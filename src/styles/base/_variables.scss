@@ -1,0 +1,34 @@
+// This file stores all reusable colors, fonts, and sizes.
+
+// 🎨 Color Palette
+$black: #000000;
+$brown: #8B4513;
+$orange-shade: #c08f63;
+$tan: #d3b89d;
+$off-white: #f1ebe1;
+
+// 🖋️ Typography
+$font-heading: 'Playfair Display', serif;
+$font-subheading: 'Montserrat', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+// 🔠 Font Weights
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 600;
+$font-heavy: 700;
+
+// 📏 Spacing
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// 🔄 Border Radius
+$border-radius: 5px;
+
+// 📱 Breakpoints
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;

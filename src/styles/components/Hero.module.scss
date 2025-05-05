@@ -1,0 +1,61 @@
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5px 0 0;
+    display: flex;
+    justify-content: center;
+
+
+
+    .hero-img {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        position: relative;
+    }
+        
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .hero-text {
+        width: 50%;
+        height: fit-content;
+        padding: 3px;
+        position: relative;
+        margin: 200px 0;
+        right: 39;
+        z-index: 2;
+
+
+        h1 {
+            padding: 5px;
+            font-size: 2em;
+            overflow: hidden;
+            display: none;
+        }
+
+        p {
+            font-size: 1.05em;
+        }
+
+        .hero-cta {
+
+            .hero-btn {
+                width: 25%;
+                padding: 7px;
+                margin: 15px 5px;
+                color: #ffffff;
+                background-color: #000000;
+                border: 1px solid #000;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            }
+        }
+
+    }
+
+}

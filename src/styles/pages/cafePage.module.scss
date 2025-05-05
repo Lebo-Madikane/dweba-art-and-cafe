@@ -1,0 +1,78 @@
+.menu-items {
+    margin-top: 80px;
+
+    .menu-text-container {
+        width: 100%;
+        min-height: 450px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-image: url('/assets/cafeCanvasBg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .menu-text-bg {
+            width: 100%;
+            min-height: 450px;
+            padding-left: 80px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: rgb(255, 255, 255, 0.87);
+
+            .menu-text {
+                width: 45%;
+                padding: 10px;
+            
+                p {
+                    margin-bottom: 8px;
+                }
+            }
+
+            .menuImg {
+            margin-top: 100px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            }
+
+        }
+    }
+
+    .menu-container {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #f3f3f3;
+
+        .menu-category {
+            width: 100%;
+            padding: 80px 0px;
+            margin: 20px;
+            line-height: 20px;
+            //background-image: url('/assets/menuBg.jpg');
+            //background-size: cover;
+            //background-position: center;
+            //background-repeat: no-repeat;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .menu-category h3 {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            width: 110px;
+            margin: 0 auto 15px auto;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+    }
+
+}

@@ -1,0 +1,248 @@
+
+.eventsBackground {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+    padding: 0px 20px;
+    margin-top: 80px;
+
+    .eventsContainer {
+            width: 82%;
+            min-height: 100vh;
+            margin: 0 auto;
+            padding: 10px 10px 0px 10px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            .eventsHeading {
+                margin: 15px 0px;
+                line-height: 50px;
+            }
+
+            .events {
+                padding: 5px;
+
+                .events1 {
+                    h3 {
+                        height: 70px;
+                        color: #ffffff;
+                        background-color: #000000;
+                        align-content: center;
+                    }
+
+                    .events1Contents {
+                        display: flex;
+                        align-items: center;
+                        text-align: start;
+                        padding: 20px;
+                        margin: 40px 0px;
+                        gap: 20;
+
+                        .events1details {
+                            flex: 1.2;
+
+                            h4 {
+                                margin-bottom: 10px;
+                            }
+
+                            p {
+                                margin-bottom: 15px;
+                            }
+
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+
+                        .events1img {
+                            width: 100%;
+                            height: 100%;
+                            flex: 1;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+                            .eventOneImg {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }   
+                }
+
+                .events2 {
+
+                    h3 {
+                        height: 70px;
+                        color: #ffffff;
+                        background-color: #000000;
+                        align-content: center;
+                    }
+                
+                    .events2Contents {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: start;
+                        padding: 20px;
+                        margin: 0px 0px 60px 0px;
+                        gap: 20;
+                        color: #ffffff;
+                        background-color: #000000;
+
+                        .events2-1container {
+                            display: flex;
+                            align-items: center;
+                            text-align: start;
+                            justify-content: center;
+                            padding: 20px;
+                            margin: 40px 0px 20px 0px;
+                            gap: 20;
+
+                            .events2-1img {
+                                flex: 1;
+                                box-shadow: 0 4px 8px rgb(255, 255, 255, 0.4);
+                                
+                                .eventTwo-OneImg {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                                
+                            .events2-1details {
+                                flex: 1.2;
+                                
+                                h4 {
+                                    margin-bottom: 10px;
+                                    color: #ffffff;
+                                }
+                                
+                                 p {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+
+                        .events2container {
+                            display: flex;
+                            align-items: center;
+                            text-align: start;
+                            justify-content: center;
+                            padding: 20px;
+                            margin: 20px 0px 40px 0px;
+                            gap: 20;
+
+                            .events2img {
+                                width: 100%;
+                                height: 100%;
+                                flex: 1;
+                                box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+                                
+                                .eventTwoImg {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .events2details {
+                                flex: 1.2;
+                            
+                                h4 {
+                                    margin-bottom: 10px;
+                                    color: #ffffff;
+                                }
+                            
+                                p {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .events3 {
+                    h3 {
+                        height: 70px;
+                        color: #ffffff;
+                        background-color: #000000;
+                        align-content: center;
+                    }
+                
+                    .events3Contents {
+                        display: flex;
+                        align-items: center;
+                        text-align: start;
+                        padding: 20px;
+                        margin: 40px 0px;
+                        gap: 20;
+                
+                        .events3details {
+                            flex: 1.2;
+                
+                            h4 {
+                                 margin-bottom: 10px;
+                            }
+                
+                            p {
+                                 margin-bottom: 15px;
+                            }
+
+                            button {
+                                width: 120px;
+                                padding: 8px;
+                                margin: 10px auto 10px auto;
+                                color: #ffffff;
+                                background-color: #000000;
+                                border: 1px solid #000;
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                            }
+                        }
+                
+                        .events3img {
+                            flex: 1;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+                            .eventThreeImg {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .eventsFooter {
+                width: 80%;
+                min-height: 150px;
+                margin: 40px auto 0px auto;
+                padding: 20px;
+                background-color: #000000;
+                color: #ffffff;
+                font-size: 0.9em;
+                
+                p {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    color: #ffd8a9;
+                }
+
+                .eventSponsor {
+                    width: 80%;
+                    padding: 20px;
+                    margin: 30px auto 0px auto;
+                    border: 2px dotted #ffffff;
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+
+                    .eventSponsorImg {
+                        margin: 0px auto;
+                    }
+                }
+            }
+
+        }
+}

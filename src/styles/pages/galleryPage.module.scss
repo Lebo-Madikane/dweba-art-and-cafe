@@ -1,0 +1,58 @@
+.gallerySection {
+    min-height: 400px;
+    padding: 10px;
+    margin-top: 80px;
+    //background-image: url('/assets/BackgroundGalleryImg1.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: #fff;
+    background-color: #000000;
+    border-bottom: 1px solid #fff;
+
+    .welcomeSection {
+        width: fit-content;
+        padding: 5px;
+        line-height: 30px;
+        margin: 50px;
+
+        h1, h2, h3, p {
+            color: #fff;
+        }
+    }
+
+    .galleryPageGrid {
+        padding: 10px;
+        margin: 50px 0px;
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .galleryPageRow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20;
+                margin: 20px;
+            
+                .galleryPageArtDetails {
+                    //border: 2px solid blue;
+
+                    span {
+                        font-weight: bolder;
+                    }
+                }
+
+                .leftText {
+                    text-align: end;
+                }
+            
+            }
+
+        }
+
+    
+    }
+}
