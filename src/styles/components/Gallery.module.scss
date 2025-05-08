@@ -1,11 +1,13 @@
 
 .gallery {
     margin-top: 150px;
+    border: 2px solid red;
 
     .gallery-heading {
         width: 100%;
         padding: 0px 50px;
         margin-bottom: 50px;
+        border: 2px solid yellow;
 
         h3 {
             margin-bottom: 20px;
@@ -17,12 +19,14 @@
     }
 
     .gallery-grid {
-        height: 805px;
-        position: relative;
+        height: fit-content;
+        padding: 10px;
         display: flex;
+        flex-direction: column;
         overflow: hidden;
+        border: 2px solid blue;
     
-        .row {
+        .walls {
             width: 100%;
             height: fit-content;
             padding: 5px;
@@ -31,41 +35,30 @@
             position: relative;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            border: 2px solid black;
             //flex-wrap: wrap;
-        }
-    
-        .art-grid {
-            width: 100%;
-            height: 300px;
-            margin: 10px;
-            position: relative;
-    
-    
-            img {
+
+            .wall-header {
                 width: 100%;
-                height: 100%;
+                height: 50px;
+                border: 2px solid yellow;
             }
-    
-            .art-details {
-                padding: 5px;
-                position: absolute;
-                color: #ffffff;
-                bottom: 20;
-                left: 16;
-                background-color: rgba(0, 0, 0, 0.4);
 
-                h4 {
-                    color: #ffffff;
-                }
-
+            .wall-grid {
+                width: 100%;
+                height: 200px;
+                border: 2px solid red;
             }
+
         }
+    
+
     }
 
     .gallery-btn-container {
         margin: 40px;
         display: flex;
+        border: 2px solid black;
 
         .gallery-btn {
             width: 120px;
