@@ -14,13 +14,33 @@ const Gallery = () => {
             </div>
             <div className={Style["gallery-grid"]}>
                 <div className={Style["walls"]}>
-                    <div className={Style["wall-header"]}></div>
-                    <div className={Style["wall-grid"]}></div>
+                    <div className={Style["wall-header"]}>
+                        <h3>UPSTAIRS - NOW SHOWING:</h3>
+                        <h4>Solo Show: Inside = Outside</h4>
+                        <p>Artist: Refiloe Mnisi</p>
+                    </div>
+                    <div className={Style["wall-grid"]}>
+                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}></div>
+                    </div>
                 </div>
                 <div className={Style["walls"]}>
-                    <div className={Style["wall-header"]}></div>
-                    <div className={Style["wall-grid"]}></div>
-                    <div className={Style["wall-grid"]}></div>
+                    <div className={Style["wall-header"]}>
+                        <h3>UPSTAIRS - NOW SHOWING:</h3>
+                        <h4>Solo Show: Inside = Outside</h4>
+                        <p>Artist: Refiloe Mnisi</p>
+                    </div>
+                    <div className={Style["wall-grid"]}>
+                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}></div>
+                    </div>
+                    <div className={Style["wall-grid"]}>
+                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}></div>
+                    </div>
                 </div>
             </div>
             {/*
