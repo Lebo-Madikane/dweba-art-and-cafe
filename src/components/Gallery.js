@@ -27,7 +27,7 @@ const Gallery = () => {
                 </div>
                 <div className={Style["walls"]}>
                     <div className={Style["wall-header"]}>
-                        <h3>UPSTAIRS - NOW SHOWING:</h3>
+                        <h3>DOWNSTAIRS - NOW SHOWING:</h3>
                         <h4>Solo Show: Inside = Outside</h4>
                         <p>Artist: Refiloe Mnisi</p>
                     </div>
