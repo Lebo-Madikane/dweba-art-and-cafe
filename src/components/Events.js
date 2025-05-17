@@ -10,19 +10,19 @@ const Events = () => {
             <div className={Style["event-one"]}>
                 <div className={Style["marquee-track"]}>
                     <h4>
-                        <span className={Style["event-name"]}> SOLO SHOW : BY REFILOE MNISI</span> ● 24 APRIL 2025 ●
+                        <span className={Style["event-name"]}> EXHIBITION WALKTHROUGH(INSIDE=OUTSIDE): BY REFILOE MNISI</span> ● 24 MAY 2025 ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
                         <span className={Style["event-entry"]}>FREE ENTRANCE</span> ●
                     </h4>
                     <h4>
-                        <span className={Style["event-name"]}>SOLO SHOW : BY REFILOE MNISI</span> ● 24 APRIL 2025 ●
+                        <span className={Style["event-name"]}>EXHIBITION WALKTHROUGH(INSIDE=OUTSIDE): BY REFILOE MNISI</span> ● 24 MAY 2025 ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
                         <span className={Style["event-entry"]}>FREE ENTRANCE</span> ●
                     </h4>
                 </div>
             </div>
             <div className={Style["event-two"]}>
-                <h4>● <span className={Style["event-name"]}>FIRST THURSDAY : FROM 5PM TILL LATE</span> ● 01 MAY 2025 ● <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ● <span className={Style["event-entry"]}> FREE ENTRANCE</span> ●</h4>
+                <h4> ● <span className={Style["event-name"]}>FIRST THURSDAY : FROM 6PM TILL LATE</span> ● 05 JUNE 2025 ● <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ● <span className={Style["event-entry"]}> FREE ENTRANCE</span> ● </h4>
             </div>
             <div className={Style["event-memories"]}>
                 <div className={Style["marquee-track"]}>
@@ -84,14 +84,14 @@ const Events = () => {
             <div className={Style["event-four"]}>
                 <div className={Style["marquee-track"]}>
                     <h4>
-                        <span className={Style["event-name"]}>IXESHA LIXHATSHWE ZIZINJA : AWAKENING - BY QAQAMBA NTSHINKA</span> ● 02 MAY 2025 ●
+                        <span className={Style["event-name"]}> DWEBA WINE & DINE: 6 COURSE </span> ● 26 JUNE 2025 ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
-                        <span className={Style["event-entry"]}>TICKET: R150</span> ●
+                        <span className={Style["event-entry"]}> INVITATION </span> ●
                     </h4>
                     <h4>
-                        <span className={Style["event-name"]}>IXESHA LIXHATSHWE ZIZINJA : AWAKENING - BY QAQAMBA NTSHINKA</span> ● 02 MAY 2025 ●
+                        <span className={Style["event-name"]}> DWEBA WINE & DINE: 6 COURSE </span> ● 26 JUNE 2025 ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
-                        <span className={Style["event-entry"]}>TICKET: R150</span> ●
+                        <span className={Style["event-entry"]}> INVITATION </span> ●
                     </h4>
                 </div>
             </div>

@@ -28,8 +28,8 @@ const Gallery = () => {
                 <div className={Style["walls"]}>
                     <div className={Style["wall-header"]}>
                         <h3>DOWNSTAIRS - NOW SHOWING:</h3>
-                        <h4>Solo Show: Inside = Outside</h4>
-                        <p>Artist: Refiloe Mnisi</p>
+                        <h4>The Reading Man: <span>Julius Badatu</span></h4>
+                        <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}></div>
