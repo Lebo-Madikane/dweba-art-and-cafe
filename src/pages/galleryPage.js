@@ -47,8 +47,7 @@ const GalleryGrid = () => (
         </div>
         <div className={styles.gallerySection}>
             <div className={styles.galleryHeader}>
-                <h3>Inside = Outside</h3>
-                <h4>Now Showing - Until 6 June 2025</h4>
+                <h3>EXPLORE OUR STOREROOM</h3>
                 <p>A solo exhibition by Refiloe Mnisi</p>
             </div>
             <div className={styles.galleryGrid}>

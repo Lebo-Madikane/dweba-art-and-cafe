@@ -11,7 +11,8 @@
     top: 0;
     left: 0;
     z-index: 99;
-    background: rgba(255, 255, 255, 0.0); // Optional background
+    background-color: #000;
+    color: #ffffff;
 
 
     img {
@@ -36,7 +37,7 @@
 
                 &:hover {
                     text-decoration: underline;
-                    color: #C08f63; // Accent color on hover
+                    color: hsl(30, 4%, 69%); // Accent color on hover
                 }
             }
         }

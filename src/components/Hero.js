@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className={Style["hero-section"]}>
             <div className={Style["hero-img"]}>
-                <Image src='/assets/heroImg-2.svg' alt="logo" width={150} height={50} />
+                <Image src='/assets/hero-img-readingMan1.svg' alt="logo" width={150} height={50} />
             </div>
             <div className={Style["hero-text"]}>
                 <h1>Art Meets<br/>Community & Coffee</h1>

@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className={Style.header}>
             <Link href='/'>
-                <Image src='/assets/Dweba-logo-black.svg' alt="logo" width={150} height={50} />
+                <Image src='/assets/Dweba-Logo-White.svg' alt="logo" width={150} height={50} />
             </Link>
             <nav>
                 <ul>
