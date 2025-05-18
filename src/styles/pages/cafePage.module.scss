@@ -3,7 +3,7 @@
 
     .menu-text-container {
         width: 100%;
-        min-height: 450px;
+        min-height: 300px;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -14,26 +14,21 @@
 
         .menu-text-bg {
             width: 100%;
-            min-height: 450px;
-            padding-left: 80px;
+            min-height: 300px;
             display: flex;
             justify-content: start;
             align-items: center;
             background-color: rgb(255, 255, 255, 0.87);
 
             .menu-text {
-                width: 45%;
+                width: 70%;
                 padding: 10px;
+                margin: 0 auto;
+                text-align: center;
             
                 p {
                     margin-bottom: 8px;
                 }
-            }
-
-            .menuImg {
-            margin-top: 100px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgb(0, 0, 0);
             }
 
         }
@@ -45,19 +40,55 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: #f3f3f3;
+        background-color: #efefef;
 
         .menu-category {
             width: 100%;
-            padding: 80px 0px;
             margin: 20px;
             line-height: 20px;
-            //background-image: url('/assets/menuBg.jpg');
-            //background-size: cover;
+            display: flex;
+            background-image: url('/assets/menuBg3.jpg');
+            background-size: cover;
             //background-position: center;
-            //background-repeat: no-repeat;
+            background-repeat: no-repeat;
             background-color: #ffffff;
             border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+            .menu-category-img {
+                flex: 1;
+                padding: 5px;
+                background-color: rgb(255, 255, 255, 0.7);
+
+                .menuImgs {
+                    width: 100%;
+                    min-height: 100%;
+                    object-fit: cover;
+                }
+
+                .breakfastImg {
+                    width: 100%;
+                    min-height: fit-content;
+                }
+
+                .croissaintImg {
+                    width: 100%;
+                    min-height: 100%;
+                    object-fit: cover;
+                }
+
+                .saladsImg {
+                    width: 100%;
+                    min-height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .menu-category-detail {
+                padding: 50px;
+                flex: 1;
+                background-color: rgb(255, 255, 255, 0.7);
+            }
         }
 
         .menu-category h3 {
