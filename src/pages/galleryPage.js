@@ -16,6 +16,20 @@ const GalleryGrid = () => (
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
+                <div className={`${styles.showMoreArtwork}`}>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                </div>
             </div>
             <div className={styles.galleryShowMoreBtn}>Show More</div>
         </div>
@@ -29,6 +43,10 @@ const GalleryGrid = () => (
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
+                <div className={`${styles.showMoreArtwork}`}>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                </div>
             </div>
             <div className={`${styles.galleryShowMoreBtn} ${styles.galleryShowMoreBtnMid}`}>Show More</div>
             <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
@@ -40,6 +58,14 @@ const GalleryGrid = () => (
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
+                <div className={`${styles.showMoreArtwork}`}>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                </div>
             </div>
             <div className={`${styles.galleryShowMoreBtn} ${styles.galleryShowMoreBtnMid}`}>Show More</div>
         </div>
@@ -53,6 +79,12 @@ const GalleryGrid = () => (
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
+                <div className={`${styles.showMoreArtwork}`}>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                    <div className={styles["artwork"]}></div>
+                </div>
             </div>
             <div className={styles.galleryShowMoreBtn}>Show More</div>
         </div>
