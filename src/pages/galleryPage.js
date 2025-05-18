@@ -21,9 +21,8 @@ const GalleryGrid = () => (
         </div>
         <div className={`${styles.gallerySection} ${styles.gallerySectionMid}`}>
             <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
-                <h3>Inside = Outside</h3>
                 <h4>Now Showing - Until 6 June 2025</h4>
-                <p>A solo exhibition by Refiloe Mnisi</p>
+                <h3>The Reading Man: <span>Julius Badatu</span></h3>
             </div>
             <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                 <div className={styles["artwork"]}></div>
@@ -33,9 +32,8 @@ const GalleryGrid = () => (
             </div>
             <div className={`${styles.galleryShowMoreBtn} ${styles.galleryShowMoreBtnMid}`}>Show More</div>
             <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
-                <h3>Inside = Outside</h3>
                 <h4>Now Showing - Until 6 June 2025</h4>
-                <p>A solo exhibition by Refiloe Mnisi</p>
+                <h3>Golden Kings Code: <span>Kevin Wurffel</span></h3>
             </div>
             <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                 <div className={styles["artwork"]}></div>
@@ -48,7 +46,7 @@ const GalleryGrid = () => (
         <div className={styles.gallerySection}>
             <div className={styles.galleryHeader}>
                 <h3>EXPLORE OUR STOREROOM</h3>
-                <p>A solo exhibition by Refiloe Mnisi</p>
+                <p>Discover a curated selection of works from our debut group show, “And Just Like That...”, now available for viewing and purchase in the storeroom.</p>
             </div>
             <div className={styles.galleryGrid}>
                 <div className={styles["artwork"]}></div>
