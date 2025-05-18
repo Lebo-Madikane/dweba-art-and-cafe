@@ -19,31 +19,31 @@ const GalleryGrid = () => (
             </div>
             <div className={styles.galleryShowMoreBtn}>Show More</div>
         </div>
-        <div className={styles.gallerySection}>
-            <div className={styles.galleryHeader}>
+        <div className={`${styles.gallerySection} ${styles.gallerySectionMid}`}>
+            <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
                 <h3>Inside = Outside</h3>
                 <h4>Now Showing - Until 6 June 2025</h4>
                 <p>A solo exhibition by Refiloe Mnisi</p>
             </div>
-            <div className={styles.galleryGrid}>
+            <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
             </div>
-            <div className={styles.galleryShowMoreBtn}>Show More</div>
-            <div className={styles.galleryHeader}>
+            <div className={`${styles.galleryShowMoreBtn} ${styles.galleryShowMoreBtnMid}`}>Show More</div>
+            <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
                 <h3>Inside = Outside</h3>
                 <h4>Now Showing - Until 6 June 2025</h4>
                 <p>A solo exhibition by Refiloe Mnisi</p>
             </div>
-            <div className={styles.galleryGrid}>
+            <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
                 <div className={styles["artwork"]}></div>
             </div>
-            <div className={styles.galleryShowMoreBtn}>Show More</div>
+            <div className={`${styles.galleryShowMoreBtn} ${styles.galleryShowMoreBtnMid}`}>Show More</div>
         </div>
         <div className={styles.gallerySection}>
             <div className={styles.galleryHeader}>
