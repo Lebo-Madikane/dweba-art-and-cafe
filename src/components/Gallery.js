@@ -20,9 +20,15 @@ const Gallery = () => {
                         <p>Artist: Refiloe Mnisi</p>
                     </div>
                     <div className={Style["wall-grid"]}>
-                        <div className={Style["artwork"]}></div>
-                        <div className={Style["artwork"]}></div>
-                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-1.svg' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-2.svg' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-3.jpg' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
                     </div>
                 </div>
                 <div className={Style["walls"]}>
@@ -32,14 +38,26 @@ const Gallery = () => {
                         <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
                     </div>
                     <div className={Style["wall-grid"]}>
-                        <div className={Style["artwork"]}></div>
-                        <div className={Style["artwork"]}></div>
-                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.jpg' alt='The-Reading-Man-I' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/Brothers-Embrace.jpg' alt='Brothers-Embrace' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.jpg' alt='The-Reading-Man-II' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
                     </div>
                     <div className={Style["wall-grid"]}>
-                        <div className={Style["artwork"]}></div>
-                        <div className={Style["artwork"]}></div>
-                        <div className={Style["artwork"]}></div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/Downstairs/KevinWurffel/THE-INFI.jpg' alt='THE-INFI' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.jpg' alt='King-Yankuru' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
+                        <div className={Style["artwork"]}>
+                            <Image src='/assets/artworks/Downstairs/KevinWurffel/Golden-King.jpg' alt='Golden-King' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                        </div>
                     </div>
                 </div>
             </div>
