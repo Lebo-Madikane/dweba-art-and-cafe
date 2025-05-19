@@ -43,7 +43,7 @@ const EventsContent = () => (
                         </div> */}
                         <div className={styles["events2container"]}>
                             <div className={styles["events2img"]}>
-                                <Image src='/assets/FirstFriday.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} />
+                                <Image src='/assets/firstThursdayPoster.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} />
                             </div>
                             <div className={styles["events2details"]}>
                                 <h4>First Thursday, 05 June: From 5PM till late</h4>
