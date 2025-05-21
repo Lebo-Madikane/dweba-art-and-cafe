@@ -57,7 +57,19 @@
             .artwork {
                 width: 250px;
                 height: 290px;
-                border: 1px solid black;
+                
+                .soloImgs {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                }
+
+                .storeroomImg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
 
@@ -93,7 +105,6 @@
             .artwork {
                 width: 250px;
                 height: 290px;
-                border: 1px solid rgb(0, 0, 0);
             }
         }
     }
