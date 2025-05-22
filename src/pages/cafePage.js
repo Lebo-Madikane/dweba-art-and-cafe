@@ -17,20 +17,20 @@ const MenuItems = () => (
         <div id='menu-container' className={Styles['menu-container']}>
             <div id='breakfast' className={Styles['menu-category']}>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/breakfast.jpg" alt='breakfast image' width={150} height={150} className={Styles['breakfastImg']} />
+                    <Image src="/assets/breakfast.png" alt='breakfast image' width={150} height={150} className={Styles['breakfastImg']} />
                 </div>
                 <div className={Styles["menu-category-detail"]}>
                     <h3>Breakfast</h3>
                     <hr />
                     <ul>
-                        <li>Classic egg benedict - <span>R95</span></li>
-                        <li>Loaded egg benedict - <span>R115</span></li>
+                        <li>Classic egg benedict - <span>R105</span></li>
+                        <li>Loaded egg benedict - <span>R135</span></li>
                         <li>Cheese omelette basic - <span>R80</span></li>
-                        <li>Classic english breakfast - <span>R65</span></li>
-                        <li>Herby scramble on toast - <span>R85</span></li>
-                        <li>Boiled or poached egg - <span>R120</span></li>
+                        <li>Classic english breakfast - <span>R75</span></li>
+                        <li>Herby scramble on toast - <span>R95</span></li>
+                        <li>Loaded avocado toast with boiled or poached egg - <span>R120</span></li>
                         <li>Loaded avocado toast - <span>R95</span></li>
-                        <li>Masela poached - <span>R75</span></li>
+                        <li>Masela poached - <span>R90</span></li>
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}></div>
@@ -41,20 +41,19 @@ const MenuItems = () => (
                     <h3>Croissaints</h3>
                     <hr />
                     <ul>
-                        <li>Croissants - <span>R50</span></li>
                         <li>Plain croissant - <span>R25</span></li>
                         <li>Croissant with butter & jam - <span>R50</span></li>
-                        <li>Croissant french toast - <span>R65</span></li>
-                        <li>Croissant with herby scramble - <span>R65</span></li>
+                        <li>Croissant french toast - <span>R85</span></li>
+                        <li>Croissant with herby scramble - <span>R95</span></li>
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/croissaints.jpg" alt='croissaints image' width={150} height={150} className={Styles['croissaintImg']} />
+                    <Image src="/assets/croissant.jpg" alt='croissaints image' width={150} height={150} className={Styles['croissaintImg']} />
                 </div>
             </div>
             <div id='salads' className={Styles['menu-category']}>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/salads.jpg" alt='salads image' width={150} height={150} className={Styles['saladsImg']} />
+                    <Image src="/assets/salad.JPG" alt='salads image' width={150} height={150} className={Styles['saladsImg']} />
                 </div>
                 <div className={Styles["menu-category-detail"]}>
                     <h3>Salads</h3>
@@ -64,6 +63,7 @@ const MenuItems = () => (
                         <li>Waldorf salad - <span>R95</span></li>
                         <li>Summer panzanella - <span>R75</span></li>
                         <li>Lemon broccoli & wild rocket - <span>R95</span></li>
+                        <li>Fruit salad with yogurt - <span>R80</span></li>
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}></div>
@@ -74,10 +74,10 @@ const MenuItems = () => (
                     <h3>Burgers</h3>
                     <hr />
                     <ul>
-                        <li>Smash burger - <span>R105</span></li>
-                        <li>Caprese style burger - <span>R85</span></li>
-                        <li>Smash chicken burger - <span>R105</span></li>
-                        <li>Spicy lamb burger - <span>R105</span></li>
+                        <li>Smash burger - <span>R165</span></li>
+                        <li>Caprese style burger - <span>R95</span></li>
+                        <li>Smash chicken burger - <span>R155</span></li>
+                        <li>Spicy lamb burger - <span>R165</span></li>
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}>
@@ -86,7 +86,7 @@ const MenuItems = () => (
             </div>
             <div id='extras' className={Styles['menu-category']}>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/extras.jpg" alt='burger image' width={150} height={150} className={Styles['menuImgs']} />
+                    <Image src="/assets/extras.png" alt='burger image' width={150} height={150} className={Styles['menuImgs']} />
                 </div>
                 <div className={Styles["menu-category-detail"]}>
                     <h3>Extras</h3>
@@ -100,13 +100,14 @@ const MenuItems = () => (
                         <li>Avocado - <span>R25</span></li>
                         <li>Camembert - <span>R25</span></li>
                         <li>Mozzarella - <span>R25</span></li>
+                        <li>Side salad - <span>R35</span></li>
                         <li>Chesse platter - <span>R98</span></li>
                         <li>Cherry tomatoes - <span>R10</span></li>
                         <li>Breakfast sausage - <span>R25</span></li>
                         <li>Crispy fresh fries - <span>R25</span></li>
                         <li>Smoked chicken - <span>R25</span></li>
-                        <li>Sweet potatoe's - <span>R25</span></li>
-                        <li>Sauteed greens - <span>R15</span></li>
+                        <li>Sweet potatoe's - <span>R35</span></li>
+                        <li>Sauteed greens - <span>R30</span></li>
                         <li>Artisanal/Country bread - <span>R15</span></li>
                         <li>Feta - <span>R20</span></li>
                         <li>Kale - <span>R15</span></li>
@@ -133,12 +134,12 @@ const MenuItems = () => (
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/juice.jpg" alt='juice image' width={150} height={150} className={Styles['menuImgs']} />
+                    <Image src="/assets/juicez.jpg" alt='juice image' width={150} height={150} className={Styles['menuImgs']} />
                 </div>
             </div>
             <div id='cold-drinks' className={Styles['menu-category']}>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/coldDrinks.jpg" alt='cold drinks image' width={150} height={150} className={Styles['menuImgs']} />
+                    <Image src="/assets/cold-drink.png" alt='cold drinks image' width={150} height={150} className={Styles['menuImgs']} />
                 </div>
                 <div className={Styles["menu-category-detail"]}>
                     <h3>Cold Drinks</h3>
@@ -147,8 +148,8 @@ const MenuItems = () => (
                         <li>Sprite - <span>R22</span></li>
                         <li>Lemonade - <span>R22</span></li>
                         <li>Ice coffee - <span>R45</span></li>
-                        <li>Still water - <span>R15/R50</span></li>
-                        <li>Sparkling water - <span>R15/R50</span></li>
+                        <li>Still water - <span>R15/R30</span></li>
+                        <li>Sparkling water - <span>R15/R45</span></li>
                         <li>Coke(ligth, zero) - <span>R22</span></li>
                         <li>Appletizer(grape) - <span>R30</span></li>
                         <li>Cream soda - <span>R22</span></li>
@@ -167,16 +168,16 @@ const MenuItems = () => (
                     <ul>
                         <li>Tea - <span>R25</span></li>
                         <li>Espresso - <span>R28</span></li>
-                        <li>Flat white - <span>R35</span></li>
+                        <li>Flat white - <span>R40</span></li>
                         <li>Macchiato - <span>R28</span></li>
                         <li>Americano - <span>R30</span></li>
-                        <li>Dark hot chocolate - <span>R40</span></li>
-                        <li>White hot chocolate - <span>R40</span></li>
-                        <li>Cappuccino - <span>R35</span></li>
-                        <li>Chai latte - <span>R40</span></li>
+                        <li>Dark hot chocolate - <span>R45</span></li>
+                        <li>White hot chocolate - <span>R45</span></li>
+                        <li>Cappuccino - <span>R45</span></li>
+                        <li>Chai latte - <span>R54</span></li>
                         <li>Baby chino - <span>R5</span></li>
                         <li>Cortado - <span>R35</span></li>
-                        <li>Latte - <span>R40</span></li>
+                        <li>Latte - <span>R45</span></li>
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}>
@@ -208,7 +209,7 @@ const MenuItems = () => (
                     <ul>
                         <li>Tropical breeze - <span>R55</span></li>
                         <li>Peanut butter bliss - <span>R55</span></li>
-                        <li>Berry smoothie - <span>R55</span></li>
+                        <li>Berry smoothie - <span>R70</span></li>
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}>
