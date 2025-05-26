@@ -21,6 +21,23 @@ const Hero = () => {
                     </Link>
                 </div>
             </div>
+            <div className={Style.mobileHero}>
+                <div className={Style.mobileHeroText}>
+                    <h1>Art Meets<br />Community & Coffee</h1>
+                    <p>Dweba Art and Café is where creativity, connection, and comfort meet - offering contemporary art, premium coffee, and an inspiring, inclusive atmosphere.</p>
+                </div>
+                <div className={Style.mobileHeroCta}>
+                    <Link href="/galleryPage">
+                        <button className={Style["hero-btn-mobile"]}>View Gallery</button>
+                    </Link>
+                    <Link href="/cafePage">
+                        <button className={Style["hero-btn-mobile"]} target="_blank">View Menu</button>
+                    </Link>
+                </div>
+                <div className={Style.mobileHeroImg}>
+                    <Image src='/assets/mobileHeroImg.svg' alt="logo" width={150} height={50} />
+                </div>
+            </div>
         </div>
     );
 
