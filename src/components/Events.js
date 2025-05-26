@@ -17,12 +17,12 @@ const Events = () => {
                     <h4>
                         <span className={Style["event-name"]}>EXHIBITION WALKTHROUGH(INSIDE=OUTSIDE): BY REFILOE MNISI</span> ● 24 MAY 2025 ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
-                        <span className={Style["event-entry"]}>FREE ENTRANCE</span> ●
+                        <span className={Style["event-entry"]}>FREE ENTRANCE</span>
                     </h4>
                 </div>
             </div>
             <div className={Style["event-two"]}>
-                <h4> ● <span className={Style["event-name"]}>FIRST THURSDAY : FROM 6PM TILL LATE</span> ● 05 JUNE 2025 ● <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ● <span className={Style["event-entry"]}> FREE ENTRANCE</span> ● </h4>
+                <h4><span className={Style["event-name"]}>● FIRST THURSDAY : FROM 6PM TILL LATE ●</span><span className={Style["event-location"]}> 05 JUNE 2025 ● 167 LONGMARKET ST. CAPE TOWN ● DWEBA ART & CAFE ●</span><span className={Style["event-entry"]}> FREE ENTRANCE  ● </span></h4>
             </div>
             <div className={Style["event-memories"]}>
                 <div className={Style["marquee-track"]}>

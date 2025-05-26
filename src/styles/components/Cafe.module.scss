@@ -35,4 +35,32 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+
+        .cafe-content {
+            margin: 0px auto;
+            padding: 10px;
+            align-items: center;
+
+            h2 {
+                font-size: 1.24em;
+            }
+
+            p {
+                padding: 0px;
+                font-size: 1em;
+            }
+
+            .view-menu-btn {
+                margin: 20px auto;
+            }
+        }
+    }
+
 }

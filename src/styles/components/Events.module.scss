@@ -135,15 +135,23 @@
     .event-entry {
         color: #c4c3ff;
     }
-}
 
+    .view-events-btn {
+        width: 115px;
+        height: 40px;
+        margin: 20px auto;
+        color: white;
+        background-color: #000;
+        border: 1.3px solid #000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);   
+    }
 
-.view-events-btn {
-    width: 115px;
-    height: 40px;
-    margin: 20px auto;
-    color: white;
-    background-color: #000;
-    border: 1.3px solid #000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 50px 0px 10px 0px;
+
+        .event-location, .event-entry {
+            display: none;
+        }
+    }
 }
