@@ -17,6 +17,7 @@ const Home = () => {
             <Head>
                 <title>Dweba Art & Café</title>
                 <meta name="description" content="A space for creativity, connection, and coffee." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
             <Header />
             <section id="home">
