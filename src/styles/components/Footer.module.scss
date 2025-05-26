@@ -53,4 +53,26 @@
         }
 
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 5px;
+        flex-direction: column;
+
+        .logo {
+            display: none;
+        }
+
+        .footer-details {
+            width: 90%;
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .footer-icons {
+            margin: 10px 0px;
+            width: 60%;
+        }
+    }
 }

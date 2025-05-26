@@ -92,8 +92,46 @@
 
         @media (max-width: 768px) {
             width: 100%;
-            padding: 0px;
-            margin: 0px;
-            border: 2px solid blue;   
+            padding: 20px;
+            margin: 50px 0px;
+            
+            .art-collector-form {
+                width: 100%;
+                min-height: fit-content;
+                margin: 0px auto;
+                padding: 15px;
+                gap: 5px;
+
+                h4 {
+                    font-size: 1.5em;
+                    margin-bottom: 5px;
+                }
+                
+                p {
+                    width: 90%;
+                    font-size: 1.1em;
+                }
+
+                .input-row-1, .input-row-2 {
+                    width: 100%;
+                    padding: 0px;
+
+                    input, select {
+                        width: 43%;
+                        height: 45px;
+                        padding: 5px;
+                        margin: 0;
+                    }
+                }
+                                
+                .input-row-3 {
+                
+                    .message {
+                        width: 90%;
+                        height: 75px;
+                        padding: 5px;
+                    }
+                }
+            }
         }
 }
