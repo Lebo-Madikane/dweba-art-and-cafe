@@ -19,11 +19,13 @@ const About = () => {
             </div>
             <div className={Style['row-two']}>
                 <div className={Style['row-two-col-one']}>
-                    <Image src='/assets/About-Couch.svg' alt="logo" width={150} height={50} />
+                    <Image className={Style['street-sign-img']} src='/assets/About-street-sign.svg' alt="logo" width={150} height={50} />
+                    <Image className={Style['couch-img']} src='/assets/About-Couch.svg' alt="logo" width={150} height={50} />
                 </div>
                 <div className={Style['row-two-col-two']}>
                     <div className={Style['row-two-col-two-row-one']}>
-                        <Image src='/assets/About-street-sign.svg' alt="logo" width={150} height={50} />
+                        <Image className={Style['upstairs-img']} src='/assets/About-us-one.svg' alt="logo" width={150} height={50} />
+                        <Image className={Style['street-sign-img2']} src='/assets/About-street-sign.svg' alt="logo" width={150} height={50} />
                     </div>
                     <div className={Style['row-two-col-two-row-two']}>
                         <h2>COME & BE<br/>INSPIRED</h2>

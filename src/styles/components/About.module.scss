@@ -53,6 +53,10 @@
                 height: 470px;
                 object-fit: cover;
             }
+
+            .street-sign-img {
+                display: none;
+            }
         }
 
         .row-two-col-two {
@@ -63,6 +67,10 @@
 
             .row-two-col-two-row-one {
                 flex: 1;
+
+                .upstairs-img {
+                    display: none;
+                }
 
                 Img {
                     width: 100%;
@@ -84,5 +92,91 @@
             }
         }
 
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: fit-content;
+        margin: 20px 0px;
+        border: 2px solid red;
+
+        .row-one {
+
+            .row-one-col-left {
+                padding: 0px;
+
+                h2 {
+                    font-size: 1.24em;
+                }
+
+                p {
+                    font-size: 1em;
+                }
+            }
+
+            .row-one-col-one {
+                display: none;
+            }
+
+            .row-one-col-two {
+                Img {
+                    height: 190px;
+                }
+            }
+
+        }
+
+        .row-two {
+            flex-direction: column;
+
+            .street-sign-img {
+                display: block;
+            }
+
+            .couch-img {
+                display: none;
+            }
+
+            .row-two-col-one {
+
+                .street-sign-img {
+                    display: block;
+                }
+
+                Img {
+                    height: 150px;
+                }
+            }
+
+            .row-two-col-two {
+                flex-direction: row;
+
+                .row-two-col-two-row-one {
+
+                    .upstairs-img {
+                        display: block;
+                    }
+
+                    .street-sign-img2 {
+                        display: none;
+                    }
+
+                    Img {
+                        height: 100%;
+                    }
+                }
+
+                .row-two-col-two-row-two{
+                        h2 {
+                            font-size: 1.24em;
+                        }
+                    
+                        p {
+                            font-size: 1em;   }
+                }
+
+            }
+
+        }
     }
 }
