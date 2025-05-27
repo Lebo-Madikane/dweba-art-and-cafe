@@ -47,6 +47,7 @@
             margin: 20px;
             line-height: 20px;
             display: flex;
+            flex-wrap: wrap;
             background-image: url('/assets/menuBg3.jpg');
             background-size: cover;
             //background-position: center;
@@ -103,6 +104,41 @@
 
         span {
             font-weight: bold;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
+        .menu-text-container {
+            .menu-text-bg {
+                .menu-text {
+                    width: 90%;
+                }
+            }
+        }
+
+        .menu-container {
+            padding: 20px;
+
+            .menu-category {
+                flex-direction: column;
+
+                .menu-category-detail {
+
+                    padding: 15px;
+
+                    h3 {
+                        font-size: 1.44em;
+                    }
+                    
+                    ul {
+                        width: 100%;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+
         }
 
     }

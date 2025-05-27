@@ -10,6 +10,10 @@
     background-color: #000;
     border: 2px solid #000;
 
+    .logo2 {
+            display: none;
+    }
+
 
     .footer-details {
         width: 470px;
@@ -61,6 +65,10 @@
 
         .logo {
             display: none;
+        }
+
+        .logo2 {
+            display: flex;
         }
 
         .footer-details {
