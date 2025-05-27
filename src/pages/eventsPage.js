@@ -13,7 +13,7 @@ const EventsContent = () => (
             </div>
             <div className={styles["events"]}>
                 <div className={styles["events1"]}>
-                    <h3>Saturday, 24 May: Exhibition Walkthrough("Inside=Outside") with Refiloe Mnisi</h3>
+                    <h3>Saturday, 24 May: Exhibition Walkthrough("Inside=Outside")</h3>
                     <div className={styles["events1Contents"]}>
                         <div className={styles["events1details"]}>
                             <h4>Step inside the story</h4>
@@ -47,7 +47,7 @@ const EventsContent = () => (
                             </div>
                             <div className={styles["events2details"]}>
                                 <h4>First Thursday, 05 June: From 5PM till late</h4>
-                                <p>Join us for another spirited edition of First Thursday at Dweba — where art, music, and community collide in one of Cape Town’s most vibrant cultural spaces.</p>
+                                <p>Another spirited edition of First Thursday at Dweba — where art, music, and community collide in one of Cape Town’s most vibrant cultural spaces.</p>
                                 <p>This month’s gathering promises an open-door celebration of creativity: warm light, soulful sounds, curated art moments, and the comforting aroma of freshly brewed coffee from our café.</p>
                                 <p>No bookings. No barriers. Just come as you are.</p>
                             </div>
