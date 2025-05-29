@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className={Styles["footer"]}>
             <div className={Styles["footer-logo"]}>
-                <Image className={Styles["logo"]} src='/assets/Dweba-logo-white.jpg' alt="logo" width={150} height={50} />
+                <Image className={Styles["logo"]} src='/assets/Dweba-Logo-White-copy.png' alt="logo" width={150} height={50} />
                 <Image className={Styles["logo2"]} src='/assets/Dweba-logo-white.png' alt="logo" width={150} height={50} />
             </div>
             <div className={Styles["footer-details"]}>
