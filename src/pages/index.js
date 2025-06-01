@@ -31,7 +31,7 @@ const Home = () => {
                 <Cafe />
             </section>
                 <Events />
-            <   Form />
+            <Form />
             <section id="contact">
                 <Footer />
             </section>
