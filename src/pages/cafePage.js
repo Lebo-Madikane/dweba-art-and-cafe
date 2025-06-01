@@ -139,7 +139,7 @@ const MenuItems = () => (
             </div>
             <div id='cold-drinks' className={Styles['menu-category']}>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/cold-drink.png" alt='cold drinks image' width={150} height={150} className={Styles['menuImgs']} />
+                    <Image src="/assets/cafe/coldDrinks.webp" alt='cold drinks image' width={150} height={150} className={Styles['menuImgs']} />
                 </div>
                 <div className={Styles["menu-category-detail"]}>
                     <h3>Cold Drinks</h3>
