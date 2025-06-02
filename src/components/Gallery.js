@@ -21,13 +21,13 @@ const Gallery = () => {
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-1.svg' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-1.webp' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-2.svg' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-2.webp' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-3.jpg' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-3.webp' alt='Untitled Indlela 1' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                     </div>
                 </div>
