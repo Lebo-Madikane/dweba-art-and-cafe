@@ -11,21 +11,21 @@ const About = () => {
                     <p>Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
                 </div>
                 <div className={Style['row-one-col-one']}>
-                    <Image src='/assets/About-us-one.svg' alt="logo" width={150} height={50} />
+                    <Image src='/assets/about-section/About-us-one.webp' alt="About us image" width={150} height={50} loading='lazy'/>
                 </div>
                 <div className={Style['row-one-col-two']}>
-                    <Image src='/assets/About-us-two.png' alt="logo" width={150} height={50} />
+                    <Image src='/assets/about-section/About-us-two.webp' alt="About us image" width={150} height={50} loading='lazy' />
                 </div>
             </div>
             <div className={Style['row-two']}>
                 <div className={Style['row-two-col-one']}>
-                    <Image className={Style['street-sign-img']} src='/assets/About-street-sign.svg' alt="logo" width={150} height={50} />
-                    <Image className={Style['couch-img']} src='/assets/About-Couch.svg' alt="logo" width={150} height={50} />
+                    <Image className={Style['street-sign-img']} src='/assets/about-section/About-street-sign.webp' alt="Street sign image" width={150} height={50} loading='lazy' />
+                    <Image className={Style['couch-img']} src='/assets/about-section/About-Couch.webp' alt="logo" width={150} height={50} loading='lazy' />
                 </div>
                 <div className={Style['row-two-col-two']}>
                     <div className={Style['row-two-col-two-row-one']}>
-                        <Image className={Style['upstairs-img']} src='/assets/About-us-one.svg' alt="logo" width={150} height={50} />
-                        <Image className={Style['street-sign-img2']} src='/assets/About-street-sign.svg' alt="logo" width={150} height={50} />
+                        <Image className={Style['upstairs-img']} src='/assets/about-section/About-us-one.webp' alt="Gallery image" width={150} height={50} loading='lazy' />
+                        <Image className={Style['street-sign-img2']} src='/assets/about-section/About-street-sign.webp' alt="Street sign image" width={150} height={50} loading='lazy' />
                     </div>
                     <div className={Style['row-two-col-two-row-two']}>
                         <h2>COME & BE<br/>INSPIRED</h2>
