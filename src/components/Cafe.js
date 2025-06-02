@@ -19,7 +19,7 @@ const Cafe = () => {
                 </Link>
             </div>
             <div className={Style["cafe-img-container"]}>
-                <Image src='/assets/All-Day-Breakfast.svg' alt="logo" width={150} height={50} className={Style["cafe-img"]} />
+                <Image src='/assets/cafe/All-Day-Breakfast.webp' alt="Cafe Image" width={150} height={50} className={Style["cafe-img"]} />
             </div>
         </div>
     );
