@@ -39,24 +39,24 @@ const Gallery = () => {
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.jpg' alt='The-Reading-Man-I' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.webp' alt='The-Reading-Man-I' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/Brothers-Embrace.jpg' alt='Brothers-Embrace' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/Brothers-Embrace.webp' alt='Brothers-Embrace' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.jpg' alt='The-Reading-Man-II' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp' alt='The-Reading-Man-II' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/THE-INFI.jpg' alt='THE-INFI' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp' alt='THE-INFI' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.jpg' alt='King-Yankuru' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp' alt='King-Yankuru' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/Golden-King.jpg' alt='Golden-King' width={150} height={150} className={`${Style.untitledIndlela}`} />
+                            <Image src='/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp' alt='Golden-King' width={150} height={150} className={`${Style.untitledIndlela}`} />
                         </div>
                     </div>
                 </div>
