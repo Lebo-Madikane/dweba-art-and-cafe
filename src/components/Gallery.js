@@ -9,7 +9,7 @@ const Gallery = () => {
             <div className={Style["gallery-heading"]}>
                 <h2>Explore the Dweba Art Gallery</h2>
                 <p>
-                    Discover a curated collection of contemporary works by bold, expressive artists.<br/> Each piece invites you to experience storytelling through form, color, and culture — all under one roof.
+                    Discover a curated collection of contemporary works by bold, expressive artists.<br/> Each piece invites you to experience storytelling through form, colour, and culture — all under one roof.
                 </p>
             </div>
             <div className={Style["gallery-grid"]}>
