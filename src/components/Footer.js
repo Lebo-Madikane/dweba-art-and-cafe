@@ -12,7 +12,9 @@ const Footer = () => {
                 <Image className={Styles["logo2"]} src='/assets/Dweba-logo-white.png' alt="logo" width={150} height={50} />
             </div>
             <div className={Styles["footer-details"]}>
-                <p>The Dweba Art Gallery & Cafe is free to all visitors and open six days a week from 8am to 5pm mon-fri and 8am to 1pm Sat. Find us at<br/> 167 Longmarket Street, Cape Town, 8001, SA.  </p>
+                <p>Call: +2771 051 7574</p>
+                <p>Email: hello@dwebaart.com</p>
+                <p>Sign-up: to our <span className={Styles["newsletter"]}>Newsletter</span> </p>
             </div>
             <div className={Styles["footer-icons"]}>
                 <a

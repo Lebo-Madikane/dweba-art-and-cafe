@@ -16,10 +16,15 @@
 
 
     .footer-details {
-        width: 470px;
+        width: fit-content;
+        text-align: center;
 
         p {
             font-size: 0.87em;
+        }
+
+        .newsletter {
+            text-decoration: underline;
         }
     }
 
