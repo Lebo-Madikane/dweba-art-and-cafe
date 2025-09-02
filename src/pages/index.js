@@ -23,14 +23,14 @@ const Home = () => {
             <section id="home">
                 <Hero />
             </section>
-                <About />
+            <About />
             <section id="gallery">
                 <Gallery />
             </section>
             <section id="cafe">
                 <Cafe />
             </section>
-                <Events />
+            <Events />
             <Form />
             <section id="contact">
                 <Footer />
