@@ -11,7 +11,7 @@ const Hero = () => {
             </div>
             <div className={Style["hero-text"]}>
                 <h1>Art Meets<br/>Community & Coffee</h1>
-                <p>Dweba Art and Café is where creativity, connection, and comfort meet - offering contemporary art, premium coffee, and an inspiring, inclusive atmosphere.</p>
+                <p>Dweba Art & Café is a platform where local and international artists spark dialogue, challenge norms, and inspire creativity toward a kinder society.</p>
                 <div className={Style["hero-cta"]}> 
                     <Link href="/galleryPage">
                         <button className={Style["hero-btn"]}>View Gallery</button>
@@ -24,7 +24,7 @@ const Hero = () => {
             <div className={Style.mobileHero}>
                 <div className={Style.mobileHeroText}>
                     <h1>Art Meets<br />Community & Coffee</h1>
-                    <p>Dweba Art and Café is where creativity, connection, and comfort meet - offering contemporary art, premium coffee, and an inspiring, inclusive atmosphere.</p>
+                    <p>Dweba Art & Café is a platform where local and international artists spark dialogue, challenge norms, and inspire creativity toward a kinder society.</p>
                 </div>
                 <div className={Style.mobileHeroCta}>
                     <Link href="/galleryPage">
