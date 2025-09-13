@@ -53,7 +53,7 @@ const MenuItems = () => (
             </div>
             <div id='salads' className={Styles['menu-category']}>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/cafe/salad1.jpg" alt='salads image' width={150} height={150} className={Styles['saladsImg']} />
+                    <Image src="/assets/cafe/Salad1.jpg" alt='salad image' width={150} height={150} className={Styles['saladsImg']} />
                 </div>
                 <div className={Styles["menu-category-detail"]}>
                     <h3>Salads</h3>
@@ -186,7 +186,7 @@ const MenuItems = () => (
             </div>
             <div id='mocktails' className={Styles['menu-category']}>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/cafe/Mocktail.jpg" alt='smoothie image' width={150} height={150} className={Styles['menuImgs']} />
+                    <Image src="/assets/cafe/Mocktail.jpg" alt='mocktail image' width={150} height={150} className={Styles['menuImgs']} />
                 </div>
                 <div className={Styles["menu-category-detail"]}>
                     <h3>Mocktails</h3>
@@ -213,7 +213,7 @@ const MenuItems = () => (
                     </ul>
                 </div>
                 <div className={Styles["menu-category-img"]}>
-                    <Image src="/assets/cafe/Smoothy1.jpg" alt='mocktail image' width={150} height={150} className={Styles['menuImgs']} />
+                    <Image src="/assets/cafe/Smoothy1.jpg" alt='Smoothy image' width={150} height={150} className={Styles['menuImgs']} />
                 </div>
             </div>
         </div>
