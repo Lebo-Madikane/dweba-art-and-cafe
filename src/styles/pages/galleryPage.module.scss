@@ -7,6 +7,176 @@
         margin: 20px auto;
         padding: 10px;
 
+        .wallHeader {
+            display: none;
+            width: 85%;
+            height: fit-content;
+            margin: 30px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: rgba(0, 0, 0);
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        
+            h4,
+            h3,
+            p {
+                color: #ffffff;
+            }
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
+        
+        .wallGrid {
+            width: 100%;
+            height: fit-content;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            display: none;
+        
+            .artwork {
+                width: 300px;
+                height: 360px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        
+                .untitledIndlela {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        
+        // Desktop carousel grid (unchanged)
+        .carouselGrid {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        // Mobile carousel styles - scroll-based like your example
+        .mobileCarousel {
+            display: none;
+        
+            @media (max-width: 768px) {
+                display: block;
+                width: 100%;
+            }
+        }
+        
+        .carouselWrapper {
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none; // Firefox
+            -ms-overflow-style: none; // IE
+        
+            &::-webkit-scrollbar {
+                display: none; // Chrome, Safari
+            }
+        }
+        
+        .carouselSlide {
+            flex: 0 0 calc(100% - 2rem);
+            scroll-snap-align: start;
+            padding: 10px;
+        
+            .slideContent {
+                display: flex;
+                justify-content: center;
+                padding: 1rem 0.5rem;
+        
+                .artworkCard {
+                    flex: 1;
+                    width: 100%;
+        
+                    .artworkImage {
+                        width: 100%;
+                        height: 390px;
+                        object-fit: cover;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                        transition: all 0.3s ease;
+        
+                        &:hover {
+                            transform: translateY(-3px);
+                            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Carousel Dots
+        .dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 0;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(117, 117, 117, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0.6;
+        
+            &.active {
+                background: #000000;
+                opacity: 1;
+                transform: scale(1.3);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+        
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+        }
+        
+        .carousel-dots {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+                padding: 10px 0;
+        
+                .dot {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: rgba(255, 255, 255, 0.4);
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+        
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.7);
+                        transform: scale(1.1);
+                    }
+        
+                    &.active {
+                        background-color: #ffffff;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
         .galleryHeader {
             width: 90%;
             margin: 20px auto;
@@ -98,6 +268,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
             cursor: pointer;
         }
+
+        @media (max-width: 768px) {
+            .removeMobile {
+                display: none;
+            }
+        }
     }
 
     .gallerySectionMid {
@@ -120,6 +296,12 @@
                 width: 250px;
                 height: fit-content;
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .removeMobile {
+            display: none;
         }
     }
 }

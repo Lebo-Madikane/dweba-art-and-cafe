@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import styles from '../styles/pages/galleryPage.module.scss';
-import { useState } from "react";
+import { useState, useEffect, useRef } from 'react';
 
 const GalleryGrid = () => {
 
@@ -28,16 +28,156 @@ const GalleryGrid = () => {
     };
 
 
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [windowWidth, setWindowWidth] = useState(0);
+    const [mounted, setMounted] = useState(false);
+    const carouselRef = useRef(null);
+
+    // mark mounted (avoid SSR mismatch)
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    // window width
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const isMobile = mounted && windowWidth <= 768 && windowWidth > 0;
+
+    // All artworks
+    const allArtworks = [
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.webp', alt: 'The-Reading-Man-I' },
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/Brothers-Embrace.webp', alt: 'Brothers-Embrace' },
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp', alt: 'The-Reading-Man-II' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp', alt: 'THE-INFI' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp', alt: 'King-Yankuru' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp', alt: 'Golden-King' }
+    ];
+
+    // Build slides (1 per slide in your current code)
+    const slides = [];
+    for (let i = 0; i < allArtworks.length; i += 1) {
+        slides.push(allArtworks.slice(i, i + 1));
+    }
+
+    // helper to measure slide width (accounts for margins)
+    const getSlideWidth = () => {
+        const carousel = carouselRef.current;
+        if (!carousel) return 0;
+        const slide = carousel.children[0];
+        if (!slide) return carousel.clientWidth;
+        const rect = slide.getBoundingClientRect();
+        const style = window.getComputedStyle(slide);
+        const marginLeft = parseFloat(style.marginLeft || '0');
+        const marginRight = parseFloat(style.marginRight || '0');
+        return rect.width + marginLeft + marginRight;
+    };
+
+    // scroll tracking — attach only when mobile carousel exists
+    useEffect(() => {
+        const carousel = carouselRef.current;
+        if (!carousel || !isMobile) return;
+
+        let rafId = null;
+        const onScroll = () => {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+                const width = getSlideWidth() || carousel.clientWidth;
+                const rawIndex = width > 0 ? Math.round(carousel.scrollLeft / width) : 0;
+                const index = Math.max(0, Math.min(rawIndex, carousel.children.length - 1));
+                setCurrentSlide(index);
+            });
+        };
+
+        // initial sync (in case user landed in the middle)
+        onScroll();
+
+        carousel.addEventListener('scroll', onScroll, { passive: true });
+        // also re-sync on resize (slides could change size)
+        const onResize = () => onScroll();
+        window.addEventListener('resize', onResize);
+
+        return () => {
+            carousel.removeEventListener('scroll', onScroll);
+            window.removeEventListener('resize', onResize);
+            if (rafId) cancelAnimationFrame(rafId);
+        };
+    }, [isMobile, mounted, slides.length]);
+
+    // Dot navigation
+    const goToSlide = (slideIndex) => {
+        setCurrentSlide(slideIndex);
+        const carousel = carouselRef.current;
+        if (!carousel) return;
+        const width = getSlideWidth() || carousel.clientWidth;
+        carousel.scrollTo({
+            left: slideIndex * width,
+            behavior: 'smooth',
+        });
+    };
+
+
 
     return (
         <div className={styles.galleryContainer}>
             <div className={styles.gallerySection}>
-                <div className={styles.galleryHeader}>
+                <div className={styles.wallHeader}>
+                    <h3>DOWNSTAIRS - NOW SHOWCASING:</h3>
+                    <h4>The Reading Man: <span>Julius Badatu</span></h4>
+                    <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
+                </div>
+
+                {/* DESKTOP */}
+                {!isMobile && (
+                    <div className={styles.carouselGrid}>
+                        <div className={styles.wallGrid}>
+                            {allArtworks.slice(0, 3).map((artwork, index) => (
+                                <div key={index} className={styles.artwork}>
+                                    <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} />
+                                </div>
+                            ))}
+                        </div>
+                        <div className={styles.wallGrid}>
+                            {allArtworks.slice(3, 6).map((artwork, index) => (
+                                <div key={index} className={styles.artwork}>
+                                    <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {/* MOBILE CAROUSEL */}
+                {isMobile && (
+                    <div className={styles.mobileCarousel}>
+                        <div className={styles.carouselWrapper}>
+                            <div className={styles.carousel} ref={carouselRef}>
+                                {slides.map((slideArtworks, slideIndex) => (
+                                    <div key={slideIndex} className={styles.carouselSlide}>
+                                        <div className={styles.slideContent}>
+                                            {slideArtworks.map((artwork, artIndex) => (
+                                                <div key={artIndex} className={styles.artworkCard}>
+                                                    <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={styles.artworkImage} />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                )}
+                
+                <div className={`${styles.galleryHeader} ${styles.removeMobile}`}>
                     <h3>Inside = Outside</h3>
                     <h4>Now Showing - Until 6 June 2025</h4>
                     <p>A solo exhibition by Refiloe Mnisi</p>
                 </div>
-                <div className={styles.galleryGrid}>
+                <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/RefiloeMnisiSolo/Okwethu1.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
@@ -217,7 +357,7 @@ const GalleryGrid = () => {
                         </div>
                     </div>
                 </div>
-                <button onClick={handleToggle} className={styles.galleryShowMoreBtn}>
+                <button onClick={handleToggle} className={`${styles.galleryShowMoreBtn} ${styles.removeMobile}`}>
                     {showMore ? "Show Less" : "Show More"}
                 </button>
             </div>
@@ -412,11 +552,69 @@ const GalleryGrid = () => {
                 </button>
             </div>
             <div className={styles.gallerySection}>
-                <div className={styles.galleryHeader}>
+                <div className={styles.wallHeader}>
+                    <h3>DOWNSTAIRS - NOW SHOWCASING:</h3>
+                    <h4>The Reading Man: <span>Julius Badatu</span></h4>
+                    <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
+                </div>
+
+                {/* DESKTOP */}
+                {!isMobile && (
+                    <div className={styles.carouselGrid}>
+                        <div className={styles.wallGrid}>
+                            {allArtworks.slice(0, 3).map((artwork, index) => (
+                                <div key={index} className={styles.artwork}>
+                                    <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} />
+                                </div>
+                            ))}
+                        </div>
+                        <div className={styles.wallGrid}>
+                            {allArtworks.slice(3, 6).map((artwork, index) => (
+                                <div key={index} className={styles.artwork}>
+                                    <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {/* MOBILE CAROUSEL */}
+                {isMobile && (
+                    <div className={styles.mobileCarousel}>
+                        <div className={styles.carouselWrapper}>
+                            <div className={styles.carousel} ref={carouselRef}>
+                                {slides.map((slideArtworks, slideIndex) => (
+                                    <div key={slideIndex} className={styles.carouselSlide}>
+                                        <div className={styles.slideContent}>
+                                            {slideArtworks.map((artwork, artIndex) => (
+                                                <div key={artIndex} className={styles.artworkCard}>
+                                                    <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={styles.artworkImage} />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className={styles.dots}>
+                            {slides.map((_, index) => (
+                                <button
+                                    key={index}
+                                    className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
+                                    onClick={() => goToSlide(index)}
+                                    aria-label={`Go to slide ${index + 1}`}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                <div className={`${styles.galleryHeader} ${styles.removeMobile}`}>
                     <h3>EXPLORE OUR STOREROOM</h3>
                     <p>Discover a curated selection of works from our debut group show, “And Just Like That...”, now available for viewing and purchase in the storeroom.</p>
                 </div>
-                <div className={styles.galleryGrid}>
+                <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Storeroom/ART17.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
                         <div className={styles["artwork-details"]}>
@@ -509,7 +707,7 @@ const GalleryGrid = () => {
                         </div>
                     </div>
                 </div>
-                <button onClick={handleToggleBottom} className={styles.galleryShowMoreBtn}>
+                <button onClick={handleToggleBottom} className={`${styles.galleryShowMoreBtn} ${styles.removeMobile}`}>
                     {showMoreBottom ? "Show Less" : "Show More"}
                 </button>
             </div>
