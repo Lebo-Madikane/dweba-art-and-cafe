@@ -108,26 +108,26 @@ const Gallery = () => {
             <div className={Style["gallery-grid"]}>
                 <div className={Style["walls"]}>
                     <div className={Style["wall-header"]}>
-                        <h3>UPSTAIRS - NOW SHOWCASING:</h3>
-                        <h4>Solo Show: Inside = Outside</h4>
-                        <p>Artist: Refiloe Mnisi</p>
+                        <h3>UPSTAIRS - SHOWCASING:</h3>
+                        <h4>Why We Need Mothers</h4>
+                        <p>Group Exhibition</p>
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-1.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-2.webp' alt='Untitled Indlela 2' width={150} height={150} className={Style.untitledIndlela} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/beauties2.webp' alt='Untitled Indlela 2' width={150} height={150} className={Style.untitledIndlela} />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/Untitled-Indlela-3.webp' alt='Untitled Indlela 3' width={150} height={150} className={Style.untitledIndlela} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp' alt='Untitled Indlela 3' width={150} height={150} className={Style.untitledIndlela} />
                         </div>
                     </div>
                 </div>
 
                 <div className={Style["walls"]}>
                     <div className={Style["wall-header"]}>
-                        <h3>DOWNSTAIRS - NOW SHOWCASING:</h3>
+                        <h3>DOWNSTAIRS - SHOWCASING:</h3>
                         <h4>The Reading Man: <span>Julius Badatu</span></h4>
                         <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
                     </div>
