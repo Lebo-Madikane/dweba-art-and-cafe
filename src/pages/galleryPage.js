@@ -126,9 +126,9 @@ const GalleryGrid = () => {
         <div className={styles.galleryContainer}>
             <div className={styles.gallerySection}>
                 <div className={styles.wallHeader}>
-                    <h3>DOWNSTAIRS - NOW SHOWCASING:</h3>
-                    <h4>The Reading Man: <span>Julius Badatu</span></h4>
-                    <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
+                    <h3>Why We Need Mothers</h3>
+                    <h4>Group Exhibition</h4>
+                    <p>Now Showing</p>
                 </div>
 
                 {/* DESKTOP */}
@@ -173,9 +173,9 @@ const GalleryGrid = () => {
                 )}
                 
                 <div className={`${styles.galleryHeader} ${styles.removeMobile}`}>
-                    <h3>Inside = Outside</h3>
-                    <h4>Now Showing - Until 6 June 2025</h4>
-                    <p>A solo exhibition by Refiloe Mnisi</p>
+                    <h3>Why We Need Mothers</h3>
+                    <h4>Group Exhibition</h4>
+                    <p>Now Showing</p>
                 </div>
                 <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                     <div className={styles["artwork"]}>
@@ -363,8 +363,8 @@ const GalleryGrid = () => {
             </div>
             <div className={`${styles.gallerySection} ${styles.gallerySectionMid}`}>
                 <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
-                    <h4>Now Showing - Until 6 June 2025</h4>
-                    <h3>The Reading Man: <span>Julius Badatu</span></h3>
+                    <h3>Now Showing</h3>
+                    <h4>The Reading Man: <span>Julius Badatu</span></h4>
                 </div>
                 <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                     <div className={styles["artwork"]}>
@@ -430,8 +430,8 @@ const GalleryGrid = () => {
                     {showMoreMid ? "Show Less" : "Show More"}
                 </button>
                 <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
-                    <h4>Now Showing - Until 6 June 2025</h4>
-                    <h3>Golden Kings Code: <span>Kevin Wurffel</span></h3>
+                    <h3>Now Showing</h3>
+                    <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
                 </div>
                 <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                     <div className={styles["artwork"]}>
@@ -553,9 +553,7 @@ const GalleryGrid = () => {
             </div>
             <div className={styles.gallerySection}>
                 <div className={styles.wallHeader}>
-                    <h3>DOWNSTAIRS - NOW SHOWCASING:</h3>
-                    <h4>The Reading Man: <span>Julius Badatu</span></h4>
-                    <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
+                    <h3>EXPLORE OUR STOREROOM</h3>
                 </div>
 
                 {/* DESKTOP */}

@@ -108,7 +108,7 @@ const Gallery = () => {
             <div className={Style["gallery-grid"]}>
                 <div className={Style["walls"]}>
                     <div className={Style["wall-header"]}>
-                        <h3>UPSTAIRS - SHOWCASING:</h3>
+                        <h3>UPSTAIRS - SHOWING:</h3>
                         <h4>Why We Need Mothers</h4>
                         <p>Group Exhibition</p>
                     </div>
@@ -127,7 +127,7 @@ const Gallery = () => {
 
                 <div className={Style["walls"]}>
                     <div className={Style["wall-header"]}>
-                        <h3>DOWNSTAIRS - SHOWCASING:</h3>
+                        <h3>DOWNSTAIRS - SHOWING:</h3>
                         <h4>The Reading Man: <span>Julius Badatu</span></h4>
                         <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
                     </div>
