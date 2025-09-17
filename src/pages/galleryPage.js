@@ -3,6 +3,8 @@ import Footer from '../components/Footer';
 import Image from 'next/image';
 import styles from '../styles/pages/galleryPage.module.scss';
 import { useState, useEffect, useRef } from 'react';
+import { IoCartOutline } from "react-icons/io5";
+import { CiHeart  } from "react-icons/ci";
 
 const GalleryGrid = () => {
 
@@ -50,12 +52,39 @@ const GalleryGrid = () => {
 
     // All artworks
     const allArtworks = [
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.webp', alt: 'The-Reading-Man-I' },
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/Brothers-Embrace.webp', alt: 'Brothers-Embrace' },
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp', alt: 'The-Reading-Man-II' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp', alt: 'THE-INFI' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp', alt: 'King-Yankuru' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp', alt: 'Golden-King' }
+        { src: '/assets/artworks/whyWeNeedMothers/smilesAreFree.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Smiles Are Free', medium: 'Oil paint on canvas', size: '100 x 130 cm', year: '2025', price: 'R60 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/aDayInTheLife.webp', alt: 'Exhibition Artwork' },
+        { src: '/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp', alt: 'Exhibition Artwork', artist: 'Luyanda Mkhuthungu', title: 'Umhambi Wendlela', medium: 'Mixed Media', size: '73 x 97 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/beauties1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 1', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/beauties2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 2', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Gaze', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Mind', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'F A I TH', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/fearOverFaith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'Devine Breakthrough', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/theGrandCannon.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'The Grand Canyon', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/messiahsDonkey.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'Messiah`s Donkey', medium: 'Acrylic and oil paint', size: '93 x 64 cm', year: '2021', price: 'R42 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/tbc.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'TBC', medium: 'Acrylic and oil paint', size: '54 x 78 cm', year: '2025', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/theKingsKingdom.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'The Kings Kingdom', medium: 'Acrylic and oil paint', size: '170 x 110 cm', year: '2020', price: 'R74 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/observingPresence.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Observing Presences', medium: 'Oil paint on canvas', size: '130 x 90 cm', year: '2025', price: 'R60 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Through Rose Glasses', medium: 'Oil paint on canvas', size: '92 x 92 cm', year: '2025', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 1', medium: 'Oil on canvas', size: '120 x 120 cm', year: '2023', price: 'R23 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 2', medium: 'Oil on canvas', size: '120 x 125 cm', year: '2023', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract3.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 3', medium: 'Oil on canvas', size: '152 x 122 cm', year: '2023', price: 'R23 000 ex VAT' },
+        { src: 'assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/rose.webp', alt: 'Exhibition Artwork', artist: 'Nelson Okoh', title: 'The Rose', medium: 'Oil on canvas', size: '120 x 90 cm', year: '20219', price: 'R95 000 ex VAT' },
+    ];
+
+    // Storeroom artworks
+    const storeroomArtworks = [
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
     ];
 
     // Build slides (1 per slide in your current code)
@@ -162,6 +191,18 @@ const GalleryGrid = () => {
                                             {slideArtworks.map((artwork, artIndex) => (
                                                 <div key={artIndex} className={styles.artworkCard}>
                                                     <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={styles.artworkImage} />
+                                                    <div className={styles["artwork-details"]}>
+                                                        <p><span>Artist:</span> Refiloe Mnisi</p>
+                                                        <p><span>Title:</span> Okwethu I</p>
+                                                        <p><span>Medium:</span> Mixed Media</p>
+                                                        <p><span>Size:</span> 87 x 70 cm</p>
+                                                        <p><span>Year:</span> 2025</p>
+                                                        <p><span>Price:</span> R50 000</p>
+                                                    </div>
+                                                    <div className={styles.btnsContainer}>
+                                                        <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                                        <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                                    </div>
                                                 </div>
                                             ))}
                                         </div>
@@ -179,180 +220,304 @@ const GalleryGrid = () => {
                 </div>
                 <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/RefiloeMnisiSolo/Okwethu1.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src='/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Refiloe Mnisi</p>
-                            <p><span>Title:</span> Okwethu I</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 87 x 70 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R50 000</p>
+                            <p><span>Artist:</span> {allArtworks[15].artist}</p>
+                            <p><span>Title:</span> {allArtworks[15].title}</p>
+                            <p><span>Medium:</span> {allArtworks[15].medium}</p>
+                            <p><span>Size:</span>{allArtworks[15].size}</p>
+                            <p><span>Year:</span> {allArtworks[15].year}</p>
+                            <p><span>Price:</span> {allArtworks[15].price}</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff'/></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/RefiloeMnisiSolo/Okwethu2.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src='/assets/artworks/whyWeNeedMothers/rose.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Refiloe Mnisi</p>
-                            <p><span>Title:</span> Okwethu II</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 100 x 70 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R70 000</p>
+                            <p><span>Artist:</span> {allArtworks[20].artist}</p>
+                            <p><span>Title:</span> {allArtworks[20].title}</p>
+                            <p><span>Medium:</span> {allArtworks[20].medium}</p>
+                            <p><span>Size:</span> {allArtworks[20].size}</p>
+                            <p><span>Year:</span> {allArtworks[20].year}</p>
+                            <p><span>Price:</span> {allArtworks[20].price}</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/RefiloeMnisiSolo/Okwethu3.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src='/assets/artworks/whyWeNeedMothers/smilesAreFree.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Refiloe Mnisi</p>
-                            <p><span>Title:</span> Okwethu III</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 86 x 70 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R50 000</p>
+                            <p><span>Artist:</span> {allArtworks[0].artist}</p>
+                            <p><span>Title:</span> {allArtworks[0].title}</p>
+                            <p><span>Medium:</span> {allArtworks[0].medium}</p>
+                            <p><span>Size:</span> {allArtworks[0].size}</p>
+                            <p><span>Year:</span> {allArtworks[0].year}</p>
+                            <p><span>Price:</span> {allArtworks[0].price}</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/RefiloeMnisiSolo/Okwethu4.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src='/assets/artworks/whyWeNeedMothers/observingPresence.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Refiloe Mnisi</p>
-                            <p><span>Title:</span> Okwethu IV</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 96 x 70 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R70 000</p>
+                            <p><span>Artist:</span> {allArtworks[14].artist}</p>
+                            <p><span>Title:</span> {allArtworks[14].title}</p>
+                            <p><span>Medium:</span> {allArtworks[14].medium}</p>
+                            <p><span>Size:</span> {allArtworks[14].size}</p>
+                            <p><span>Year:</span> {allArtworks[14].year}</p>
+                            <p><span>Price:</span> {allArtworks[14].price}</p>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
                         </div>
                     </div>
                     <div className={`${styles.showMoreArtwork} ${showMore ? styles.active : ""}`}>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IjubaElingafi1.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/beauties1.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Ijuba Elingafi I</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 33 x 24 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R18 000</p>
+                                <p><span>Artist:</span> {allArtworks[4].artist}</p>
+                                <p><span>Title:</span> {allArtworks[4].title}</p>
+                                <p><span>Medium:</span> {allArtworks[4].medium}</p>
+                                <p><span>Size:</span> {allArtworks[4].size}</p>
+                                <p><span>Year:</span> {allArtworks[4].year}</p>
+                                <p><span>Price:</span> {allArtworks[4].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IjubaElingafi2.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/beauties2.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Ijuba Elingafi II</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 33 x 24 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R18 000</p>
+                                <p><span>Artist:</span> {allArtworks[5].artist}</p>
+                                <p><span>Title:</span> {allArtworks[5].title}</p>
+                                <p><span>Medium:</span> {allArtworks[5].medium}</p>
+                                <p><span>Size:</span> {allArtworks[5].size}</p>
+                                <p><span>Year:</span> {allArtworks[5].year}</p>
+                                <p><span>Price:</span> {allArtworks[5].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IjubaElingafi3.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Ijuba Elingafi III</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 33 x 24 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R18 000</p>
+                                <p><span>Artist:</span> {allArtworks[6].artist}</p>
+                                <p><span>Title:</span> {allArtworks[6].title}</p>
+                                <p><span>Medium:</span> {allArtworks[6].medium}</p>
+                                <p><span>Size:</span> {allArtworks[6].size}</p>
+                                <p><span>Year:</span> {allArtworks[6].year}</p>
+                                <p><span>Price:</span> {allArtworks[6].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IMadeItDance.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Untitled</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 33 x 24 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R15 000</p>
+                                <p><span>Artist:</span> {allArtworks[7].artist}</p>
+                                <p><span>Title:</span> {allArtworks[7].title}</p>
+                                <p><span>Medium:</span> {allArtworks[7].medium}</p>
+                                <p><span>Size:</span> {allArtworks[7].size}</p>
+                                <p><span>Year:</span> {allArtworks[7].year}</p>
+                                <p><span>Price:</span> {allArtworks[7].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IMG3198.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/theGrandCannon.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Untitled</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 123 x 56 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R180 000</p>
+                                <p><span>Artist:</span> {allArtworks[10].artist}</p>
+                                <p><span>Title:</span> {allArtworks[10].title}</p>
+                                <p><span>Medium:</span> {allArtworks[10].medium}</p>
+                                <p><span>Size:</span> {allArtworks[10].size}</p>
+                                <p><span>Year:</span> {allArtworks[10].year}</p>
+                                <p><span>Price:</span> {allArtworks[10].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IMG6659.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/faith.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Untitled</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 128 x 64 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R180 000</p>
+                                <p><span>Artist:</span> {allArtworks[9].artist}</p>
+                                <p><span>Title:</span> {allArtworks[9].title}</p>
+                                <p><span>Medium:</span> {allArtworks[9].medium}</p>
+                                <p><span>Size:</span> {allArtworks[9].size}</p>
+                                <p><span>Year:</span> {allArtworks[9].year}</p>
+                                <p><span>Price:</span> {allArtworks[9].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/KancaneKancane1.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/fearOverFaith.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Kancane Kancane I</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 140 x 78 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R285 000</p>
+                                <p><span>Artist:</span> {allArtworks[8].artist}</p>
+                                <p><span>Title:</span> {allArtworks[8].title}</p>
+                                <p><span>Medium:</span> {allArtworks[8].medium}</p>
+                                <p><span>Size:</span> {allArtworks[8].size}</p>
+                                <p><span>Year:</span> {allArtworks[8].year}</p>
+                                <p><span>Price:</span> {allArtworks[8].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/KancaneKancane2.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> Kancane Kancane II</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 135 x 90 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R255 000</p>
+                                <p><span>Artist:</span> {allArtworks[3].artist}</p>
+                                <p><span>Title:</span> {allArtworks[3].title}</p>
+                                <p><span>Medium:</span> {allArtworks[3].medium}</p>
+                                <p><span>Size:</span> {allArtworks[3].size}</p>
+                                <p><span>Year:</span> {allArtworks[3].year}</p>
+                                <p><span>Price:</span> {allArtworks[3].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IMG3191.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> TBD</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 158 X 72 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R160 000</p>
+                                <p><span>Artist:</span> {allArtworks[1].artist}</p>
+                                <p><span>Title:</span> {allArtworks[1].title}</p>
+                                <p><span>Medium:</span> {allArtworks[1].medium}</p>
+                                <p><span>Size:</span> {allArtworks[1].size}</p>
+                                <p><span>Year:</span> {allArtworks[1].year}</p>
+                                <p><span>Price:</span> {allArtworks[1].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IMG3192.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/theKingsKingdom.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> TBD</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 158 X 72 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R160 000</p>
+                                <p><span>Artist:</span> {allArtworks[13].artist}</p>
+                                <p><span>Title:</span> {allArtworks[13].title}</p>
+                                <p><span>Medium:</span> {allArtworks[13].medium}</p>
+                                <p><span>Size:</span> {allArtworks[13].size}</p>
+                                <p><span>Year:</span> {allArtworks[13].year}</p>
+                                <p><span>Price:</span> {allArtworks[13].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IMG3193.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/messiahsDonkey.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> TBD</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 117 x 120 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R160 000</p>
+                                <p><span>Artist:</span> {allArtworks[11].artist}</p>
+                                <p><span>Title:</span> {allArtworks[11].title}</p>
+                                <p><span>Medium:</span> {allArtworks[11].medium}</p>
+                                <p><span>Size:</span> {allArtworks[11].size}</p>
+                                <p><span>Year:</span> {allArtworks[11].year}</p>
+                                <p><span>Price:</span> {allArtworks[11].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/RefiloeMnisiSolo/IMG3194.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/tbc.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Refiloe Mnisi</p>
-                                <p><span>Title:</span> TBD</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 158 X 72 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R210 000</p>
+                                <p><span>Artist:</span> {allArtworks[12].artist}</p>
+                                <p><span>Title:</span> {allArtworks[12].title}</p>
+                                <p><span>Medium:</span> {allArtworks[12].medium}</p>
+                                <p><span>Size:</span> {allArtworks[12].size}</p>
+                                <p><span>Year:</span> {allArtworks[12].year}</p>
+                                <p><span>Price:</span> {allArtworks[12].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src='/assets/artworks/whyWeNeedMothers/untitledAbstract1.webp' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {allArtworks[16].artist}</p>
+                                <p><span>Title:</span> {allArtworks[16].title}</p>
+                                <p><span>Medium:</span> {allArtworks[16].medium}</p>
+                                <p><span>Size:</span> {allArtworks[16].size}</p>
+                                <p><span>Year:</span> {allArtworks[16].year}</p>
+                                <p><span>Price:</span> {allArtworks[16].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src='/assets/artworks/whyWeNeedMothers/untitledAbstract2.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {allArtworks[17].artist}</p>
+                                <p><span>Title:</span> {allArtworks[17].title}</p>
+                                <p><span>Medium:</span> {allArtworks[17].medium}</p>
+                                <p><span>Size:</span> {allArtworks[17].size}</p>
+                                <p><span>Year:</span> {allArtworks[17].year}</p>
+                                <p><span>Price:</span> {allArtworks[17].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src='/assets/artworks/whyWeNeedMothers/untitledAbstract3.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {allArtworks[18].artist}</p>
+                                <p><span>Title:</span> {allArtworks[18].title}</p>
+                                <p><span>Medium:</span> {allArtworks[18].medium}</p>
+                                <p><span>Size:</span> {allArtworks[18].size}</p>
+                                <p><span>Year:</span> {allArtworks[18].year}</p>
+                                <p><span>Price:</span> {allArtworks[18].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src='/assets/artworks/Storeroom/ART3.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {allArtworks[19].artist}</p>
+                                <p><span>Title:</span> {allArtworks[19].title}</p>
+                                <p><span>Medium:</span> {allArtworks[19].medium}</p>
+                                <p><span>Size:</span> {allArtworks[19].size}</p>
+                                <p><span>Year:</span> {allArtworks[19].year}</p>
+                                <p><span>Price:</span> {allArtworks[19].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                     </div>
@@ -377,6 +542,10 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> 2025</p>
                             <p><span>Price:</span> R20 000</p>
                         </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                        </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
@@ -387,6 +556,10 @@ const GalleryGrid = () => {
                             <p><span>Size:</span> 60 X 45 cm</p>
                             <p><span>Year:</span> 2025</p>
                             <p><span>Price:</span> R20 000</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -399,6 +572,10 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> 2025</p>
                             <p><span>Price:</span> R20 000</p>
                         </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                        </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIV.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
@@ -410,7 +587,12 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> 2025</p>
                             <p><span>Price:</span> R20 000</p>
                         </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                        </div>
                     </div>
+                    {/*
                     <div className={`${styles.showMoreArtwork} ${showMoreMid ? styles.active : ""
                         }`}>
                         <div className={styles["artwork"]}>
@@ -423,12 +605,19 @@ const GalleryGrid = () => {
                                 <p><span>Year:</span> 2025</p>
                                 <p><span>Price:</span> R20 000</p>
                             </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
                         </div>
                     </div>
+                    */}
                 </div>
+                {/*
                 <button onClick={handleToggleMid} className={styles.galleryShowMoreBtn}>
                     {showMoreMid ? "Show Less" : "Show More"}
                 </button>
+                */}
                 <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
                     <h3>Now Showing</h3>
                     <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
@@ -444,6 +633,10 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> 2012</p>
                             <p><span>Price:</span> R20 000</p>
                         </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                        </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Downstairs/KevinWurffel/LHUNAH.webp' alt='Lhunah Image' width={150} height={150} className={`${styles.soloImgs}`} />
@@ -454,6 +647,10 @@ const GalleryGrid = () => {
                             <p><span>Size:</span> 64 X 45 cm</p>
                             <p><span>Year:</span> 2012</p>
                             <p><span>Price:</span> R20 000</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -466,6 +663,10 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> 2012</p>
                             <p><span>Price:</span> R20 000</p>
                         </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                        </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Downstairs/KevinWurffel/THENITUS.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} />
@@ -476,6 +677,10 @@ const GalleryGrid = () => {
                             <p><span>Size:</span> 70 X 60 cm</p>
                             <p><span>Year:</span> 2012</p>
                             <p><span>Price:</span> R20 000</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={`${styles.showMoreArtwork} ${showMoreMidTwo ? styles.active : ""}`}>
@@ -489,6 +694,10 @@ const GalleryGrid = () => {
                                 <p><span>Year:</span> 2012</p>
                                 <p><span>Price:</span> R20 000</p>
                             </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
                         </div>
                         <div className={styles["artwork"]}>
                             <Image src='/assets/artworks/Downstairs/KevinWurffel/KingMansaMusa.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} />
@@ -499,6 +708,10 @@ const GalleryGrid = () => {
                                 <p><span>Size:</span> 111 X 89 cm</p>
                                 <p><span>Year:</span> 2012</p>
                                 <p><span>Price:</span> R20 000</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -511,6 +724,10 @@ const GalleryGrid = () => {
                                 <p><span>Year:</span> 2012</p>
                                 <p><span>Price:</span> R20 000</p>
                             </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
                         </div>
                         <div className={styles["artwork"]}>
                             <Image src='/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} />
@@ -522,27 +739,9 @@ const GalleryGrid = () => {
                                 <p><span>Year:</span> 2012</p>
                                 <p><span>Price:</span> R20 000</p>
                             </div>
-                        </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/TheGoldMineCoordinate.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Kevin Wurffel</p>
-                                <p><span>Title:</span> The Gold Mine Coordinate</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 108 X 80 cm</p>
-                                <p><span>Year:</span> 2012</p>
-                                <p><span>Price:</span> R20 000</p>
-                            </div>
-                        </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/TheKingsPostCard.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Kevin Wurffel</p>
-                                <p><span>Title:</span> The King's Post Card</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 48 X 38 cm</p>
-                                <p><span>Year:</span> 2012</p>
-                                <p><span>Price:</span> R20 000</p>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                     </div>
@@ -623,6 +822,10 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> 2024</p>
                             <p><span>Price:</span> R53 000</p>
                         </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                        </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Storeroom/ART14.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
@@ -634,62 +837,86 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> 2024</p>
                             <p><span>Price:</span> R53 000</p>
                         </div>
-                    </div>
-                    <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Storeroom/ART10.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
-                        <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Samson Mnisi</p>
-                            <p><span>Title:</span> Abstract I</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 55 X 100 cm</p>
-                            <p><span>Year:</span> 2022</p>
-                            <p><span>Price:</span> R150 000</p>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
+                        <Image src='/assets/artworks/Storeroom/ART4.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Funeka Shuping</p>
-                            <p><span>Title:</span> Untitled (Bee Series)</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 141 X 102 cm</p>
-                            <p><span>Year:</span> 2024</p>
-                            <p><span>Price:</span> R28 000</p>
+                            <p><span>Artist:</span> Cheryl Traub Adler</p>
+                            <p><span>Title:</span> Chimera II</p>
+                            <p><span>Medium:</span> Monotype and paint on fabriano acadenia</p>
+                            <p><span>Size:</span> 62 X 82 cm</p>
+                            <p><span>Year:</span> 2025</p>
+                            <p><span>Price:</span> R24 000</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                        </div>
+                    </div>
+                    <div className={styles["artwork"]}>
+                        <Image src='/assets/artworks/Storeroom/ART16.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
+                        <div className={styles["artwork-details"]}>
+                            <p><span>Artist:</span> Cheryl Traub Adler</p>
+                            <p><span>Title:</span> Chimera III</p>
+                            <p><span>Medium:</span> Monotype and paint on fabriano acadenia</p>
+                            <p><span>Size:</span> 62 X 82 cm</p>
+                            <p><span>Year:</span> 2025</p>
+                            <p><span>Price:</span> R24 000</p>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={`${styles.showMoreArtwork} ${showMoreBottom ? styles.active : ""
                         }`}>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART4.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
+                            <Image src='/assets/artworks/Storeroom/ART10.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Cheryl Traub Adler</p>
-                                <p><span>Title:</span> Chimera II</p>
-                                <p><span>Medium:</span> Monotype and paint on fabriano acadenia</p>
-                                <p><span>Size:</span> 62 X 82 cm</p>
-                                <p><span>Year:</span> 2025</p>
-                                <p><span>Price:</span> R24 000</p>
-                            </div>
-                        </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART3.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Ndikhumbule Ngqinambi</p>
-                                <p><span>Title:</span> Yintengiso Yobomi</p>
-                                <p><span>Medium:</span> Oil on paper</p>
-                                <p><span>Size:</span> 51 X 69 cm</p>
-                                <p><span>Year:</span> 2024</p>
-                                <p><span>Price:</span> R42 000</p>
-                            </div>
-                        </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART1.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Nico Phooko</p>
-                                <p><span>Title:</span> Afro Blues - Kora Meets Maskandi</p>
-                                <p><span>Medium:</span> Acrylic on canvas</p>
-                                <p><span>Size:</span> 110 X 135 cm</p>
+                                <p><span>Artist:</span> Samson Mnisi</p>
+                                <p><span>Title:</span> Abstract I</p>
+                                <p><span>Medium:</span> Mixed Media</p>
+                                <p><span>Size:</span> 55 X 100 cm</p>
                                 <p><span>Year:</span> 2022</p>
-                                <p><span>Price:</span> R70 500</p>
+                                <p><span>Price:</span> R150 000</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> Funeka Shuping</p>
+                                <p><span>Title:</span> Untitled (Bee Series)</p>
+                                <p><span>Medium:</span> Mixed Media</p>
+                                <p><span>Size:</span> 141 X 102 cm</p>
+                                <p><span>Year:</span> 2024</p>
+                                <p><span>Price:</span> R28 000</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src='/assets/artworks/Storeroom/ART13.png' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> Samson Mnisi</p>
+                                <p><span>Title:</span> The Last One</p>
+                                <p><span>Medium:</span> Mixed Media</p>
+                                <p><span>Size:</span> 185 X 88 cm</p>
+                                <p><span>Year:</span> 2022</p>
+                                <p><span>Price:</span> R240 000</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -701,6 +928,10 @@ const GalleryGrid = () => {
                                 <p><span>Size:</span> 60 X 40 cm</p>
                                 <p><span>Year:</span> 2018</p>
                                 <p><span>Price:</span> R36 000</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                     </div>

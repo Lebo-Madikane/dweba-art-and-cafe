@@ -31,7 +31,7 @@ const Gallery = () => {
         { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp', alt: 'The-Reading-Man-II' },
         { src: '/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp', alt: 'THE-INFI' },
         { src: '/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp', alt: 'King-Yankuru' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp', alt: 'Golden-King' }
+        { src: '/assets/artworks/Downstairs/KevinWurffel/THENITUS.webp', alt: 'Golden-King' }
     ];
 
     // Build slides (1 per slide in your current code)
@@ -114,7 +114,7 @@ const Gallery = () => {
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/observingPresence.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} />
                         </div>
                         <div className={Style["artwork"]}>
                             <Image src='/assets/artworks/whyWeNeedMothers/beauties2.webp' alt='Untitled Indlela 2' width={150} height={150} className={Style.untitledIndlela} />
