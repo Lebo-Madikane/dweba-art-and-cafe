@@ -52,27 +52,26 @@ const GalleryGrid = () => {
 
     // All artworks
     const allArtworks = [
+        { src: '/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Through Rose Glasses', medium: 'Oil paint on canvas', size: '92 x 92 cm', year: '2025', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/rose.webp', alt: 'Exhibition Artwork', artist: 'Nelson Okoh', title: 'The Rose', medium: 'Oil on canvas', size: '120 x 90 cm', year: '20219', price: 'R95 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/smilesAreFree.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Smiles Are Free', medium: 'Oil paint on canvas', size: '100 x 130 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/aDayInTheLife.webp', alt: 'Exhibition Artwork' },
-        { src: '/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp', alt: 'Exhibition Artwork', artist: 'Luyanda Mkhuthungu', title: 'Umhambi Wendlela', medium: 'Mixed Media', size: '73 x 97 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/observingPresence.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Observing Presences', medium: 'Oil paint on canvas', size: '130 x 90 cm', year: '2025', price: 'R60 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/beauties1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 1', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/beauties2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 2', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Gaze', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Mind', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'F A I TH', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/fearOverFaith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'Devine Breakthrough', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/theGrandCannon.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'The Grand Canyon', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/fearOverFaith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'Devine Breakthrough', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'F A I TH', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp', alt: 'Exhibition Artwork', artist: 'Luyanda Mkhuthungu', title: 'Umhambi Wendlela', medium: 'Mixed Media', size: '73 x 97 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/theKingsKingdom.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'The Kings Kingdom', medium: 'Acrylic and oil paint', size: '170 x 110 cm', year: '2020', price: 'R74 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/messiahsDonkey.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'Messiah`s Donkey', medium: 'Acrylic and oil paint', size: '93 x 64 cm', year: '2021', price: 'R42 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/tbc.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'TBC', medium: 'Acrylic and oil paint', size: '54 x 78 cm', year: '2025', price: 'R40 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/theKingsKingdom.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'The Kings Kingdom', medium: 'Acrylic and oil paint', size: '170 x 110 cm', year: '2020', price: 'R74 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/observingPresence.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Observing Presences', medium: 'Oil paint on canvas', size: '130 x 90 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Through Rose Glasses', medium: 'Oil paint on canvas', size: '92 x 92 cm', year: '2025', price: 'R40 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 1', medium: 'Oil on canvas', size: '120 x 120 cm', year: '2023', price: 'R23 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 2', medium: 'Oil on canvas', size: '120 x 125 cm', year: '2023', price: 'R20 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract3.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 3', medium: 'Oil on canvas', size: '152 x 122 cm', year: '2023', price: 'R23 000 ex VAT' },
         { src: 'assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/rose.webp', alt: 'Exhibition Artwork', artist: 'Nelson Okoh', title: 'The Rose', medium: 'Oil on canvas', size: '120 x 90 cm', year: '20219', price: 'R95 000 ex VAT' },
     ];
 
     // Storeroom artworks
@@ -191,13 +190,13 @@ const GalleryGrid = () => {
                                             {slideArtworks.map((artwork, artIndex) => (
                                                 <div key={artIndex} className={styles.artworkCard}>
                                                     <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={styles.artworkImage} />
-                                                    <div className={styles["artwork-details"]}>
-                                                        <p><span>Artist:</span> Refiloe Mnisi</p>
-                                                        <p><span>Title:</span> Okwethu I</p>
-                                                        <p><span>Medium:</span> Mixed Media</p>
-                                                        <p><span>Size:</span> 87 x 70 cm</p>
-                                                        <p><span>Year:</span> 2025</p>
-                                                        <p><span>Price:</span> R50 000</p>
+                                                    <div className={styles["carousel-artwork-details"]}>
+                                                        <p><span>Artist:</span> {artwork.artist}</p>
+                                                        <p><span>Title:</span> {artwork.title}</p>
+                                                        <p><span>Medium:</span> {artwork.medium}</p>
+                                                        <p><span>Size:</span> {artwork.size}</p>
+                                                        <p><span>Year:</span> {artwork.year}</p>
+                                                        <p><span>Price:</span> {artwork.price}</p>
                                                     </div>
                                                     <div className={styles.btnsContainer}>
                                                         <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
@@ -220,14 +219,14 @@ const GalleryGrid = () => {
                 </div>
                 <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src={allArtworks[0].src} alt={allArtworks[0].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> {allArtworks[15].artist}</p>
-                            <p><span>Title:</span> {allArtworks[15].title}</p>
-                            <p><span>Medium:</span> {allArtworks[15].medium}</p>
-                            <p><span>Size:</span>{allArtworks[15].size}</p>
-                            <p><span>Year:</span> {allArtworks[15].year}</p>
-                            <p><span>Price:</span> {allArtworks[15].price}</p>
+                            <p><span>Artist:</span> {allArtworks[0].artist}</p>
+                            <p><span>Title:</span> {allArtworks[0].title}</p>
+                            <p><span>Medium:</span> {allArtworks[0].medium}</p>
+                            <p><span>Size:</span>{allArtworks[0].size}</p>
+                            <p><span>Year:</span> {allArtworks[0].year}</p>
+                            <p><span>Price:</span> {allArtworks[0].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
@@ -235,14 +234,14 @@ const GalleryGrid = () => {
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/whyWeNeedMothers/rose.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src={allArtworks[1].src} alt={allArtworks[1].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> {allArtworks[20].artist}</p>
-                            <p><span>Title:</span> {allArtworks[20].title}</p>
-                            <p><span>Medium:</span> {allArtworks[20].medium}</p>
-                            <p><span>Size:</span> {allArtworks[20].size}</p>
-                            <p><span>Year:</span> {allArtworks[20].year}</p>
-                            <p><span>Price:</span> {allArtworks[20].price}</p>
+                            <p><span>Artist:</span> {allArtworks[1].artist}</p>
+                            <p><span>Title:</span> {allArtworks[1].title}</p>
+                            <p><span>Medium:</span> {allArtworks[1].medium}</p>
+                            <p><span>Size:</span> {allArtworks[1].size}</p>
+                            <p><span>Year:</span> {allArtworks[1].year}</p>
+                            <p><span>Price:</span> {allArtworks[1].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
@@ -250,14 +249,14 @@ const GalleryGrid = () => {
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/whyWeNeedMothers/smilesAreFree.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src={allArtworks[2].src} alt={allArtworks[2].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> {allArtworks[0].artist}</p>
-                            <p><span>Title:</span> {allArtworks[0].title}</p>
-                            <p><span>Medium:</span> {allArtworks[0].medium}</p>
-                            <p><span>Size:</span> {allArtworks[0].size}</p>
-                            <p><span>Year:</span> {allArtworks[0].year}</p>
-                            <p><span>Price:</span> {allArtworks[0].price}</p>
+                            <p><span>Artist:</span> {allArtworks[2].artist}</p>
+                            <p><span>Title:</span> {allArtworks[2].title}</p>
+                            <p><span>Medium:</span> {allArtworks[2].medium}</p>
+                            <p><span>Size:</span> {allArtworks[2].size}</p>
+                            <p><span>Year:</span> {allArtworks[2].year}</p>
+                            <p><span>Price:</span> {allArtworks[2].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
@@ -265,14 +264,14 @@ const GalleryGrid = () => {
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/whyWeNeedMothers/observingPresence.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                        <Image src={allArtworks[3].src} alt={allArtworks[3].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> {allArtworks[14].artist}</p>
-                            <p><span>Title:</span> {allArtworks[14].title}</p>
-                            <p><span>Medium:</span> {allArtworks[14].medium}</p>
-                            <p><span>Size:</span> {allArtworks[14].size}</p>
-                            <p><span>Year:</span> {allArtworks[14].year}</p>
-                            <p><span>Price:</span> {allArtworks[14].price}</p>
+                            <p><span>Artist:</span> {allArtworks[3].artist}</p>
+                            <p><span>Title:</span> {allArtworks[3].title}</p>
+                            <p><span>Medium:</span> {allArtworks[3].medium}</p>
+                            <p><span>Size:</span> {allArtworks[3].size}</p>
+                            <p><span>Year:</span> {allArtworks[3].year}</p>
+                            <p><span>Price:</span> {allArtworks[3].price}</p>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
                                 <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
@@ -281,7 +280,7 @@ const GalleryGrid = () => {
                     </div>
                     <div className={`${styles.showMoreArtwork} ${showMore ? styles.active : ""}`}>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/beauties1.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[4].src} alt={allArtworks[4].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[4].artist}</p>
                                 <p><span>Title:</span> {allArtworks[4].title}</p>
@@ -296,7 +295,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/beauties2.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[5].src} alt={allArtworks[5].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[5].artist}</p>
                                 <p><span>Title:</span> {allArtworks[5].title}</p>
@@ -311,7 +310,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[6].src} alt={allArtworks[6].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[6].artist}</p>
                                 <p><span>Title:</span> {allArtworks[6].title}</p>
@@ -326,7 +325,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[7].src} alt={allArtworks[7].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[7].artist}</p>
                                 <p><span>Title:</span> {allArtworks[7].title}</p>
@@ -341,37 +340,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/theGrandCannon.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> {allArtworks[10].artist}</p>
-                                <p><span>Title:</span> {allArtworks[10].title}</p>
-                                <p><span>Medium:</span> {allArtworks[10].medium}</p>
-                                <p><span>Size:</span> {allArtworks[10].size}</p>
-                                <p><span>Year:</span> {allArtworks[10].year}</p>
-                                <p><span>Price:</span> {allArtworks[10].price}</p>
-                            </div>
-                            <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
-                            </div>
-                        </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/faith.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> {allArtworks[9].artist}</p>
-                                <p><span>Title:</span> {allArtworks[9].title}</p>
-                                <p><span>Medium:</span> {allArtworks[9].medium}</p>
-                                <p><span>Size:</span> {allArtworks[9].size}</p>
-                                <p><span>Year:</span> {allArtworks[9].year}</p>
-                                <p><span>Price:</span> {allArtworks[9].price}</p>
-                            </div>
-                            <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
-                            </div>
-                        </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/fearOverFaith.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[8].src} alt={allArtworks[8].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[8].artist}</p>
                                 <p><span>Title:</span> {allArtworks[8].title}</p>
@@ -386,14 +355,14 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[9].src} alt={allArtworks[9].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> {allArtworks[3].artist}</p>
-                                <p><span>Title:</span> {allArtworks[3].title}</p>
-                                <p><span>Medium:</span> {allArtworks[3].medium}</p>
-                                <p><span>Size:</span> {allArtworks[3].size}</p>
-                                <p><span>Year:</span> {allArtworks[3].year}</p>
-                                <p><span>Price:</span> {allArtworks[3].price}</p>
+                                <p><span>Artist:</span> {allArtworks[9].artist}</p>
+                                <p><span>Title:</span> {allArtworks[9].title}</p>
+                                <p><span>Medium:</span> {allArtworks[9].medium}</p>
+                                <p><span>Size:</span> {allArtworks[9].size}</p>
+                                <p><span>Year:</span> {allArtworks[9].year}</p>
+                                <p><span>Price:</span> {allArtworks[9].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
@@ -401,14 +370,14 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[10].src} alt={allArtworks[10].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> {allArtworks[1].artist}</p>
-                                <p><span>Title:</span> {allArtworks[1].title}</p>
-                                <p><span>Medium:</span> {allArtworks[1].medium}</p>
-                                <p><span>Size:</span> {allArtworks[1].size}</p>
-                                <p><span>Year:</span> {allArtworks[1].year}</p>
-                                <p><span>Price:</span> {allArtworks[1].price}</p>
+                                <p><span>Artist:</span> {allArtworks[10].artist}</p>
+                                <p><span>Title:</span> {allArtworks[10].title}</p>
+                                <p><span>Medium:</span> {allArtworks[10].medium}</p>
+                                <p><span>Size:</span> {allArtworks[10].size}</p>
+                                <p><span>Year:</span> {allArtworks[10].year}</p>
+                                <p><span>Price:</span> {allArtworks[10].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
@@ -416,22 +385,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/theKingsKingdom.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> {allArtworks[13].artist}</p>
-                                <p><span>Title:</span> {allArtworks[13].title}</p>
-                                <p><span>Medium:</span> {allArtworks[13].medium}</p>
-                                <p><span>Size:</span> {allArtworks[13].size}</p>
-                                <p><span>Year:</span> {allArtworks[13].year}</p>
-                                <p><span>Price:</span> {allArtworks[13].price}</p>
-                            </div>
-                            <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
-                            </div>
-                        </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/messiahsDonkey.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[11].src} alt={allArtworks[11].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[11].artist}</p>
                                 <p><span>Title:</span> {allArtworks[11].title}</p>
@@ -446,7 +400,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/tbc.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[12].src} alt={allArtworks[12].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[12].artist}</p>
                                 <p><span>Title:</span> {allArtworks[12].title}</p>
@@ -461,7 +415,52 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/untitledAbstract1.webp' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[13].src} alt={allArtworks[13].alt} width={150} height={150} className={`${styles.soloImgs}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {allArtworks[13].artist}</p>
+                                <p><span>Title:</span> {allArtworks[13].title}</p>
+                                <p><span>Medium:</span> {allArtworks[13].medium}</p>
+                                <p><span>Size:</span> {allArtworks[13].size}</p>
+                                <p><span>Year:</span> {allArtworks[13].year}</p>
+                                <p><span>Price:</span> {allArtworks[13].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src={allArtworks[14].src} alt={allArtworks[14].alt} width={150} height={150} className={`${styles.soloImgs}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {allArtworks[14].artist}</p>
+                                <p><span>Title:</span> {allArtworks[14].title}</p>
+                                <p><span>Medium:</span> {allArtworks[14].medium}</p>
+                                <p><span>Size:</span> {allArtworks[14].size}</p>
+                                <p><span>Year:</span> {allArtworks[14].year}</p>
+                                <p><span>Price:</span> {allArtworks[14].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src={allArtworks[15].src} alt={allArtworks[15].alt} width={150} height={150} className={`${styles.soloImgs}`} />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {allArtworks[15].artist}</p>
+                                <p><span>Title:</span> {allArtworks[15].title}</p>
+                                <p><span>Medium:</span> {allArtworks[15].medium}</p>
+                                <p><span>Size:</span> {allArtworks[15].size}</p>
+                                <p><span>Year:</span> {allArtworks[15].year}</p>
+                                <p><span>Price:</span> {allArtworks[15].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src={allArtworks[16].src} alt={allArtworks[16].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[16].artist}</p>
                                 <p><span>Title:</span> {allArtworks[16].title}</p>
@@ -476,7 +475,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/untitledAbstract2.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[17].src} alt={allArtworks[17].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[17].artist}</p>
                                 <p><span>Title:</span> {allArtworks[17].title}</p>
@@ -491,7 +490,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/untitledAbstract3.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[18].src} alt={allArtworks[18].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[18].artist}</p>
                                 <p><span>Title:</span> {allArtworks[18].title}</p>
@@ -506,7 +505,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART3.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} />
+                            <Image src={allArtworks[19].src} alt={allArtworks[19].alt} width={150} height={150} className={`${styles.soloImgs}`} />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {allArtworks[19].artist}</p>
                                 <p><span>Title:</span> {allArtworks[19].title}</p>
@@ -786,6 +785,18 @@ const GalleryGrid = () => {
                                             {slideArtworks.map((artwork, artIndex) => (
                                                 <div key={artIndex} className={styles.artworkCard}>
                                                     <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={styles.artworkImage} />
+                                                    <div className={styles["carousel-artwork-details"]}>
+                                                        <p><span>Artist:</span> {artwork.artist}</p>
+                                                        <p><span>Title:</span> {artwork.title}</p>
+                                                        <p><span>Medium:</span> {artwork.medium}</p>
+                                                        <p><span>Size:</span> {artwork.size}</p>
+                                                        <p><span>Year:</span> {artwork.year}</p>
+                                                        <p><span>Price:</span> {artwork.price}</p>
+                                                    </div>
+                                                    <div className={styles.btnsContainer}>
+                                                        <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                                        <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                                    </div>
                                                 </div>
                                             ))}
                                         </div>

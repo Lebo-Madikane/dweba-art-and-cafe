@@ -68,6 +68,7 @@
             @media (max-width: 768px) {
                 display: block;
                 width: 100%;
+                margin: 10px 0px;
             }
         }
         
@@ -96,7 +97,8 @@
             .slideContent {
                 display: flex;
                 justify-content: center;
-                padding: 1rem 0.5rem;
+                padding: 0.5rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         
                 .artworkCard {
                     flex: 1;
@@ -104,14 +106,44 @@
         
                     .artworkImage {
                         width: 100%;
-                        height: 390px;
+                        height: 380px;
                         object-fit: cover;
-                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                        //box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
                         transition: all 0.3s ease;
         
                         &:hover {
                             transform: translateY(-3px);
                             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+                        }
+                    }
+
+                    .carousel-artwork-details {
+                        padding: 5px;
+                    }
+
+                    .btnsContainer {
+                        width: 100%;
+                        height: 35px;
+                        margin: 5px auto;
+                        padding: 5px;
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: rgba(230, 230, 230, 0.5);
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                    
+                        .likeBtn {
+                            width: 20%;
+                    
+                            .heartIcon {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    
+                        .addToCartBtn {
+                            width: 35%;
+                            background-color: #000000;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
                         }
                     }
                 }
@@ -321,6 +353,21 @@
             .artwork {
                 width: 250px;
                 height: fit-content;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    padding: 5px;
+
+                    .soloImgs {
+                        width: 100%;
+                        object-fit: cover;
+                        height: fit-content;
+                    }
+                    
+                    .artwork-details {
+                        margin: 3px;
+                    }
+                }
             }
         }
     }
