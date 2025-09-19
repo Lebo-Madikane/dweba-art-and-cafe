@@ -97,7 +97,6 @@
                     text-align: start;
                     padding: 20px;
                     color: #000000;
-                    border: 2px solid orange;
 
 
                     .events2container {
@@ -126,6 +125,7 @@
 
                         .events2details {
                             flex: 1.2;
+                            border: 2px solid orange;
                            
                             h4 {
                                 margin-bottom: 10px;
