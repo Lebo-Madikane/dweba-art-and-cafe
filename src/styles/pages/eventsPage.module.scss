@@ -96,45 +96,9 @@
                     align-items: center;
                     text-align: start;
                     padding: 20px;
-                    gap: 40;
                     color: #000000;
+                    border: 2px solid orange;
 
-                    .events2container {
-                        border: 2px solid blue;
-                    }
-
-                    .events2-1container {
-                        display: flex;
-                        align-items: center;
-                        text-align: start;
-                        justify-content: center;
-                        padding: 20px;
-                        margin: 40px 0px 20px 0px;
-                        gap: 40;
-
-                        .events2-1img {
-                            flex: 1;
-                            box-shadow: 0 4px 8px rgb(255, 255, 255, 0.4);
-                                
-                            .eventTwo-OneImg {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                                
-                        .events2-1details {
-                            flex: 1.2;
-                                
-                            h4 {
-                                margin-bottom: 10px;
-                                color: #ffffff;
-                            }
-                                
-                            p {
-                                margin-bottom: 15px;
-                            }
-                        }
-                    }
 
                     .events2container {
                         display: flex;
@@ -144,6 +108,7 @@
                         padding: 20px;
                         margin: 20px 0px 40px 0px;
                         gap: 40;
+                        border: 2px solid blue;
 
                         .events2img {
                             width: 100%;
