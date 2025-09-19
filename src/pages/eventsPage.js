@@ -30,17 +30,6 @@ const EventsContent = () => (
                 <div className={styles["events2"]}>
                     <h3>Dweba Art & Cafe Artist Residency</h3>
                     <div className={styles["events2Contents"]}>
-                        {/* <div className={styles["events2-1container"]}>
-                            <div className={styles["events2-1img"]}>
-                                <Image src='/assets/RefiloeMnisi-OpeningShow.png' alt="EventTwo-One Img" width={400} height={500} className={styles["eventTwo-OneImg"]} />
-                            </div>
-                            <div className={styles["events2-1details"]}>
-                                <h4>Refiloe Mnisi: Opening Show</h4>
-                                <p>We are proud to present Refiloe Mnisi’s Opening Show — an intimate unveiling of his latest visual stories. Refiloe brings raw emotion, vibrant colour, and deeply expressive layers that speak to both the present and ancestral memory.</p>
-                                <p>Join us for an evening of art, conversation, and culture. This marks Refiloe’s first solo showcase since joining the Dweba studio, and we cannot wait to share this moment with our growing creative community</p>
-                                <p>Come through, sip something warm, and witness the beginning of something beautiful.</p>
-                            </div>
-                        </div> */}
                         <div className={styles["events2container"]}>
                             <div className={styles["events2img"]}>
                                 <Image src='/assets/eventsPageImgs/Ziyanda-M.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} />
@@ -61,10 +50,7 @@ const EventsContent = () => (
                             <h4>"Wherever the river flows, everything will live."</h4>
                             <p>ECHIBINI is an intimate evening of healing, restoration, and soulful connection . A return to the well, where truth is revealed, burdens are released, and life begins again.</p>
                             <p>Inspired by the resilience and quiet strength of women, this gathering creates space for stories, reflection, music, and presence. It is a gentle invitation to come as you are and leave lighter, nourished, and renewed</p>
-                            <p>A night to soften.
-                                A moment to be seen.
-                                A place to be filled.</p>
-                            {/* <button className={styles["purchase-btn"]}><Link href="https://www.quicket.co.za/events/307400-ixesha-lixhatshwe-zizinja-awakening/?preview=t#/">Buy Ticket</Link></button> */}
+                            <p>A night to soften. A moment to be seen. A place to be filled.</p>
                         </div>
                         <div className={styles["events3img"]}>
                             <Image src='/assets/eventsPageImgs/echibini.jpeg' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} />
@@ -75,17 +61,6 @@ const EventsContent = () => (
                 <div className={styles["events2"]}>
                     <h3>First Thursday</h3>
                     <div className={styles["events2Contents"]}>
-                        {/* <div className={styles["events2-1container"]}>
-                            <div className={styles["events2-1img"]}>
-                                <Image src='/assets/RefiloeMnisi-OpeningShow.png' alt="EventTwo-One Img" width={400} height={500} className={styles["eventTwo-OneImg"]} />
-                            </div>
-                            <div className={styles["events2-1details"]}>
-                                <h4>Refiloe Mnisi: Opening Show</h4>
-                                <p>We are proud to present Refiloe Mnisi’s Opening Show — an intimate unveiling of his latest visual stories. Refiloe brings raw emotion, vibrant colour, and deeply expressive layers that speak to both the present and ancestral memory.</p>
-                                <p>Join us for an evening of art, conversation, and culture. This marks Refiloe’s first solo showcase since joining the Dweba studio, and we cannot wait to share this moment with our growing creative community</p>
-                                <p>Come through, sip something warm, and witness the beginning of something beautiful.</p>
-                            </div>
-                        </div> */}
                         <div className={styles["events2container"]}>
                             <div className={styles["events2img"]}>
                                 <Image src='/assets/firstThursdayPoster.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} />
@@ -107,7 +82,6 @@ const EventsContent = () => (
                             <p>By Refiloe Mnisi</p>
                             <p>We are proud to have presented Refiloe Mnisi’s Opening Show — an intimate unveiling of his latest visual stories. Refiloe brings raw emotion, vibrant colour, and deeply expressive layers that speak to both the present and ancestral memory.</p>
                             <p>An evening of art, conversation, and culture. This marked Refiloe’s first solo showcase since joining the Dweba studio.</p>
-                            {/* <button className={styles["purchase-btn"]}><Link href="https://www.quicket.co.za/events/307400-ixesha-lixhatshwe-zizinja-awakening/?preview=t#/">Buy Ticket</Link></button> */}
                         </div>
                         <div className={styles["events3img"]}>
                             <Image src='/assets/eventsPageImgs/R-Mnisi-Solo-Poster.png' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} />
@@ -117,17 +91,6 @@ const EventsContent = () => (
                 <div className={styles["events2"]}>
                     <h3>Dweba Art & Cafe: Jazz Sunday</h3>
                     <div className={styles["events2Contents"]}>
-                        {/* <div className={styles["events2-1container"]}>
-                            <div className={styles["events2-1img"]}>
-                                <Image src='/assets/RefiloeMnisi-OpeningShow.png' alt="EventTwo-One Img" width={400} height={500} className={styles["eventTwo-OneImg"]} />
-                            </div>
-                            <div className={styles["events2-1details"]}>
-                                <h4>Refiloe Mnisi: Opening Show</h4>
-                                <p>We are proud to present Refiloe Mnisi’s Opening Show — an intimate unveiling of his latest visual stories. Refiloe brings raw emotion, vibrant colour, and deeply expressive layers that speak to both the present and ancestral memory.</p>
-                                <p>Join us for an evening of art, conversation, and culture. This marks Refiloe’s first solo showcase since joining the Dweba studio, and we cannot wait to share this moment with our growing creative community</p>
-                                <p>Come through, sip something warm, and witness the beginning of something beautiful.</p>
-                            </div>
-                        </div> */}
                         <div className={styles["events2container"]}>
                             <div className={styles["events2img"]}>
                                 <Image src='/assets/eventsPageImgs/Sunday-Jazz.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} />
@@ -148,7 +111,6 @@ const EventsContent = () => (
                             <h4>Official launch weekend.</h4>
                             <p>Dweba Art and Cafe aims to be Cape Town’s premier platform for local and international artists and collectors, who fearlessly confront contemporary issues through diverse visual languages, including humour and satire, dramaturgy, performance, music and Live Art, fostering a space where creativity challenges societal norms and ignites meaningful dialogue</p>
                             <p>167 Longmarket Street, Cape Town. South Africa.</p>
-                            {/* <button className={styles["purchase-btn"]}><Link href="https://www.quicket.co.za/events/307400-ixesha-lixhatshwe-zizinja-awakening/?preview=t#/">Buy Ticket</Link></button> */}
                         </div>
                         <div className={styles["events3img"]}>
                             <Image src='/assets/eventsPageImgs/Launch-Poster.png' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} />
