@@ -39,12 +39,15 @@
                     padding: 20px;
                     margin: 40px 0px;
                     gap: 40px;
+                    background-color: #000000;
+                    color: #ffffff;
 
                     .events1details {
                         flex: 1.2;
 
                         h4 {
                             margin-bottom: 10px;
+                            color: #ffffff;
                         }
 
                         p {
@@ -59,10 +62,10 @@
                             width: 120px;
                             padding: 8px;
                             margin: 10px auto 10px auto;
-                            color: #ffffff;
-                            background-color: #000000;
-                            border: 1px solid #000;
-                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                            color: #000000;
+                            background-color: #ffffff;
+                            border: 1px solid #ffffff;
+                            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
                        }
                     }
 
