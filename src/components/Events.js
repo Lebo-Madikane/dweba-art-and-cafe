@@ -29,52 +29,52 @@ const Events = () => {
                     {[...Array(2)].map((_, i) => (
                         <React.Fragment key={i}>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img2.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img2.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img3.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img3.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img4.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img4.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img5.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img5.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img6.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img6.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img7.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img7.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img8.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img8.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img9.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img9.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img10.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img10.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img11.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img11.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img12.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img12.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img13.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img13.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img15.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img15.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img16.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img16.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img17.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img17.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                             <div className={Style["event-memory-container"]}>
-                                <Image src='/assets/events/events-img18.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} />
+                                <Image src='/assets/events/events-img18.webp' alt="Events Image" width={150} height={50} className={Style["memory-img-1"]} placeholder="empty" priority />
                             </div>
                         </React.Fragment>
                     ))}

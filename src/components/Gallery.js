@@ -114,13 +114,13 @@ const Gallery = () => {
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/observingPresence.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/observingPresence.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/beauties2.webp' alt='Untitled Indlela 2' width={150} height={150} className={Style.untitledIndlela} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/beauties2.webp' alt='Untitled Indlela 2' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp' alt='Untitled Indlela 3' width={150} height={150} className={Style.untitledIndlela} />
+                            <Image src='/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp' alt='Untitled Indlela 3' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                         </div>
                     </div>
                 </div>
@@ -138,14 +138,14 @@ const Gallery = () => {
                             <div className={Style["wall-grid"]}>
                                 {allArtworks.slice(0, 3).map((artwork, index) => (
                                     <div key={index} className={Style["artwork"]}>
-                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={Style.untitledIndlela} />
+                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                                     </div>
                                 ))}
                             </div>
                             <div className={Style["wall-grid"]}>
                                 {allArtworks.slice(3, 6).map((artwork, index) => (
                                     <div key={index} className={Style["artwork"]}>
-                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={Style.untitledIndlela} />
+                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                                     </div>
                                 ))}
                             </div>
@@ -162,7 +162,7 @@ const Gallery = () => {
                                             <div className={Style["slideContent"]}>
                                                 {slideArtworks.map((artwork, artIndex) => (
                                                     <div key={artIndex} className={Style["artworkCard"]}>
-                                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={Style["artworkImage"]} />
+                                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={Style["artworkImage"]} placeholder="empty" priority />
                                                     </div>
                                                 ))}
                                             </div>

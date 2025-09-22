@@ -8,8 +8,8 @@ const Footer = () => {
     return (
         <div className={Styles["footer"]}>
             <div className={Styles["footer-logo"]}>
-                <Image className={Styles["logo"]} src='/assets/Dweba-Logo-White.svg' alt="logo" width={150} height={50} />
-                <Image className={Styles["logo2"]} src='/assets/Dweba-logo-white.png' alt="logo" width={150} height={50} />
+                <Image className={Styles["logo"]} src='/assets/Dweba-Logo-White.svg' alt="logo" width={150} height={50} placeholder="empty" priority />
+                <Image className={Styles["logo2"]} src='/assets/Dweba-logo-white.png' alt="logo" width={150} height={50} placeholder="empty" priority />
             </div>
             <div className={Styles["footer-details"]}>
                 <p>Call: +2771 051 7574</p>

@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <header className={Style.header}>
             <Link href='/' onClick={handleClick}>
-                <Image src='/assets/Dweba-Logo-White.svg' alt="logo" width={150} height={50} />
+                <Image src='/assets/Dweba-Logo-White.svg' alt="logo" width={150} height={50} placeholder="empty" priority />
             </Link>
 
             <div className={`${Style.hamburger} ${isMenuOpen ? Style.active : ''}`} onClick={toggleMenu}>
