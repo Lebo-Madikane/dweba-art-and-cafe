@@ -125,14 +125,14 @@ const GalleryGrid = () => {
 
     // Storeroom artworks
     const storeroomArtworks = [
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Duvha (Sun)', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART14.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART4.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART16.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART10.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART2.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART13.png', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Misty Blues', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART14.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Duvha (Sun)', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART4.webp', alt: 'The Storeroom Artwork', artist: 'Cheryl Traub Adler', title: 'Chimera II', medium: 'Monotype and paint', size: '62 X 82 cm', year: '2025', price: 'R24 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART16.webp', alt: 'The Storeroom Artwork', artist: 'Cheryl Traub Adler', title: 'Chimera III', medium: 'Monotype and paint', size: '62 X 82 cm', year: '2025', price: 'R24 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART10.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'Abstract I', medium: 'Mixed Media', size: '55 X 100 cm', year: '2022', price: 'R150 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART13.png', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'The Last One', medium: 'Mixed Media', size: '185 X 88 cm', year: '2022', price: 'R240 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART2.webp', alt: 'The Storeroom Artwork', artist: 'Funeka Shuping', title: 'Untitled (Bee Series)', medium: 'Mixed Media', size: '141 X 102 cm', year: '2024', price: 'R28 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork', artist: 'Ziyanda Majozi', title: 'Nozimvo', medium: 'Mosaic', size: '60 X 40 cm', year: '2018', price: 'R36 000 ex VAT' },
     ];
 
     // Build slides (1 per slide in your current code)
