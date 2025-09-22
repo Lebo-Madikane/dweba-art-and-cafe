@@ -13,20 +13,69 @@ const GalleryGrid = () => {
     const [showMoreMidTwo, setShowMoreMidTwo] = useState(false);
     const [showMoreBottom, setShowMoreBottom] = useState(false);
 
+    const topSectionRef = useRef(null);
+    const midSectionRef = useRef(null);
+    const midTwoSectionRef = useRef(null);
+    const bottomSectionRef = useRef(null);
+
     const handleToggle = () => {
-        setShowMore((prevShowMore) => !prevShowMore);
+        setShowMore((prev) => {
+            const nextState = !prev;
+            setTimeout(() => {
+                if (topSectionRef.current) {
+                    topSectionRef.current.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            }, 200);
+            return nextState;
+        });
     };
 
     const handleToggleMid = () => {
-        setShowMoreMid((prev) => !prev);
+        setShowMoreMid((prev) => {
+            const nextState = !prev;
+            setTimeout(() => {
+                if (midSectionRef.current) {
+                    midSectionRef.current.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            }, 200);
+            return nextState;
+        });
     };
 
     const handleToggleMidTwo = () => {
-        setShowMoreMidTwo((prev) => !prev);
+        setShowMoreMidTwo((prev) => {
+            const nextState = !prev;
+            setTimeout(() => {
+                if (midTwoSectionRef.current) {
+                    midTwoSectionRef.current.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            }, 200);
+            return nextState;
+        });
     };
 
     const handleToggleBottom = () => {
-        setShowMoreBottom((prev) => !prev);
+        setShowMoreBottom((prev) => {
+            const nextState = !prev;
+            setTimeout(() => {
+                if (bottomSectionRef.current) {
+                    bottomSectionRef.current.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            }, 200);
+            return nextState;
+        });
     };
 
 
@@ -76,20 +125,26 @@ const GalleryGrid = () => {
 
     // Storeroom artworks
     const storeroomArtworks = [
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
-        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Duvha (Sun)', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART14.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART4.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART16.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART10.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART2.webp', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART13.png', alt: 'The Storeroom Artwork' },
+        { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork' },
     ];
 
     // Build slides (1 per slide in your current code)
     const slides = [];
     for (let i = 0; i < allArtworks.length; i += 1) {
         slides.push(allArtworks.slice(i, i + 1));
+    }
+
+    // Build slides for storeroomArtworks
+    const storeroomSlides = [];
+    for (let i = 0; i < storeroomArtworks.length; i += 1) {
+        storeroomSlides.push(storeroomArtworks.slice(i, i + 1));
     }
 
     // helper to measure slide width (accounts for margins)
@@ -152,7 +207,7 @@ const GalleryGrid = () => {
 
     return (
         <div className={styles.galleryContainer}>
-            <div className={styles.gallerySection}>
+            <div ref={topSectionRef} className={styles.gallerySection}>
                 <div className={styles.wallHeader}>
                     <h3>Why We Need Mothers</h3>
                     <h4>Group Exhibition</h4>
@@ -525,7 +580,7 @@ const GalleryGrid = () => {
                     {showMore ? "Show Less" : "Show More"}
                 </button>
             </div>
-            <div className={`${styles.gallerySection} ${styles.gallerySectionMid}`}>
+            <div ref={midSectionRef} className={`${styles.gallerySection} ${styles.gallerySectionMid}`}>
                 <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
                     <h3>Now Showing</h3>
                     <h4>The Reading Man: <span>Julius Badatu</span></h4>
@@ -667,7 +722,7 @@ const GalleryGrid = () => {
                             <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
-                    <div className={styles["artwork"]}>
+                    <div ref={midTwoSectionRef} className={styles["artwork"]}>
                         <Image src='/assets/artworks/Downstairs/KevinWurffel/THENITUS.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} />
                         <div className={styles["artwork-details"]}>
                             <p><span>Artist:</span> Kevin Wurffel</p>
@@ -776,10 +831,10 @@ const GalleryGrid = () => {
 
                 {/* MOBILE CAROUSEL */}
                 {isMobile && (
-                    <div className={styles.mobileCarousel}>
+                    <div className={`${styles.mobileCarousel} ${styles.storeroomMobileCarousel}`}>
                         <div className={styles.carouselWrapper}>
                             <div className={styles.carousel} ref={carouselRef}>
-                                {slides.map((slideArtworks, slideIndex) => (
+                                {storeroomSlides.map((slideArtworks, slideIndex) => (
                                     <div key={slideIndex} className={styles.carouselSlide}>
                                         <div className={styles.slideContent}>
                                             {slideArtworks.map((artwork, artIndex) => (
@@ -806,7 +861,7 @@ const GalleryGrid = () => {
                         </div>
 
                         <div className={styles.dots}>
-                            {slides.map((_, index) => (
+                            {storeroomSlides.map((_, index) => (
                                 <button
                                     key={index}
                                     className={`${styles.dot} ${index === currentSlide ? styles.active : ''}`}
@@ -822,7 +877,7 @@ const GalleryGrid = () => {
                     <h3>EXPLORE OUR STOREROOM</h3>
                     <p>Discover a curated selection of works from our debut group show, “And Just Like That...”, now available for viewing and purchase in the storeroom.</p>
                 </div>
-                <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
+                <div ref={bottomSectionRef} className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Storeroom/ART17.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} />
                         <div className={styles["artwork-details"]}>

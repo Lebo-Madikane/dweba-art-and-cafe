@@ -71,6 +71,12 @@
                 margin: 10px 0px;
             }
         }
+
+        .storeroomMobileCarousel {
+            @media (max-width: 768px) {
+                //border: 2px solid yellow;
+            }
+        }
         
         .carouselWrapper {
             overflow: hidden;
