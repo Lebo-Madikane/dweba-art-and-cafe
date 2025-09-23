@@ -203,6 +203,15 @@ const GalleryGrid = () => {
         });
     };
 
+    // Add to your component state
+    const [showComingSoon, setShowComingSoon] = useState(false);
+
+    // Handler for the cart button
+    const handleAddToCart = () => {
+        setShowComingSoon(true);
+        // Auto-hide after 6 seconds
+        setTimeout(() => setShowComingSoon(false), 6000);
+    };
 
 
     return (
@@ -255,7 +264,7 @@ const GalleryGrid = () => {
                                                     </div>
                                                     <div className={styles.btnsContainer}>
                                                         <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                                        <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                                        <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                                                     </div>
                                                 </div>
                                             ))}
@@ -285,7 +294,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff'/></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff'/></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -300,7 +309,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -315,7 +324,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -329,7 +338,7 @@ const GalleryGrid = () => {
                             <p><span>Price:</span> {allArtworks[3].price}</p>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                     </div>
@@ -346,7 +355,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -361,7 +370,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -376,7 +385,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -391,7 +400,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -406,7 +415,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -421,7 +430,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -436,7 +445,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -451,7 +460,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -466,7 +475,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -481,7 +490,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -496,7 +505,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -511,7 +520,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -526,7 +535,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -541,7 +550,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -556,7 +565,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -571,7 +580,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                     </div>
@@ -598,7 +607,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -613,7 +622,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -628,7 +637,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -643,7 +652,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     {/*
@@ -689,7 +698,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -704,7 +713,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -719,7 +728,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div ref={midTwoSectionRef} className={styles["artwork"]}>
@@ -734,7 +743,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={`${styles.showMoreArtwork} ${showMoreMidTwo ? styles.active : ""}`}>
@@ -750,7 +759,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -765,7 +774,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -780,7 +789,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -795,7 +804,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                     </div>
@@ -850,7 +859,7 @@ const GalleryGrid = () => {
                                                     </div>
                                                     <div className={styles.btnsContainer}>
                                                         <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                                        <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                                        <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                                                     </div>
                                                 </div>
                                             ))}
@@ -890,7 +899,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -905,7 +914,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -920,7 +929,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
@@ -935,7 +944,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                            <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                            <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={`${styles.showMoreArtwork} ${showMoreBottom ? styles.active : ""
@@ -952,7 +961,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -967,7 +976,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -982,7 +991,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
@@ -997,7 +1006,7 @@ const GalleryGrid = () => {
                             </div>
                             <div className={styles.btnsContainer}>
                                 <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
-                                <button className={styles.addToCartBtn}><IoCartOutline size={24} color='#ffffff' /></button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                     </div>
@@ -1006,6 +1015,23 @@ const GalleryGrid = () => {
                     {showMoreBottom ? "Show Less" : "Show More"}
                 </button>
             </div>
+            
+            {/* Coming Soon Modal */}
+            {showComingSoon && (
+                <div className={styles.modalOverlay} onClick={() => setShowComingSoon(false)}>
+                    <div className={styles.comingSoonCard} onClick={(e) => e.stopPropagation()}>
+                        <h3>Coming Soon!</h3>
+                        <p>Online purchasing will be available soon. Please visit us in-store or contact us directly.</p>
+                        <button
+                            className={styles.closeBtn}
+                            onClick={() => setShowComingSoon(false)}
+                        >
+                            Got it
+                        </button>
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 };
