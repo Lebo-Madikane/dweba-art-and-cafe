@@ -20,7 +20,7 @@ const EventsContent = () => (
                             <p>Join us on the 24th of September for a truly unique celebration of sound, culture, and movement at Emandulo: The Silent Sonic Experience — a one-of-a-kind silent disco set in the heart of Dweba Art & Café.</p>
                             <p>In honour of Heritage Day, we invite you to journey through South Africa's rich and rhythmic history with live jazz music performed by Zintle 'NeAhtyah' Mbuyazwe and her band, along with Simanye Gxobole as our special guest.</p>
                             <p>This immersive experience also includes a taste of traditional South African cuisine, to nourish your body after the music has fed your soul — this will be included in your ticket.</p>
-                            <button className={styles["purchase-btn"]}><Link href="https://www.quicket.co.za/events/332310-emandulo-the-silent-sonic-experience/#/">Buy Ticket</Link></button>
+                            <button className={styles["purchase-btn"]} target="_blank"><Link href="https://www.quicket.co.za/events/332310-emandulo-the-silent-sonic-experience/#/" target='blank'>Buy Ticket</Link></button>
                         </div>
                         <div className={styles["events1img"]}>
                             <Image src='/assets/eventsPageImgs/Zinhle.jpeg' alt="EventOne Img" width={400} height={500} className={styles["eventOneImg"]} placeholder="empty" priority />
