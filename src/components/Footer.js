@@ -14,7 +14,7 @@ const Footer = () => {
             <div className={Styles["footer-details"]}>
                 <p>Call: +2771 051 7574</p>
                 <p>Email: hello@dwebaart.com</p>
-                <p>Sign-up: to our <span className={Styles["newsletter"]}>Newsletter</span> </p>
+                <p><span className={Styles["signUp"]}>Sign-up</span> to our Newsletter</p>
             </div>
             <div className={Styles["footer-icons"]}>
                 <a
