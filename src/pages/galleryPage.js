@@ -5,6 +5,7 @@ import styles from '../styles/pages/galleryPage.module.scss';
 import { useState, useEffect, useRef } from 'react';
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart  } from "react-icons/ci";
+import { title } from 'process';
 
 const GalleryGrid = () => {
 
@@ -133,6 +134,26 @@ const GalleryGrid = () => {
         { src: '/assets/artworks/Storeroom/ART13.png', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'The Last One', medium: 'Mixed Media', size: '185 X 88 cm', year: '2022', price: 'R240 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART2.webp', alt: 'The Storeroom Artwork', artist: 'Funeka Shuping', title: 'Untitled (Bee Series)', medium: 'Mixed Media', size: '141 X 102 cm', year: '2024', price: 'R28 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork', artist: 'Ziyanda Majozi', title: 'Nozimvo', medium: 'Mosaic', size: '60 X 40 cm', year: '2018', price: 'R36 000 ex VAT' },
+    ];
+
+    // The Reading Man artworks
+    const theReadingMan = [
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man I', medium: 'Mixed Media', size: '100 x 80 cm', year: '2025', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man II', medium: 'Mixed Media', size: '60 x 45 cm', year: '2025', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIII.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man III', medium: 'Mixed Media', size: '50 x 50 cm', year: '2025', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIV.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man IV', medium: 'Mixed Media', size: '100 x 80 cm', year: '2025', price: 'R20 000 ex VAT' },
+    ];
+
+    // Golden Kings Code artworks
+    const goldenKingsCode = [
+        { src: '/assets/artworks/Downstairs/KevinWurffel/LHASTRA.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'LHASTRA', medium: 'Mixed Media', size: '64 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/LHUNAH.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'LHUNAH', medium: 'Mixed Media', size: '64 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'THE INFI', medium: 'Mixed Media', size: '70 X 60 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/THENITUS.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'THE NITUS', medium: 'Mixed Media', size: '70 X 60 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/King-Lukeni-lua-Nimi.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'King Lukeni lua Nimi', medium: 'Mixed Media', size: '45 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/KingMansaMusa.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'King Mansa Musa', medium: 'Mixed Media', size: '111 X 89 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'King Yankuru', medium: 'Mixed Media', size: '55 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'Golden King', medium: 'Mixed Media', size: '60.6 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
     ];
 
     // Build slides (1 per slide in your current code)
@@ -913,27 +934,27 @@ const GalleryGrid = () => {
                 </div>
                 <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={theReadingMan[0].src} alt={theReadingMan.alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Julius Badatu</p>
-                            <p><span>Title:</span> The Reading Man I</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 100 X 80 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {theReadingMan[0].artist}</p>
+                            <p><span>Title:</span> {theReadingMan[0].title}</p>
+                            <p><span>Medium:</span> {theReadingMan[0].medium}</p>
+                            <p><span>Size:</span> {theReadingMan[0].size}</p>
+                            <p><span>Year:</span> {theReadingMan[0].year}</p>
+                            <p><span>Price:</span> {theReadingMan[0].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
                             <button
-                                className={`${styles.likeBtn} ${likedArtworks.has() ? styles.liked : ''}`}
-                                onClick={() => handleLike()}
-                                title={likedArtworks.has() ? 'Unlike this artwork' : 'Like this artwork'}
+                                className={`${styles.likeBtn} ${likedArtworks.has(theReadingMan[0].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(theReadingMan[0])}
+                                title={likedArtworks.has(theReadingMan[0].title) ? 'Unlike this artwork' : 'Like this artwork'}
                             >
                                 <CiHeart
                                     size={24}
                                     className={styles.heartIcon}
                                     style={{
-                                        fill: likedArtworks.has() ? '#ff4757' : '#000000',
-                                        color: likedArtworks.has() ? '#ff4757' : '#333'
+                                        fill: likedArtworks.has(theReadingMan[0].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(theReadingMan[0].title) ? '#ff4757' : '#333'
                                     }}
                                 />
                             </button>
@@ -941,47 +962,86 @@ const GalleryGrid = () => {
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={theReadingMan[1].src} alt={theReadingMan[1].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Julius Badatu</p>
-                            <p><span>Title:</span> The Reading Man II</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 60 X 45 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {theReadingMan[1].artist}</p>
+                            <p><span>Title:</span> {theReadingMan[1].title}</p>
+                            <p><span>Medium:</span> {theReadingMan[1].medium}</p>
+                            <p><span>Size:</span> {theReadingMan[1].size}</p>
+                            <p><span>Year:</span> {theReadingMan[1].year}</p>
+                            <p><span>Price:</span> {theReadingMan[1].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(theReadingMan[1].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(theReadingMan[1])}
+                                title={likedArtworks.has(theReadingMan[1].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(theReadingMan[1].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(theReadingMan[1].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIII.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={theReadingMan[2].src} alt={theReadingMan[2].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Julius Badatu</p>
-                            <p><span>Title:</span> The Reading Man III</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 50 X 50 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {theReadingMan[2].artist}</p>
+                            <p><span>Title:</span> {theReadingMan[2].title}</p>
+                            <p><span>Medium:</span> {theReadingMan[2].medium}</p>
+                            <p><span>Size:</span> {theReadingMan[2].size}</p>
+                            <p><span>Year:</span> {theReadingMan[2].year}</p>
+                            <p><span>Price:</span> {theReadingMan[2].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(theReadingMan[2].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(theReadingMan[2])}
+                                title={likedArtworks.has(theReadingMan[2].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(theReadingMan[2].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(theReadingMan[2].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIV.webp' alt='SoloShowImg' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={theReadingMan[3].src} alt={theReadingMan[3].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Julius Badatu</p>
-                            <p><span>Title:</span> The Reading Man IV</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 100 X 80 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {theReadingMan[3].artist}</p>
+                            <p><span>Title:</span> {theReadingMan[3].title}</p>
+                            <p><span>Medium:</span> {theReadingMan[3].medium}</p>
+                            <p><span>Size:</span> {theReadingMan[3].size}</p>
+                            <p><span>Year:</span> {theReadingMan[3].year}</p>
+                            <p><span>Price:</span> {theReadingMan[3].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(theReadingMan[3].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(theReadingMan[3])}
+                                title={likedArtworks.has(theReadingMan[3].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(theReadingMan[3].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(theReadingMan[3].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
@@ -1017,123 +1077,227 @@ const GalleryGrid = () => {
                 </div>
                 <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/KevinWurffel/LHASTRA.webp' alt='Lhastra Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={goldenKingsCode[0].src} alt={goldenKingsCode[0].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Kevin Wurffel</p>
-                            <p><span>Title:</span> L'HASTRA</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 64 X 45 cm</p>
-                            <p><span>Year:</span> 2012</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {goldenKingsCode[0].artist}</p>
+                            <p><span>Title:</span> {goldenKingsCode[0].title}</p>
+                            <p><span>Medium:</span> {goldenKingsCode[0].medium}</p>
+                            <p><span>Size:</span> {goldenKingsCode[0].size}</p>
+                            <p><span>Year:</span> {goldenKingsCode[0].year}</p>
+                            <p><span>Price:</span> {goldenKingsCode[0].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[0].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(goldenKingsCode[0])}
+                                title={likedArtworks.has(goldenKingsCode[0].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(goldenKingsCode[0].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(goldenKingsCode[0].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/KevinWurffel/LHUNAH.webp' alt='Lhunah Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={goldenKingsCode[1].src} alt={goldenKingsCode[1].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Kevin Wurffel</p>
-                            <p><span>Title:</span> L'HUNAH</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 64 X 45 cm</p>
-                            <p><span>Year:</span> 2012</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {goldenKingsCode[1].artist}</p>
+                            <p><span>Title:</span> {goldenKingsCode[1].title}</p>
+                            <p><span>Medium:</span> {goldenKingsCode[1].medium}</p>
+                            <p><span>Size:</span> {goldenKingsCode[1].size}</p>
+                            <p><span>Year:</span> {goldenKingsCode[1].year}</p>
+                            <p><span>Price:</span> {goldenKingsCode[1].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[1].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(goldenKingsCode[1])}
+                                title={likedArtworks.has(goldenKingsCode[1].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(goldenKingsCode[1].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(goldenKingsCode[1].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={goldenKingsCode[2].src} alt={goldenKingsCode[2].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Kevin Wurffel</p>
-                            <p><span>Title:</span> THE INFI</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 70 X 60 cm</p>
-                            <p><span>Year:</span> 2012</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {goldenKingsCode[2].artist}</p>
+                            <p><span>Title:</span> {goldenKingsCode[2].title}</p>
+                            <p><span>Medium:</span> {goldenKingsCode[2].medium}</p>
+                            <p><span>Size:</span> {goldenKingsCode[2].size}</p>
+                            <p><span>Year:</span> {goldenKingsCode[2].year}</p>
+                            <p><span>Price:</span> {goldenKingsCode[2].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[2].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(goldenKingsCode[2])}
+                                title={likedArtworks.has(goldenKingsCode[2].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(goldenKingsCode[2].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(goldenKingsCode[2].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div ref={midTwoSectionRef} className={styles["artwork"]}>
-                        <Image src='/assets/artworks/Downstairs/KevinWurffel/THENITUS.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                        <Image src={goldenKingsCode[3].src} alt={goldenKingsCode[3].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Kevin Wurffel</p>
-                            <p><span>Title:</span> THE NITUS</p>
-                            <p><span>Medium:</span> Mixed Media</p>
-                            <p><span>Size:</span> 70 X 60 cm</p>
-                            <p><span>Year:</span> 2012</p>
-                            <p><span>Price:</span> R20 000</p>
+                            <p><span>Artist:</span> {goldenKingsCode[3].artist}</p>
+                            <p><span>Title:</span> {goldenKingsCode[3].title}</p>
+                            <p><span>Medium:</span> {goldenKingsCode[3].medium}</p>
+                            <p><span>Size:</span> {goldenKingsCode[3].size}</p>
+                            <p><span>Year:</span> {goldenKingsCode[3].year}</p>
+                            <p><span>Price:</span> {goldenKingsCode[3].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[3].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(goldenKingsCode[3])}
+                                title={likedArtworks.has(goldenKingsCode[3].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(goldenKingsCode[3].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(goldenKingsCode[3].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={`${styles.showMoreArtwork} ${showMoreMidTwo ? styles.active : ""}`}>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/King-Lukeni-lua-Nimi.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[4].src} alt={goldenKingsCode[4].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Kevin Wurffel</p>
-                                <p><span>Title:</span> King Lukeni lua Nimi</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 45 X 45 cm</p>
-                                <p><span>Year:</span> 2012</p>
-                                <p><span>Price:</span> R20 000</p>
+                                <p><span>Artist:</span> {goldenKingsCode[4].artist}</p>
+                                <p><span>Title:</span> {goldenKingsCode[4].title}</p>
+                                <p><span>Medium:</span> {goldenKingsCode[4].medium}</p>
+                                <p><span>Size:</span> {goldenKingsCode[4].size}</p>
+                                <p><span>Year:</span> {goldenKingsCode[4].year}</p>
+                                <p><span>Price:</span> {goldenKingsCode[4].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[4].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(goldenKingsCode[4])}
+                                    title={likedArtworks.has(goldenKingsCode[4].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(goldenKingsCode[4].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(goldenKingsCode[4].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/KingMansaMusa.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[5].src} alt={goldenKingsCode[5].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Kevin Wurffel</p>
-                                <p><span>Title:</span> King Mansa Musa</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 111 X 89 cm</p>
-                                <p><span>Year:</span> 2012</p>
-                                <p><span>Price:</span> R20 000</p>
+                                <p><span>Artist:</span> {goldenKingsCode[5].artist}</p>
+                                <p><span>Title:</span> {goldenKingsCode[5].title}</p>
+                                <p><span>Medium:</span> {goldenKingsCode[5].medium}</p>
+                                <p><span>Size:</span> {goldenKingsCode[5].size}</p>
+                                <p><span>Year:</span> {goldenKingsCode[5].year}</p>
+                                <p><span>Price:</span> {goldenKingsCode[5].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[5].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(goldenKingsCode[5])}
+                                    title={likedArtworks.has(goldenKingsCode[5].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(goldenKingsCode[5].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(goldenKingsCode[5].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[6].src} alt={goldenKingsCode[6].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Kevin Wurffel</p>
-                                <p><span>Title:</span> King Yankuru</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 55 X 45 cm</p>
-                                <p><span>Year:</span> 2012</p>
-                                <p><span>Price:</span> R20 000</p>
+                                <p><span>Artist:</span> {goldenKingsCode[6].artist}</p>
+                                <p><span>Title:</span> {goldenKingsCode[6].title}</p>
+                                <p><span>Medium:</span> {goldenKingsCode[6].medium}</p>
+                                <p><span>Size:</span> {goldenKingsCode[6].size}</p>
+                                <p><span>Year:</span> {goldenKingsCode[6].year}</p>
+                                <p><span>Price:</span> {goldenKingsCode[6].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[6].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(goldenKingsCode[6])}
+                                    title={likedArtworks.has(goldenKingsCode[6].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(goldenKingsCode[6].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(goldenKingsCode[6].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp' alt='The Golden Code Image' width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[7].src} alt={goldenKingsCode[7].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Kevin Wurffel</p>
-                                <p><span>Title:</span> Golden King</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 60.5 X 45 cm</p>
-                                <p><span>Year:</span> 2012</p>
-                                <p><span>Price:</span> R20 000</p>
+                                <p><span>Artist:</span> {goldenKingsCode[7].artist}</p>
+                                <p><span>Title:</span> {goldenKingsCode[7].title}</p>
+                                <p><span>Medium:</span> {goldenKingsCode[7].medium}</p>
+                                <p><span>Size:</span> {goldenKingsCode[7].size}</p>
+                                <p><span>Year:</span> {goldenKingsCode[7].year}</p>
+                                <p><span>Price:</span> {goldenKingsCode[7].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(goldenKingsCode[7].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(goldenKingsCode[7])}
+                                    title={likedArtworks.has(goldenKingsCode[7].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(goldenKingsCode[7].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(goldenKingsCode[7].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
