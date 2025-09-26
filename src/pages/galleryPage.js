@@ -213,6 +213,50 @@ const GalleryGrid = () => {
         setTimeout(() => setShowComingSoon(false), 6000);
     };
 
+    // Existing state...
+    const [likedArtworks, setLikedArtworks] = useState(new Set());
+
+    // Load likes from localStorage on component mount
+    useEffect(() => {
+        const savedLikes = localStorage.getItem('likedArtworks');
+        if (savedLikes) {
+            setLikedArtworks(new Set(JSON.parse(savedLikes)));
+        }
+    }, []);
+
+    // Handle like toggle with GA tracking
+    const handleLike = (artwork) => {
+        const artworkId = artwork.title; // Use title as unique ID
+        const newLikedArtworks = new Set(likedArtworks);
+
+        let action;
+        if (newLikedArtworks.has(artworkId)) {
+            // Unlike
+            newLikedArtworks.delete(artworkId);
+            action = 'unlike';
+        } else {
+            // Like
+            newLikedArtworks.add(artworkId);
+            action = 'like';
+        }
+
+        // Update local state and localStorage
+        setLikedArtworks(newLikedArtworks);
+        localStorage.setItem('likedArtworks', JSON.stringify([...newLikedArtworks]));
+
+        // Track in Google Analytics
+        if (typeof window.gtag !== 'undefined') {
+            window.gtag('event', action, {
+                event_category: 'artwork_engagement',
+                event_label: artworkId,
+                artwork_artist: artwork.artist,
+                artwork_price: artwork.price,
+                custom_parameter_1: artwork.medium,
+                value: 1
+            });
+        }
+    };
+
 
     return (
         <div className={styles.galleryContainer}>
@@ -263,7 +307,20 @@ const GalleryGrid = () => {
                                                         <p><span>Price:</span> {artwork.price}</p>
                                                     </div>
                                                     <div className={styles.btnsContainer}>
-                                                        <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                                        <button
+                                                            className={`${styles.likeBtn} ${likedArtworks.has(artwork.title) ? styles.liked : ''}`}
+                                                            onClick={() => handleLike(artwork)}
+                                                            title={likedArtworks.has(artwork.title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                                        >
+                                                            <CiHeart
+                                                                size={24}
+                                                                className={styles.heartIcon}
+                                                                style={{
+                                                                    fill: likedArtworks.has(artwork.title) ? '#ff4757' : '#000000',
+                                                                    color: likedArtworks.has(artwork.title) ? '#ff4757' : '#333'
+                                                                }}
+                                                            />
+                                                        </button>
                                                         <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                                                     </div>
                                                 </div>
@@ -293,7 +350,20 @@ const GalleryGrid = () => {
                             <p><span>Price:</span> {allArtworks[0].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[0].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(allArtworks[0])}
+                                title={likedArtworks.has(allArtworks[0].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(allArtworks[0].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(allArtworks[0].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff'/></button>
                         </div>
                     </div>
@@ -308,7 +378,20 @@ const GalleryGrid = () => {
                             <p><span>Price:</span> {allArtworks[1].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[1].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(allArtworks[1])}
+                                title={likedArtworks.has(allArtworks[1].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(allArtworks[1].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(allArtworks[1].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
@@ -323,7 +406,20 @@ const GalleryGrid = () => {
                             <p><span>Price:</span> {allArtworks[2].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[2].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(allArtworks[2])}
+                                title={likedArtworks.has(allArtworks[2].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(allArtworks[2].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(allArtworks[2].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
@@ -337,7 +433,20 @@ const GalleryGrid = () => {
                             <p><span>Year:</span> {allArtworks[3].year}</p>
                             <p><span>Price:</span> {allArtworks[3].price}</p>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[3].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[3])}
+                                    title={likedArtworks.has(allArtworks[3].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[3].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[3].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -354,7 +463,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[4].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[4].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[4])}
+                                    title={likedArtworks.has(allArtworks[4].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[4].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[4].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -369,7 +491,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[5].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[5].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[5])}
+                                    title={likedArtworks.has(allArtworks[5].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[5].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[5].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -384,7 +519,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[6].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[6].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[6])}
+                                    title={likedArtworks.has(allArtworks[6].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[6].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[6].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -399,7 +547,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[7].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[7].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[7])}
+                                    title={likedArtworks.has(allArtworks[7].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[7].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[7].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -414,7 +575,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[8].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[8].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[8])}
+                                    title={likedArtworks.has(allArtworks[8].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[8].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[8].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -429,7 +603,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[9].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[9].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[9])}
+                                    title={likedArtworks.has(allArtworks[9].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[9].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[9].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -444,7 +631,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[10].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[10].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[10])}
+                                    title={likedArtworks.has(allArtworks[10].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[10].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[10].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -459,7 +659,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[11].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[11].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[11])}
+                                    title={likedArtworks.has(allArtworks[11].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[11].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[11].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -474,7 +687,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[12].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[12].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[12])}
+                                    title={likedArtworks.has(allArtworks[12].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[12].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[12].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -489,7 +715,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[13].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[13].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[13])}
+                                    title={likedArtworks.has(allArtworks[13].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[13].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[13].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -504,7 +743,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[14].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[14].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[14])}
+                                    title={likedArtworks.has(allArtworks[14].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[14].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[14].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -519,7 +771,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[15].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[15].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[15])}
+                                    title={likedArtworks.has(allArtworks[15].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[15].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[15].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -534,7 +799,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[16].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[16].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[16])}
+                                    title={likedArtworks.has(allArtworks[16].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[16].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[16].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -549,7 +827,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[17].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[17].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[17])}
+                                    title={likedArtworks.has(allArtworks[17].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[17].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[17].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -564,7 +855,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[18].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[18].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[18])}
+                                    title={likedArtworks.has(allArtworks[18].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[18].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[18].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -579,7 +883,20 @@ const GalleryGrid = () => {
                                 <p><span>Price:</span> {allArtworks[19].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[19].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(allArtworks[19])}
+                                    title={likedArtworks.has(allArtworks[19].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(allArtworks[19].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(allArtworks[19].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
@@ -606,7 +923,20 @@ const GalleryGrid = () => {
                             <p><span>Price:</span> R20 000</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has() ? styles.liked : ''}`}
+                                onClick={() => handleLike()}
+                                title={likedArtworks.has() ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has() ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has() ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
@@ -858,7 +1188,20 @@ const GalleryGrid = () => {
                                                         <p><span>Price:</span> {artwork.price}</p>
                                                     </div>
                                                     <div className={styles.btnsContainer}>
-                                                        <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                                        <button
+                                                            className={`${styles.likeBtn} ${likedArtworks.has(artwork.title) ? styles.liked : ''}`}
+                                                            onClick={() => handleLike(artwork)}
+                                                            title={likedArtworks.has(artwork.title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                                        >
+                                                            <CiHeart
+                                                                size={24}
+                                                                className={styles.heartIcon}
+                                                                style={{
+                                                                    fill: likedArtworks.has(artwork.title) ? '#ff4757' : '#000000',
+                                                                    color: likedArtworks.has(artwork.title) ? '#ff4757' : '#333'
+                                                                }}
+                                                            />
+                                                        </button>
                                                         <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                                                     </div>
                                                 </div>
@@ -890,60 +1233,112 @@ const GalleryGrid = () => {
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Storeroom/ART17.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Ditiro Mashigo</p>
-                            <p><span>Title:</span> Duvha (Sun)</p>
-                            <p><span>Medium:</span> Fabric Paint, Pastel Merino Wool On Board Paper</p>
-                            <p><span>Size:</span> 145 x 106 cm</p>
-                            <p><span>Year:</span> 2024</p>
-                            <p><span>Price:</span> R53 000</p>
+                            <p><span>Artist:</span> {storeroomArtworks[0].artist}</p>
+                            <p><span>Title:</span> {storeroomArtworks[0].title}</p>
+                            <p><span>Medium:</span> {storeroomArtworks[0].medium}</p>
+                            <p><span>Size:</span>{storeroomArtworks[0].size}</p>
+                            <p><span>Year:</span> {storeroomArtworks[0].year}</p>
+                            <p><span>Price:</span> {storeroomArtworks[0].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[0].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(storeroomArtworks[0])}
+                                title={likedArtworks.has(storeroomArtworks[0].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(storeroomArtworks[0].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(storeroomArtworks[0].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Storeroom/ART14.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Ditiro Mashigo</p>
-                            <p><span>Title:</span> Misty Blues</p>
-                            <p><span>Medium:</span> Fabric Paint, Pastel Merino Wool On Board Paper</p>
-                            <p><span>Size:</span> 145 X 106 cm</p>
-                            <p><span>Year:</span> 2024</p>
-                            <p><span>Price:</span> R53 000</p>
+                            <p><span>Artist:</span> {storeroomArtworks[1].artist}</p>
+                            <p><span>Title:</span> {storeroomArtworks[1].title}</p>
+                            <p><span>Medium:</span> {storeroomArtworks[1].medium}</p>
+                            <p><span>Size:</span>{storeroomArtworks[1].size}</p>
+                            <p><span>Year:</span> {storeroomArtworks[1].year}</p>
+                            <p><span>Price:</span> {storeroomArtworks[1].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[1].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(storeroomArtworks[1])}
+                                title={likedArtworks.has(storeroomArtworks[1].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(storeroomArtworks[1].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(storeroomArtworks[1].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Storeroom/ART4.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Cheryl Traub Adler</p>
-                            <p><span>Title:</span> Chimera II</p>
-                            <p><span>Medium:</span> Monotype and paint on fabriano acadenia</p>
-                            <p><span>Size:</span> 62 X 82 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R24 000</p>
+                            <p><span>Artist:</span> {storeroomArtworks[2].artist}</p>
+                            <p><span>Title:</span> {storeroomArtworks[2].title}</p>
+                            <p><span>Medium:</span> {storeroomArtworks[2].medium}</p>
+                            <p><span>Size:</span>{storeroomArtworks[2].size}</p>
+                            <p><span>Year:</span> {storeroomArtworks[2].year}</p>
+                            <p><span>Price:</span> {storeroomArtworks[2].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[2].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(storeroomArtworks[2])}
+                                title={likedArtworks.has(storeroomArtworks[2].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(storeroomArtworks[2].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(storeroomArtworks[2].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
                     <div className={styles["artwork"]}>
                         <Image src='/assets/artworks/Storeroom/ART16.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                         <div className={styles["artwork-details"]}>
-                            <p><span>Artist:</span> Cheryl Traub Adler</p>
-                            <p><span>Title:</span> Chimera III</p>
-                            <p><span>Medium:</span> Monotype and paint on fabriano acadenia</p>
-                            <p><span>Size:</span> 62 X 82 cm</p>
-                            <p><span>Year:</span> 2025</p>
-                            <p><span>Price:</span> R24 000</p>
+                            <p><span>Artist:</span> {storeroomArtworks[3].artist}</p>
+                            <p><span>Title:</span> {storeroomArtworks[3].title}</p>
+                            <p><span>Medium:</span> {storeroomArtworks[3].medium}</p>
+                            <p><span>Size:</span>{storeroomArtworks[3].size}</p>
+                            <p><span>Year:</span> {storeroomArtworks[3].year}</p>
+                            <p><span>Price:</span> {storeroomArtworks[3].price}</p>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                            <button
+                                className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[3].title) ? styles.liked : ''}`}
+                                onClick={() => handleLike(storeroomArtworks[3])}
+                                title={likedArtworks.has(storeroomArtworks[3].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                            >
+                                <CiHeart
+                                    size={24}
+                                    className={styles.heartIcon}
+                                    style={{
+                                        fill: likedArtworks.has(storeroomArtworks[3].title) ? '#ff4757' : '#000000',
+                                        color: likedArtworks.has(storeroomArtworks[3].title) ? '#ff4757' : '#333'
+                                    }}
+                                />
+                            </button>
                             <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                         </div>
                     </div>
@@ -952,60 +1347,112 @@ const GalleryGrid = () => {
                         <div className={styles["artwork"]}>
                             <Image src='/assets/artworks/Storeroom/ART10.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Samson Mnisi</p>
-                                <p><span>Title:</span> Abstract I</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 55 X 100 cm</p>
-                                <p><span>Year:</span> 2022</p>
-                                <p><span>Price:</span> R150 000</p>
+                                <p><span>Artist:</span> {storeroomArtworks[4].artist}</p>
+                                <p><span>Title:</span> {storeroomArtworks[4].title}</p>
+                                <p><span>Medium:</span> {storeroomArtworks[4].medium}</p>
+                                <p><span>Size:</span>{storeroomArtworks[4].size}</p>
+                                <p><span>Year:</span> {storeroomArtworks[4].year}</p>
+                                <p><span>Price:</span> {storeroomArtworks[4].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[4].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(storeroomArtworks[4])}
+                                    title={likedArtworks.has(storeroomArtworks[4].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(storeroomArtworks[4].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(storeroomArtworks[4].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
                             <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Funeka Shuping</p>
-                                <p><span>Title:</span> Untitled (Bee Series)</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 141 X 102 cm</p>
-                                <p><span>Year:</span> 2024</p>
-                                <p><span>Price:</span> R28 000</p>
+                                <p><span>Artist:</span> {storeroomArtworks[5].artist}</p>
+                                <p><span>Title:</span> {storeroomArtworks[5].title}</p>
+                                <p><span>Medium:</span> {storeroomArtworks[5].medium}</p>
+                                <p><span>Size:</span>{storeroomArtworks[5].size}</p>
+                                <p><span>Year:</span> {storeroomArtworks[5].year}</p>
+                                <p><span>Price:</span> {storeroomArtworks[5].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[5].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(storeroomArtworks[5])}
+                                    title={likedArtworks.has(storeroomArtworks[5].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(storeroomArtworks[5].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(storeroomArtworks[5].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
                             <Image src='/assets/artworks/Storeroom/ART13.png' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Samson Mnisi</p>
-                                <p><span>Title:</span> The Last One</p>
-                                <p><span>Medium:</span> Mixed Media</p>
-                                <p><span>Size:</span> 185 X 88 cm</p>
-                                <p><span>Year:</span> 2022</p>
-                                <p><span>Price:</span> R240 000</p>
+                                <p><span>Artist:</span> {storeroomArtworks[6].artist}</p>
+                                <p><span>Title:</span> {storeroomArtworks[6].title}</p>
+                                <p><span>Medium:</span> {storeroomArtworks[6].medium}</p>
+                                <p><span>Size:</span>{storeroomArtworks[6].size}</p>
+                                <p><span>Year:</span> {storeroomArtworks[6].year}</p>
+                                <p><span>Price:</span> {storeroomArtworks[6].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[6].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(storeroomArtworks[6])}
+                                    title={likedArtworks.has(storeroomArtworks[6].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(storeroomArtworks[6].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(storeroomArtworks[6].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
                             <Image src='/assets/artworks/Storeroom/ART6.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
                             <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> Ziyanda Majozi</p>
-                                <p><span>Title:</span> Nozimvo</p>
-                                <p><span>Medium:</span> Mosaic</p>
-                                <p><span>Size:</span> 60 X 40 cm</p>
-                                <p><span>Year:</span> 2018</p>
-                                <p><span>Price:</span> R36 000</p>
+                                <p><span>Artist:</span> {storeroomArtworks[7].artist}</p>
+                                <p><span>Title:</span> {storeroomArtworks[7].title}</p>
+                                <p><span>Medium:</span> {storeroomArtworks[7].medium}</p>
+                                <p><span>Size:</span>{storeroomArtworks[7].size}</p>
+                                <p><span>Year:</span> {storeroomArtworks[7].year}</p>
+                                <p><span>Price:</span> {storeroomArtworks[7].price}</p>
                             </div>
                             <div className={styles.btnsContainer}>
-                                <button className={styles.likeBtn}><CiHeart size={24} className={styles.heartIcon} /></button>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[7].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(storeroomArtworks[7])}
+                                    title={likedArtworks.has(storeroomArtworks[7].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(storeroomArtworks[7].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(storeroomArtworks[7].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
