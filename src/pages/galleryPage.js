@@ -1391,7 +1391,7 @@ const GalleryGrid = () => {
 
                 <div className={`${styles.galleryHeader} ${styles.removeMobile}`}>
                     <h3>EXPLORE OUR STOREROOM</h3>
-                    <p>Discover a curated selection of works from our debut group show, “And Just Like That...”, now available for viewing and purchase in the storeroom.</p>
+                    <p>Discover a curated selection of works now available for viewing and purchase in the storeroom.</p>
                 </div>
                 <div ref={bottomSectionRef} className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                     <div className={styles["artwork"]}>

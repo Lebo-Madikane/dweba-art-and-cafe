@@ -1,11 +1,13 @@
 .galleryContainer {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin-top: 80px;
 
     .gallerySection {
-        margin: 20px auto;
+        margin: 10px auto;
         padding: 10px;
+        border: 2px solid #ffffff;
+
 
         .wallHeader {
             display: none;
@@ -27,6 +29,7 @@
 
             @media (max-width: 768px) {
                 display: block;
+                margin: 50px auto;
             }
         }
         
@@ -96,10 +99,10 @@
         }
         
         .carouselSlide {
-            flex: 0 0 calc(100% - 2rem);
-            scroll-snap-align: start;
+            flex: 0 0 calc(94% - 2rem);
+            scroll-snap-align: center;
             padding: 10px;
-        
+            
             .slideContent {
                 display: flex;
                 justify-content: center;
@@ -375,6 +378,8 @@
             .removeMobile {
                 display: none;
             }
+
+            padding: 0px;
         }
     }
 
@@ -414,12 +419,20 @@
                 }
             }
         }
+
+        @media (max-width: 768px) {
+            width: 92%;
+            margin-top: 50px;
+            padding: 10px;
+        }
     }
 
     @media (max-width: 768px) {
         .removeMobile {
             display: none;
         }
+
+        padding: 0px;
     }
 
         .modalOverlay {
