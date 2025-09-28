@@ -35,12 +35,16 @@
     }
 
     .menu-container {
-        padding: 40px;
+        padding: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: #efefef;
+        background-image: url('/assets/cafe/cafeBackgroundImg.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
 
         .menu-category {
             width: 100%;
@@ -56,8 +60,8 @@
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
-            .menu-category-img {
-                flex: 1;
+            .menuCategorImg {
+                flex: 0.5;
                 padding: 5px;
                 background-color: rgb(255, 255, 255, 0.7);
 
@@ -86,9 +90,15 @@
                 }
             }
 
+            .menuCategorImg2 {
+                display: none;
+                flex: 1;
+                border: 2px solid blue;
+            }
+
             .menu-category-detail {
                 padding: 50px;
-                flex: 1;
+                flex: 0.5;
                 background-color: rgb(255, 255, 255, 0.7);
             }
         }
