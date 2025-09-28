@@ -1307,7 +1307,7 @@ const GalleryGrid = () => {
                     {showMoreMidTwo ? "Show Less" : "Show More"}
                 </button>
             </div>
-            <div className={styles.gallerySection}>
+            <div className={`${styles.gallerySection} ${styles.gallerySectionStoreroom}`}>
                 <div className={styles.wallHeader}>
                     <h3>EXPLORE OUR STOREROOM</h3>
                 </div>

@@ -505,4 +505,12 @@
                 opacity: 1;
             }
         }
+
+    .gallerySectionStoreroom {
+        margin-top: 40px;
+
+        @media (max-width: 768px) {
+            margin-top: 0px;
+        }
+    }
 }
