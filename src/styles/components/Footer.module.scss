@@ -64,6 +64,123 @@
 
     }
 
+        .modalOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 0.3s ease;
+        }
+    
+        .newsletterCard {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 450px;
+            width: 90%;
+            position: relative;
+            animation: slideUp 0.3s ease;
+    
+            .closeBtn {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                background: none;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                color: #999;
+    
+                &:hover {
+                    color: #333;
+                }
+            }
+    
+            h3 {
+                margin-bottom: 10px;
+                color: #333;
+                font-size: 1.5rem;
+            }
+    
+            p {
+                margin-bottom: 1.5rem;
+                color: #666;
+                line-height: 1.5;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+    
+            .emailInput {
+                padding: 12px;
+                border: 2px solid #ddd;
+                border-radius: 6px;
+                font-size: 16px;
+    
+                &:focus {
+                    outline: none;
+                    border-color: #000;
+                }
+            }
+    
+            .subscribeBtn {
+                padding: 12px;
+                background: #000;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 16px;
+                cursor: pointer;
+    
+                &:hover {
+                    background: #333;
+                }
+    
+                &:disabled {
+                    background: #ccc;
+                    cursor: not-allowed;
+                }
+            }
+    
+            .successMessage {
+                text-align: center;
+                padding: 20px;
+                color: #28a745;
+                font-weight: 500;
+            }
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+    
+            to {
+                opacity: 1;
+            }
+        }
+    
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+    
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
     @media (max-width: 768px) {
         width: 100%;
         padding: 5px;

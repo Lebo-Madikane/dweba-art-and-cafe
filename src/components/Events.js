@@ -22,7 +22,7 @@ const Events = () => {
                 </div>
             </div>
             <div className={Style["event-two"]}>
-                <h4><span className={Style["event-name"]}>● FIRST THURSDAY : FROM 5PM TILL LATE </span><span className={Style["event-location"]}> ● 167 LONGMARKET ST. CAPE TOWN </span><span className={Style["location-name"]}>● DWEBA ART & CAFE ●</span><span className={Style["event-entry"]}> FREE ENTRANCE  ● </span></h4>
+                <h4><span className={Style["event-name"]}>● FIRST THURSDAY : FROM 5PM TILL LATE ●</span><span className={Style["event-location"]}> ● 167 LONGMARKET ST. CAPE TOWN </span><span className={Style["location-name"]}>● DWEBA ART & CAFE ●</span><span className={Style["event-entry"]}> FREE ENTRANCE  ● </span></h4>
             </div>
             <div className={Style["event-memories"]}>
                 <div className={Style["marquee-track"]}>
