@@ -121,9 +121,22 @@
     @media (max-width: 768px) {
 
         .menu-text-container {
+
             .menu-text-bg {
+
                 .menu-text {
                     width: 90%;
+                    margin: 10% auto;
+
+                    h2 {
+                        width: 80%;
+                        margin: 10px auto;
+                    }
+
+                    h4 {
+                        width: 80%;
+                        margin: 0px auto;
+                    }
                 }
             }
         }
