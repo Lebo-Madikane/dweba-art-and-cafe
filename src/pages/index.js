@@ -16,8 +16,33 @@ const Home = () => {
         <div className='back-ground'>
             <Head>
                 <title>Dweba Art & Café</title>
-                <meta name="description" content="A space for creativity, connection, and coffee." />
+                <meta name="description" content="Dweba Art & Cafe is a contemporary art gallery and cafe in Cape Town, showcasing bold African artists. Visit our exhibitions, enjoy artisan coffee, and explore unique artworks." />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "ArtGallery",
+                            "name": "Dweba Art & Cafe",
+                            "description": "Contemporary art gallery and cafe in Cape Town",
+                            "url": "https://www.dwebaart.com",
+                            "telephone": "+27710517574",
+                            "email": "hello@dwebaart.com",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "addressLocality": "Cape Town",
+                                "addressCountry": "ZA"
+                            },
+                            "openingHoursSpecification": {
+                                "@type": "OpeningHoursSpecification",
+                                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                                "opens": "09:00",
+                                "closes": "17:00"
+                            }
+                        })
+                    }}
+                />
             </Head>
             <Header />
             <section id="home">
