@@ -31,6 +31,7 @@ const Home = () => {
                             "email": "hello@dwebaart.com",
                             "address": {
                                 "@type": "PostalAddress",
+                                "streetAddress": "167 Longmarket Street",
                                 "addressLocality": "Cape Town",
                                 "addressCountry": "ZA"
                             },
@@ -39,7 +40,11 @@ const Home = () => {
                                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                                 "opens": "09:00",
                                 "closes": "17:00"
-                            }
+                            },
+                            "sameAs": [
+                                "https://www.instagram.com/dweba_art_cafe/",
+                                "https://www.tiktok.com/@_dwebaartcpt_"
+                            ]
                         })
                     }}
                 />
