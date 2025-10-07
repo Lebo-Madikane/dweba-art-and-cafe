@@ -480,7 +480,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={`${styles.showMoreArtwork} ${showMore ? styles.active : ""}`}>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[4].src} alt={allArtworks[4].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[4].src} alt={allArtworks[4].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[4].artist}</p>
                                     <p><span>Title:</span> {allArtworks[4].title}</p>
@@ -508,7 +508,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[5].src} alt={allArtworks[5].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[5].src} alt={allArtworks[5].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[5].artist}</p>
                                     <p><span>Title:</span> {allArtworks[5].title}</p>
@@ -536,7 +536,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[6].src} alt={allArtworks[6].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[6].src} alt={allArtworks[6].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[6].artist}</p>
                                     <p><span>Title:</span> {allArtworks[6].title}</p>
@@ -564,7 +564,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[7].src} alt={allArtworks[7].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[7].src} alt={allArtworks[7].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[7].artist}</p>
                                     <p><span>Title:</span> {allArtworks[7].title}</p>
@@ -592,7 +592,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[8].src} alt={allArtworks[8].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[8].src} alt={allArtworks[8].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[8].artist}</p>
                                     <p><span>Title:</span> {allArtworks[8].title}</p>
@@ -620,7 +620,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[9].src} alt={allArtworks[9].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[9].src} alt={allArtworks[9].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[9].artist}</p>
                                     <p><span>Title:</span> {allArtworks[9].title}</p>
@@ -648,7 +648,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[10].src} alt={allArtworks[10].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[10].src} alt={allArtworks[10].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[10].artist}</p>
                                     <p><span>Title:</span> {allArtworks[10].title}</p>
@@ -676,7 +676,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[11].src} alt={allArtworks[11].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[11].src} alt={allArtworks[11].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[11].artist}</p>
                                     <p><span>Title:</span> {allArtworks[11].title}</p>
@@ -704,7 +704,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[12].src} alt={allArtworks[12].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[12].src} alt={allArtworks[12].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[12].artist}</p>
                                     <p><span>Title:</span> {allArtworks[12].title}</p>
@@ -732,7 +732,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[13].src} alt={allArtworks[13].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[13].src} alt={allArtworks[13].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[13].artist}</p>
                                     <p><span>Title:</span> {allArtworks[13].title}</p>
@@ -760,7 +760,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[14].src} alt={allArtworks[14].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[14].src} alt={allArtworks[14].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[14].artist}</p>
                                     <p><span>Title:</span> {allArtworks[14].title}</p>
@@ -788,7 +788,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[15].src} alt={allArtworks[15].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[15].src} alt={allArtworks[15].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[15].artist}</p>
                                     <p><span>Title:</span> {allArtworks[15].title}</p>
@@ -816,7 +816,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[16].src} alt={allArtworks[16].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[16].src} alt={allArtworks[16].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[16].artist}</p>
                                     <p><span>Title:</span> {allArtworks[16].title}</p>
@@ -844,7 +844,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[17].src} alt={allArtworks[17].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[17].src} alt={allArtworks[17].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[17].artist}</p>
                                     <p><span>Title:</span> {allArtworks[17].title}</p>
@@ -872,7 +872,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[18].src} alt={allArtworks[18].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[18].src} alt={allArtworks[18].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[18].artist}</p>
                                     <p><span>Title:</span> {allArtworks[18].title}</p>
@@ -900,7 +900,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={allArtworks[19].src} alt={allArtworks[19].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={allArtworks[19].src} alt={allArtworks[19].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {allArtworks[19].artist}</p>
                                     <p><span>Title:</span> {allArtworks[19].title}</p>
@@ -940,7 +940,7 @@ const GalleryGrid = () => {
                     </div>
                     <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                         <div className={styles["artwork"]}>
-                            <Image src={theReadingMan[0].src} alt={theReadingMan.alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={theReadingMan[0].src} alt={theReadingMan.alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {theReadingMan[0].artist}</p>
                                 <p><span>Title:</span> {theReadingMan[0].title}</p>
@@ -968,7 +968,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src={theReadingMan[1].src} alt={theReadingMan[1].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={theReadingMan[1].src} alt={theReadingMan[1].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {theReadingMan[1].artist}</p>
                                 <p><span>Title:</span> {theReadingMan[1].title}</p>
@@ -996,7 +996,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src={theReadingMan[2].src} alt={theReadingMan[2].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={theReadingMan[2].src} alt={theReadingMan[2].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {theReadingMan[2].artist}</p>
                                 <p><span>Title:</span> {theReadingMan[2].title}</p>
@@ -1024,7 +1024,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src={theReadingMan[3].src} alt={theReadingMan[3].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={theReadingMan[3].src} alt={theReadingMan[3].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {theReadingMan[3].artist}</p>
                                 <p><span>Title:</span> {theReadingMan[3].title}</p>
@@ -1083,7 +1083,7 @@ const GalleryGrid = () => {
                     </div>
                     <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                         <div className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[0].src} alt={goldenKingsCode[0].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[0].src} alt={goldenKingsCode[0].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[0].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[0].title}</p>
@@ -1111,7 +1111,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[1].src} alt={goldenKingsCode[1].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[1].src} alt={goldenKingsCode[1].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[1].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[1].title}</p>
@@ -1139,7 +1139,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[2].src} alt={goldenKingsCode[2].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[2].src} alt={goldenKingsCode[2].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[2].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[2].title}</p>
@@ -1167,7 +1167,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div ref={midTwoSectionRef} className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[3].src} alt={goldenKingsCode[3].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                            <Image src={goldenKingsCode[3].src} alt={goldenKingsCode[3].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[3].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[3].title}</p>
@@ -1196,7 +1196,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={`${styles.showMoreArtwork} ${showMoreMidTwo ? styles.active : ""}`}>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[4].src} alt={goldenKingsCode[4].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={goldenKingsCode[4].src} alt={goldenKingsCode[4].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[4].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[4].title}</p>
@@ -1224,7 +1224,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[5].src} alt={goldenKingsCode[5].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={goldenKingsCode[5].src} alt={goldenKingsCode[5].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[5].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[5].title}</p>
@@ -1252,7 +1252,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[6].src} alt={goldenKingsCode[6].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={goldenKingsCode[6].src} alt={goldenKingsCode[6].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[6].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[6].title}</p>
@@ -1280,7 +1280,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[7].src} alt={goldenKingsCode[7].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" priority />
+                                <Image src={goldenKingsCode[7].src} alt={goldenKingsCode[7].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[7].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[7].title}</p>
@@ -1324,14 +1324,14 @@ const GalleryGrid = () => {
                             <div className={styles.wallGrid}>
                                 {allArtworks.slice(0, 3).map((artwork, index) => (
                                     <div key={index} className={styles.artwork}>
-                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} placeholder="empty" priority />
+                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} placeholder="empty" loading="lazy" />
                                     </div>
                                 ))}
                             </div>
                             <div className={styles.wallGrid}>
                                 {allArtworks.slice(3, 6).map((artwork, index) => (
                                     <div key={index} className={styles.artwork}>
-                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} placeholder="empty" priority />
+                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={styles.untitledIndlela} placeholder="empty" loading="lazy" />
                                     </div>
                                 ))}
                             </div>
@@ -1348,7 +1348,7 @@ const GalleryGrid = () => {
                                             <div className={styles.slideContent}>
                                                 {slideArtworks.map((artwork, artIndex) => (
                                                     <div key={artIndex} className={styles.artworkCard}>
-                                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={styles.artworkImage} placeholder="empty" priority />
+                                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={200} className={styles.artworkImage} placeholder="empty" loading="lazy" />
                                                         <div className={styles["carousel-artwork-details"]}>
                                                             <p><span>Artist:</span> {artwork.artist}</p>
                                                             <p><span>Title:</span> {artwork.title}</p>
@@ -1401,7 +1401,7 @@ const GalleryGrid = () => {
                     </div>
                     <div ref={bottomSectionRef} className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART17.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                            <Image src='/assets/artworks/Storeroom/ART17.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {storeroomArtworks[0].artist}</p>
                                 <p><span>Title:</span> {storeroomArtworks[0].title}</p>
@@ -1429,7 +1429,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART14.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                            <Image src='/assets/artworks/Storeroom/ART14.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {storeroomArtworks[1].artist}</p>
                                 <p><span>Title:</span> {storeroomArtworks[1].title}</p>
@@ -1457,7 +1457,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART4.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                            <Image src='/assets/artworks/Storeroom/ART4.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {storeroomArtworks[2].artist}</p>
                                 <p><span>Title:</span> {storeroomArtworks[2].title}</p>
@@ -1485,7 +1485,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART16.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                            <Image src='/assets/artworks/Storeroom/ART16.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {storeroomArtworks[3].artist}</p>
                                 <p><span>Title:</span> {storeroomArtworks[3].title}</p>
@@ -1515,7 +1515,7 @@ const GalleryGrid = () => {
                         <div className={`${styles.showMoreArtwork} ${showMoreBottom ? styles.active : ""
                             }`}>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART10.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                                <Image src='/assets/artworks/Storeroom/ART10.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {storeroomArtworks[4].artist}</p>
                                     <p><span>Title:</span> {storeroomArtworks[4].title}</p>
@@ -1543,7 +1543,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                                <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {storeroomArtworks[5].artist}</p>
                                     <p><span>Title:</span> {storeroomArtworks[5].title}</p>
@@ -1571,7 +1571,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART13.png' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                                <Image src='/assets/artworks/Storeroom/ART13.png' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {storeroomArtworks[6].artist}</p>
                                     <p><span>Title:</span> {storeroomArtworks[6].title}</p>
@@ -1599,7 +1599,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART6.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" priority />
+                                <Image src='/assets/artworks/Storeroom/ART6.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {storeroomArtworks[7].artist}</p>
                                     <p><span>Title:</span> {storeroomArtworks[7].title}</p>
