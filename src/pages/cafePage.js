@@ -23,7 +23,7 @@ const MenuItems = () => (
             <div id='menu-container' className={Styles['menu-container']}>
                 <div id='breakfast' className={Styles['menu-category']}>
                     <div className={`${Styles.menuCategorImg}`}>
-                        <Image src="/assets//cafe/Breakfeast3.jpg" alt='breakfast image' width={150} height={150} className={Styles['breakfastImg']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/breakfast.webp" alt='breakfast image' width={150} height={150} className={Styles['breakfastImg']} placeholder="empty" priority />
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Breakfast</h3>
@@ -54,12 +54,12 @@ const MenuItems = () => (
                         </ul>
                     </div>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/Croissant.jpg" alt='croissaints image' width={150} height={150} className={Styles['croissaintImg']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/croissant.webp" alt='croissaints image' width={150} height={150} className={Styles['croissaintImg']} placeholder="empty" loading="lazy" />
                     </div>
                 </div>
                 <div id='salads' className={Styles['menu-category']}>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/Salad1.jpg" alt='salad image' width={150} height={150} className={Styles['saladsImg']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/salad.webp" alt='salad image' width={150} height={150} className={Styles['saladsImg']} placeholder="empty" loading="lazy" />
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Salads</h3>
@@ -87,12 +87,12 @@ const MenuItems = () => (
                         </ul>
                     </div>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/Burger2.jpg" alt='burger image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/burger.webp" alt='burger image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" loading="lazy" />
                     </div>
                 </div>
                 <div id='extras' className={Styles['menu-category']}>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/Extra1.jpg" alt='burger image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/extra.webp" alt='burger image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" loading="lazy" />
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Extras</h3>
@@ -140,12 +140,12 @@ const MenuItems = () => (
                         </ul>
                     </div>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/juice1.webp" alt='juice image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/juice.webp" alt='juice image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" loading="lazy" />
                     </div>
                 </div>
                 <div id='cold-drinks' className={Styles['menu-category']}>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/coldDrink.webp" alt='cold drinks image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/coldDrink.webp" alt='cold drinks image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" loading="lazy" />
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Cold Drinks</h3>
@@ -187,12 +187,12 @@ const MenuItems = () => (
                         </ul>
                     </div>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/Coffee1.jpg" alt='coffee image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/coffee.webp" alt='coffee image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" loading="lazy" />
                     </div>
                 </div>
                 <div id='mocktails' className={Styles['menu-category']}>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/Mocktail.jpg" alt='mocktail image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/mocktail.webp" alt='mocktail image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" loading="lazy" />
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Mocktails</h3>
@@ -219,7 +219,7 @@ const MenuItems = () => (
                         </ul>
                     </div>
                     <div className={Styles["menuCategorImg"]}>
-                        <Image src="/assets/cafe/Smoothy1.jpg" alt='Smoothy image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" priority />
+                        <Image src="/assets/cafe/smoothie.webp" alt='Smoothy image' width={150} height={150} className={Styles['menuImgs']} placeholder="empty" loading="lazy" />
                     </div>
                 </div>
             </div>
