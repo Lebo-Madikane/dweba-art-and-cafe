@@ -29,7 +29,7 @@ const EventsContent = () => (
                                 <button className={styles["purchase-btn"]} target="_blank"><Link href="https://www.quicket.co.za/events/332310-emandulo-the-silent-sonic-experience/#/" target='blank'>Buy Ticket</Link></button>
                             </div>
                             <div className={styles["events1img"]}>
-                                <Image src='/assets/eventsPageImgs/eventPostponed.webp' alt="EventOne Img" width={400} height={500} className={styles["eventOneImg"]} placeholder="empty" priority />
+                                <Image src='/assets/eventsPageImgs/emandulo.webp' alt="EventOne Img" width={400} height={500} className={styles["eventOneImg"]} placeholder="empty" priority />
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const EventsContent = () => (
                         <div className={styles["events2Contents"]}>
                             <div className={styles["events2container"]}>
                                 <div className={styles["events2img"]}>
-                                    <Image src='/assets/eventsPageImgs/Ziyanda-M.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
+                                    <Image src='/assets/eventsPageImgs/Ziyanda-M.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
                                 </div>
                                 <div className={styles["events2details"]}>
                                     <h4>Resident Artist: Ziyanda Majozi</h4>
@@ -59,7 +59,7 @@ const EventsContent = () => (
                                 <p>A night to soften. A moment to be seen. A place to be filled.</p>
                             </div>
                             <div className={styles["events3img"]}>
-                                <Image src='/assets/eventsPageImgs/echibini.jpeg' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} placeholder="empty" priority />
+                                <Image src='/assets/eventsPageImgs/echibini.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} placeholder="empty" priority />
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ const EventsContent = () => (
                         <div className={styles["events2Contents"]}>
                             <div className={styles["events2container"]}>
                                 <div className={styles["events2img"]}>
-                                    <Image src='/assets/firstThursdayPoster.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
+                                    <Image src='/assets/eventsPageImgs/firstThursday.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
                                 </div>
                                 <div className={styles["events2details"]}>
                                     <h4>First Thursday: From 5PM till late</h4>
@@ -90,7 +90,7 @@ const EventsContent = () => (
                                 <p>An evening of art, conversation, and culture. This marked Refiloe’s first solo showcase since joining the Dweba studio.</p>
                             </div>
                             <div className={styles["events3img"]}>
-                                <Image src='/assets/eventsPageImgs/R-Mnisi-Solo-Poster.png' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} placeholder="empty" priority />
+                                <Image src='/assets/eventsPageImgs/R-Mnisi-Solo-Poster.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} placeholder="empty" priority />
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ const EventsContent = () => (
                         <div className={styles["events2Contents"]}>
                             <div className={styles["events2container"]}>
                                 <div className={styles["events2img"]}>
-                                    <Image src='/assets/eventsPageImgs/Sunday-Jazz.png' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
+                                    <Image src='/assets/eventsPageImgs/Sunday-Jazz.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
                                 </div>
                                 <div className={styles["events2details"]}>
                                     <h4>WEEKEND LAUNCH – DAY 3: JAZZ SUNDAY</h4>
@@ -119,7 +119,7 @@ const EventsContent = () => (
                                 <p>167 Longmarket Street, Cape Town. South Africa.</p>
                             </div>
                             <div className={styles["events3img"]}>
-                                <Image src='/assets/eventsPageImgs/Launch-Poster.png' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} placeholder="empty" priority />
+                                <Image src='/assets/eventsPageImgs/Launch-Poster.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventThreeImg"]} placeholder="empty" priority />
                             </div>
                         </div>
                     </div>
