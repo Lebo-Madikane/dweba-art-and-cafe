@@ -8,11 +8,12 @@
 
 
     .hero-img {
-        width: 100%;
+        width: 65%;
         height: 90%;
         margin-top: 84px;
         overflow: hidden;
-        position: relative;
+        position: absolute;
+        left: -2;
 
         img {
             width: 100%;
@@ -25,22 +26,22 @@
         
 
     .hero-text {
-        width: 50%;
+        width: 36%;
         height: fit-content;
         padding: 3px;
-        position: relative;
-        margin: 200px 0;
-        right: 70 !important;
-        z-index: 2;
+        position: absolute;
+        margin: 15rem 0px;
+        right: 70px;
+        z-index: 1;
 
 
         h1 {
-            font-size: 2em;
+            font-size: 1.9em;
             overflow: hidden;
         }
 
         p {
-            font-size: 1.05em;
+            font-size: 1.01em;
         }
 
         .hero-cta {
