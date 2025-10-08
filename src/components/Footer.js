@@ -20,22 +20,33 @@ const Footer = () => {
         setIsSubmitting(true);
 
         try {
-            // Send to your email service
-            const response = await fetch('/api/newsletter/subscribe', {
+            // Your Google Apps Script Web App URL
+            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzdyEnDJhJVdVqcTyujUNT7zx-728Fdo1dBj3OeubFvaqPfzioEDSXAQlwHjLcyS1lu/exec';
+
+            // Create FormData
+            const formData = new FormData();
+            formData.append('email', email);
+            formData.append('source', 'Website Footer');
+            formData.append('timestamp', new Date().toISOString());
+
+            // Submit directly to Google Sheets
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email })
+                body: formData,
+                mode: 'no-cors' // Required for Google Apps Script
             });
 
-            if (response.ok) {
-                setSubmitMessage('Thank you! You\'ve been subscribed to our newsletter.');
-                setEmail('');
-                // Auto-close after 2 seconds
-                setTimeout(() => setShowNewsletterModal(false), 2000);
-            } else {
-                setSubmitMessage('Something went wrong. Please try again.');
-            }
+            // Note: With no-cors, we can't read the response
+            // So we assume success if no error is thrown
+            setSubmitMessage('Thank you! You\'ve been subscribed to our newsletter.');
+            setEmail('');
+            setTimeout(() => {
+                setShowNewsletterModal(false);
+                setSubmitMessage('');
+            }, 2000);
+
         } catch (error) {
+            console.error('Subscription error:', error);
             setSubmitMessage('Please check your connection and try again.');
         }
 
