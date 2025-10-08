@@ -13,13 +13,19 @@
         margin-top: 84px;
         overflow: hidden;
         position: absolute;
+        top: 0;
         left: -2;
+        border: 2px solid red;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: -2;
+            border: 2px solid yellow;
         }
 
     }
