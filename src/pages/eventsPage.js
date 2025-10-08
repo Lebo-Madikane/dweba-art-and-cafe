@@ -23,9 +23,9 @@ const EventsContent = () => (
                         <div className={styles["events1Contents"]}>
                             <div className={styles["events1details"]}>
                                 <h4>Emandulo: The Silent Sonic Experience</h4>
-                                <p>Join us on the 31st of October for a truly unique celebration of sound, culture, and movement at Emandulo: The Silent Sonic Experience — a one-of-a-kind silent disco set in the heart of Dweba Art & Café.</p>
+                                <p>Join us on the 31st of October for a truly unique celebration of sound, culture, and movement at Emandulo: The Silent Sonic Experience, a one-of-a-kind silent disco set in the heart of Dweba Art & Café.</p>
                                 <p>In honour of Heritage Day, we invite you to journey through South Africa's rich and rhythmic history with live jazz music performed by Zintle 'NeAhtyah' Mbuyazwe and her band, along with Simanye Gxobole as our special guest.</p>
-                                <p>This immersive experience also includes a taste of traditional South African cuisine, to nourish your body after the music has fed your soul — this will be included in your ticket.</p>
+                                <p>This immersive experience also includes a taste of traditional South African cuisine, to nourish your body after the music has fed your soul, this will be included in your ticket.</p>
                                 <button className={styles["purchase-btn"]} target="_blank"><Link href="https://www.quicket.co.za/events/332310-emandulo-the-silent-sonic-experience/#/" target='blank'>Buy Ticket</Link></button>
                             </div>
                             <div className={styles["events1img"]}>
@@ -43,18 +43,18 @@ const EventsContent = () => (
                                 <div className={styles["events2details"]}>
                                     <h4>Resident Artist: Ziyanda Majozi</h4>
                                     <p>Dweba Art & Cafe proudly welcomes Ziyanda Majozi as our current Resident Artist.</p>
-                                    <p>Known for her layered visual storytelling, Ziyanda’s work explores memory, heritage, and identity- transforming everyday narratives into powerful art.</p>
+                                    <p>Known for her layered visual storytelling, Ziyanda’s work explores memory, heritage, and identity - transforming everyday narratives into powerful art.</p>
                                     <p>Experience her journey with us this season.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className={styles["events3"]}>
-                        <h3>ECHIBINI: Women of the well (with Qaqamba Ntshinka & Chosi)</h3>
+                        <h3>ECHIBINI: Women of the well</h3>
                         <div className={styles["events3Contents"]}>
                             <div className={styles["events3details"]}>
                                 <h4>"Wherever the river flows, everything will live."</h4>
-                                <p>ECHIBINI is an intimate evening of healing, restoration, and soulful connection . A return to the well, where truth is revealed, burdens are released, and life begins again.</p>
+                                <p>ECHIBINI is an intimate evening of healing, restoration, and soulful connection with Qaqamba Ntshinka & Chosi. A return to the well, where truth is revealed, burdens are released, and life begins again.</p>
                                 <p>Inspired by the resilience and quiet strength of women, this gathering creates space for stories, reflection, music, and presence. It is a gentle invitation to come as you are and leave lighter, nourished, and renewed</p>
                                 <p>A night to soften. A moment to be seen. A place to be filled.</p>
                             </div>
@@ -103,7 +103,7 @@ const EventsContent = () => (
                                 </div>
                                 <div className={styles["events2details"]}>
                                     <h4>WEEKEND LAUNCH – DAY 3: JAZZ SUNDAY</h4>
-                                    <p>The perfect way to close off an incredible launch weekend—smooth jazz, soulful melodies, and an intimate gathering of art and music lovers.</p>
+                                    <p>The perfect way to close off an incredible launch weekend, smooth jazz, soulful melodies, and an intimate gathering of art and music lovers.</p>
                                     <p>Qaqamba Ntshinka took center stage, bringing the house down with a breathtaking performance that left us in awe.</p>
                                     <p>This was just the beginning… because we have a special announcement coming soon! 👀🔥</p>
                                 </div>
