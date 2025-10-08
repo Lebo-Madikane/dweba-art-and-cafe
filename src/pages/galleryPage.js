@@ -132,7 +132,7 @@ const GalleryGrid = () => {
         { src: '/assets/artworks/Storeroom/ART4.webp', alt: 'The Storeroom Artwork', artist: 'Cheryl Traub Adler', title: 'Chimera II', medium: 'Monotype and paint', size: '62 X 82 cm', year: '2025', price: 'R24 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART16.webp', alt: 'The Storeroom Artwork', artist: 'Cheryl Traub Adler', title: 'Chimera III', medium: 'Monotype and paint', size: '62 X 82 cm', year: '2025', price: 'R24 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART10.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'Abstract I', medium: 'Mixed Media', size: '55 X 100 cm', year: '2022', price: 'R150 000 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART13.png', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'The Last One', medium: 'Mixed Media', size: '185 X 88 cm', year: '2022', price: 'R240 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART13.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'The Last One', medium: 'Mixed Media', size: '185 X 88 cm', year: '2022', price: 'R240 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART2.webp', alt: 'The Storeroom Artwork', artist: 'Funeka Shuping', title: 'Untitled (Bee Series)', medium: 'Mixed Media', size: '141 X 102 cm', year: '2024', price: 'R28 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork', artist: 'Ziyanda Majozi', title: 'Nozimvo', medium: 'Mosaic', size: '60 X 40 cm', year: '2018', price: 'R36 000 ex VAT' },
     ];
@@ -1543,7 +1543,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                                <Image src='/assets/artworks/Storeroom/ART13.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {storeroomArtworks[5].artist}</p>
                                     <p><span>Title:</span> {storeroomArtworks[5].title}</p>
@@ -1571,7 +1571,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART13.png' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                                <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {storeroomArtworks[6].artist}</p>
                                     <p><span>Title:</span> {storeroomArtworks[6].title}</p>
