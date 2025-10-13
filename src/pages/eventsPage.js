@@ -69,7 +69,7 @@ const EventsContent = () => (
                         <div className={styles["events2Contents"]}>
                             <div className={styles["events2container"]}>
                                 <div className={styles["events2img"]}>
-                                    <Image src='/assets/eventsPageImgs/firstThursday.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
+                                    <Image src='/assets/eventsPageImgs/FirstFriday.webp' alt="EventTwo Img" width={400} height={500} className={styles["eventTwoImg"]} placeholder="empty" priority />
                                 </div>
                                 <div className={styles["events2details"]}>
                                     <h4>First Thursday: From 5PM till late</h4>
