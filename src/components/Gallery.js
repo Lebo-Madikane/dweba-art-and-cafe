@@ -27,11 +27,11 @@ const Gallery = () => {
     // All artworks
     const allArtworks = [
         { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.webp', alt: 'The-Reading-Man-I' },
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/Brothers-Embrace.webp', alt: 'Brothers-Embrace' },
+        { src: '/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIV.webp', alt: 'Brothers-Embrace' },
         { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp', alt: 'The-Reading-Man-II' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp', alt: 'THE-INFI' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp', alt: 'King-Yankuru' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/THENITUS.webp', alt: 'Golden-King' }
+        { src: '/assets/artworks/Downstairs/PatrickHolo/One.webp', alt: 'THE-INFI' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Two.webp', alt: 'King-Yankuru' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Three.webp', alt: 'Golden-King' }
     ];
 
     // Build slides (1 per slide in your current code)
@@ -109,18 +109,18 @@ const Gallery = () => {
                 <div className={Style["walls"]}>
                     <div className={Style["wall-header"]}>
                         <h3>UPSTAIRS - SHOWING:</h3>
-                        <h4>Why We Need Mothers</h4>
-                        <p>Group Exhibition</p>
+                        <h4>Dawn of Dreams: <span>Grace London</span></h4>
+                        <p>New Collection: Group Exhibition</p>
                     </div>
                     <div className={Style["wall-grid"]}>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/observingPresence.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
+                            <Image src='/assets/artworks/newCollectionNov25/DawnOfDreams/One.webp' alt='Untitled Indlela 1' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/beauties2.webp' alt='Untitled Indlela 2' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
+                            <Image src='/assets/artworks/newCollectionNov25/DawnOfDreams/Two.webp' alt='Untitled Indlela 2' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                         </div>
                         <div className={Style["artwork"]}>
-                            <Image src='/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp' alt='Untitled Indlela 3' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
+                            <Image src='/assets/artworks/newCollectionNov25/DawnOfDreams/Three.webp' alt='Untitled Indlela 3' width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ const Gallery = () => {
                     <div className={Style["wall-header"]}>
                         <h3>DOWNSTAIRS - SHOWING:</h3>
                         <h4>The Reading Man: <span>Julius Badatu</span></h4>
-                        <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
+                        <h4>linocuts: <span>Patrick Holo</span></h4>
                     </div>
 
                     {/* DESKTOP */}
@@ -144,8 +144,8 @@ const Gallery = () => {
                             </div>
                             <div className={Style["wall-grid"]}>
                                 {allArtworks.slice(3, 6).map((artwork, index) => (
-                                    <div key={index} className={Style["artwork"]}>
-                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={Style.untitledIndlela} placeholder="empty" priority />
+                                    <div key={index} className={Style["artworks"]}>
+                                        <Image src={artwork.src} alt={artwork.alt} width={150} height={150} className={Style.linocuts} placeholder="empty" priority />
                                     </div>
                                 ))}
                             </div>

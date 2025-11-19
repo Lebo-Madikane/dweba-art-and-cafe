@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className={Style["hero-section"]}>
             <div className={Style["hero-img"]}>
-                <Image src='/assets/hero/hero-img-readingMan1.webp' alt="logo" width={150} height={50} placeholder="empty" priority />
+                <Image src='/assets/hero/heroImgOne.svg' alt="Desktop Hero Image" width={150} height={50} placeholder="empty" priority />
             </div>
             <div className={Style["hero-text"]}>
                 <h1>Art Meets<br/>Community & Coffee</h1>
@@ -35,7 +35,7 @@ const Hero = () => {
                     </Link>
                 </div>
                 <div className={Style.mobileHeroImg}>
-                    <Image src='/assets/mobileHeroImg.svg' alt="logo" width={150} height={50} placeholder="empty" priority />
+                    <Image src='/assets/hero/heroImgMobileOne.svg' alt="logo" width={150} height={50} placeholder="empty" priority />
                 </div>
             </div>
         </div>

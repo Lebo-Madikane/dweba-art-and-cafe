@@ -91,7 +91,7 @@ const Form = () => {
         <div className={Style["form"]}>
             <form className={Style["art-collector-form"]} onSubmit={handleSubmit}>
                 <h4>Contact Us</h4>
-                <p>You're an artist looking for space? Or an art collector? Contact us.</p>
+                <p>We'd love to hear from you..</p>
 
                 {submitStatus === 'success' && (
                     <div className={Style["success-message"]} style={{ color: 'green', marginBottom: '1rem' }}>

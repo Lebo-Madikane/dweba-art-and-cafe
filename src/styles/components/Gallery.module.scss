@@ -60,12 +60,25 @@
 
                 .artwork {
                     width: 300px;
-                    height: 360px;
+                    height: 390px;
+                    object-fit: cover;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
                     .untitledIndlela {
                         width: 100%;
                         height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .artworks {
+                    width: 300px;
+                    object-fit: cover;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+                    .linocuts {
+                        width: 100%;
+                        height: fit-content;
                         object-fit: cover;
                     }
                 }
@@ -121,7 +134,7 @@
                         width: 100%;
 
                         .artworkImage {
-                            width: 100%;
+                            width: fit-content;
                             height: 390px;
                             object-fit: cover;
                             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);

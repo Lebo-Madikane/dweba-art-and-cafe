@@ -10,12 +10,12 @@ const Events = () => {
             <div className={Style["event-one"]}>
                 <div className={Style["marquee-track"]}>
                     <h4>
-                        <span className={Style["event-name"]}> WHY WE NEED MOTHERS: GROUP EXHIBITION</span> ● NOW SHOWING ●
+                        <span className={Style["event-name"]}> GROUP EXHIBITION</span> ● NOW SHOWING ●
                         <span className={Style["event-location"]}> 167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE 
                         {/*<span className={Style["event-entry"]}>FREE ENTRANCE</span>*/} ●
                     </h4>
                     <h4>
-                        <span className={Style["event-name"]}>WHY WE NEED MOTHERS: GROUP EXHIBITION</span> ● NOW SHOWING ●
+                        <span className={Style["event-name"]}>NEW COLLECTION: GROUP EXHIBITION</span> ● NOW SHOWING ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE 
                         {/*<span className={Style["event-entry"]}>FREE ENTRANCE</span>*/}
                     </h4>
@@ -84,14 +84,14 @@ const Events = () => {
             <div className={Style["event-four"]}>
                 <div className={Style["marquee-track"]}>
                     <h4>
-                        <span className={Style["event-name"]}> Emandulo: The Silent Sonic Experience </span> ● 31 OCT 2025 ●
+                        <span className={Style["event-name"]}> STAY UPDATED </span> ● SIGN-UP TO OUR NEWSLETTER ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
-                        <span className={Style["event-entry"]}> R450 </span> ●
+                        {/*<span className={Style["event-entry"]}> R450 </span> ●*/}
                     </h4>
                     <h4>
-                        <span className={Style["event-name"]}> Emandulo: The Silent Sonic Experience </span> ● 31 OCT 2025 ●
+                        <span className={Style["event-name"]}> STAY UPDATED </span> ● SIGN-UP TO OUR NEWSLETTER ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
-                        <span className={Style["event-entry"]}> R450 </span> ●
+                        {/*<span className={Style["event-entry"]}> R450 </span> ●*/}
                     </h4>
                 </div>
             </div>

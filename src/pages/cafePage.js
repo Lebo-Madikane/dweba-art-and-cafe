@@ -14,7 +14,7 @@ const MenuItems = () => (
             <div id='menu-text' className={Styles['menu-text-container']} >
                 <div className={Styles['menu-text-bg']}>
                     <div id='menu-text' className={Styles['menu-text']} >
-                        <h2>Savour Artistry in Every Sip</h2>
+                        <h2>Savour Artistry</h2>
                         <p>At Dweba Art & Café, Immerse yourself in a harmonious blend of rich coffee flavours and captivating local artistry. Whether you're seeking inspiration, connection, or a tranquil workspace, our café offers the perfect setting to savour creativity.</p>
                         <h4>Experience the harmony of taste and art.</h4>
                     </div>
@@ -98,6 +98,7 @@ const MenuItems = () => (
                         <h3>Extras</h3>
                         <hr />
                         <ul>
+                            <li>Cake Slice - <span>R55</span></li>
                             <li>Egg - <span>R25</span></li>
                             <li>Brie - <span>R25</span></li>
                             <li>Beacon - <span>R25</span></li>
