@@ -103,25 +103,29 @@ const GalleryGrid = () => {
 
     // All artworks
     const allArtworks = [
-        { src: '/assets/artworks/whyWeNeedMothers/throughRoseGlasses.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Through Rose Glasses', medium: 'Oil paint on canvas', size: '92 x 92 cm', year: '2025', price: 'R40 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/rose.webp', alt: 'Exhibition Artwork', artist: 'Nelson Okoh', title: 'The Rose', medium: 'Oil on canvas', size: '120 x 90 cm', year: '20219', price: 'R95 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/smilesAreFree.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Smiles Are Free', medium: 'Oil paint on canvas', size: '100 x 130 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/observingPresence.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Observing Presences', medium: 'Oil paint on canvas', size: '130 x 90 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/beauties1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 1', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/beauties2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 2', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Gaze', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Mind', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/theGrandCannon.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'The Grand Canyon', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/fearOverFaith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'Devine Breakthrough', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'F A I TH', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp', alt: 'Exhibition Artwork', artist: 'Luyanda Mkhuthungu', title: 'Umhambi Wendlela', medium: 'Mixed Media', size: '73 x 97 cm', year: '2025', price: 'R25 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/theKingsKingdom.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'The Kings Kingdom', medium: 'Acrylic and oil paint', size: '170 x 110 cm', year: '2020', price: 'R74 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/One.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Awakening', medium: 'Mash wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Two.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Chasing Horizons', medium: 'Mesh wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Three.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Rising Light', medium: 'Mesh wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Four.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Becoming Light | ..', medium: 'Mash wire, plaster on canvas', size: '20 x 26 cm, 2kg', year: '2023', price: 'R8 000each ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/MongeziGum0ne.webp', alt: 'Exhibition Artwork', artist: 'Mongezi Gum', title: 'Wedding Girl with Pearls', medium: 'Oil on board', size: '80 x 122 cm', year: '1999', price: 'R143 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/MongeziGumTwo.webp', alt: 'Exhibition Artwork', artist: 'Mongezi Gum', title: 'Women Dancing', medium: 'Mixed Midea', size: '85 x 114 cm', year: '2004', price: 'R165 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/JackMulele.webp', alt: 'Exhibition Artwork', artist: 'Jack Mulele', title: 'Composition', medium: 'Acrylic on canvas', size: '90 x 90 cm', year: '2006', price: 'R45 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/ItaiVangani.webp', alt: 'Exhibition Artwork', artist: 'Itai Vangani', title: 'Girl with Lost Goat', medium: 'Acrylic on canvas', size: '70 x 55 cm', year: '2024', price: 'R18 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/KhanyaMehloOne.webp', alt: 'Exhibition Artwork', artist: 'Khanya Mehlo', title: 'Untitled', medium: 'Mixed Media', size: '114 x 89 cm', year: '2023', price: 'R19 500 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/KhanyaMehloTwo.webp', alt: 'Exhibition Artwork', artist: 'Khanya Mehlo', title: 'Untitled', medium: 'Mixed Media', size: '92 x 65 cm', year: '2023', price: 'R18 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/messiahsDonkey.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'Messiah`s Donkey', medium: 'Acrylic and oil paint', size: '93 x 64 cm', year: '2021', price: 'R42 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/tbc.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'TBC', medium: 'Acrylic and oil paint', size: '54 x 78 cm', year: '2025', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/observingPresence.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Observing Presences', medium: 'Oil paint on canvas', size: '130 x 90 cm', year: '2025', price: 'R60 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/rose.webp', alt: 'Exhibition Artwork', artist: 'Nelson Okoh', title: 'The Rose', medium: 'Oil on canvas', size: '120 x 90 cm', year: '20219', price: 'R95 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Gaze', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Mind', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/beauties1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 1', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/beauties2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 2', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp', alt: 'Exhibition Artwork', artist: 'Luyanda Mkhuthungu', title: 'Umhambi Wendlela', medium: 'Mixed Media', size: '73 x 97 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'F A I TH', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 1', medium: 'Oil on canvas', size: '120 x 120 cm', year: '2023', price: 'R23 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 2', medium: 'Oil on canvas', size: '120 x 125 cm', year: '2023', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract3.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 3', medium: 'Oil on canvas', size: '152 x 122 cm', year: '2023', price: 'R23 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
         { src: 'assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
     ];
 
@@ -147,14 +151,14 @@ const GalleryGrid = () => {
 
     // Golden Kings Code artworks
     const goldenKingsCode = [
-        { src: '/assets/artworks/Downstairs/KevinWurffel/LHASTRA.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'LHASTRA', medium: 'Mixed Media', size: '64 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/LHUNAH.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'LHUNAH', medium: 'Mixed Media', size: '64 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/THE-INFI.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'THE INFI', medium: 'Mixed Media', size: '70 X 60 cm', year: '2012', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/THENITUS.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'THE NITUS', medium: 'Mixed Media', size: '70 X 60 cm', year: '2012', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/King-Lukeni-lua-Nimi.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'King Lukeni lua Nimi', medium: 'Mixed Media', size: '45 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/KingMansaMusa.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'King Mansa Musa', medium: 'Mixed Media', size: '111 X 89 cm', year: '2012', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/King-Yankuru.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'King Yankuru', medium: 'Mixed Media', size: '55 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/KevinWurffel/Golden-King.webp', alt: 'Golden Kings Code', artist: 'Kevin Wurffel', title: 'Golden King', medium: 'Mixed Media', size: '60.6 X 45 cm', year: '2012', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/One.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Jam Session', medium: 'Linocut', size: '48 X 64 cm', year: '2010', price: 'R12 500 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Two.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Mandela in TV', medium: 'Linocut', size: '48 X 64 cm', year: '2010', price: 'R12 500 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Three.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Market Place', medium: 'Linocut', size: '48 X 64 cm', year: '2010', price: 'R12 500 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Five.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Events from 1976 in S.A', medium: 'Linocut', size: '48 X 64 cm', year: '2010', price: 'R12 500 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Four.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Music is Love', medium: 'Linocut', size: '49 X 57 cm', year: '2004', price: 'R12 500 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Six.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Last Supper', medium: 'Linocut', size: '48 X 64 cm', year: '2010', price: 'R12 500 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Seven.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'The Quartet', medium: 'Linocut', size: '60 X 43 cm', year: '2004', price: 'R12 500 ex VAT' },
+        { src: '/assets/artworks/Downstairs/PatrickHolo/Eight.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Even the birds can sing', medium: 'Linocut', size: '59 X 69 cm', year: '2010', price: 'R12 500 ex VAT' },
     ];
 
     // Build slides (1 per slide in your current code)
@@ -289,8 +293,8 @@ const GalleryGrid = () => {
             <div className={styles.galleryContainer}>
                 <div ref={topSectionRef} className={styles.gallerySection}>
                     <div className={styles.wallHeader}>
-                        <h3>Why We Need Mothers</h3>
-                        <h4>Group Exhibition</h4>
+                        {/*<h3>Why We Need Mothers</h3>*/}
+                        <h4>New Collection: Group Exhibition</h4>
                         <p>Now Showing</p>
                     </div>
 
@@ -361,8 +365,8 @@ const GalleryGrid = () => {
                     )}
 
                     <div className={`${styles.galleryHeader} ${styles.removeMobile}`}>
-                        <h3>Why We Need Mothers</h3>
-                        <h4>Group Exhibition</h4>
+                        {/*<h3>Why We Need Mothers</h3>*/}
+                        <h4>New Collection: Group Exhibition</h4>
                         <p>Now Showing</p>
                     </div>
                     <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
@@ -1079,11 +1083,11 @@ const GalleryGrid = () => {
                 */}
                     <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
                         <h3>Now Showing</h3>
-                        <h4>Golden Kings Code: <span>Kevin Wurffel</span></h4>
+                        <h4>Linocut-edition: <span>Patrick Holo</span></h4>
                     </div>
                     <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                         <div className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[0].src} alt={goldenKingsCode[0].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                            <Image src={goldenKingsCode[0].src} alt={goldenKingsCode[0].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[0].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[0].title}</p>
@@ -1111,7 +1115,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[1].src} alt={goldenKingsCode[1].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                            <Image src={goldenKingsCode[1].src} alt={goldenKingsCode[1].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[1].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[1].title}</p>
@@ -1139,7 +1143,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[2].src} alt={goldenKingsCode[2].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                            <Image src={goldenKingsCode[2].src} alt={goldenKingsCode[2].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[2].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[2].title}</p>
@@ -1167,7 +1171,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div ref={midTwoSectionRef} className={styles["artwork"]}>
-                            <Image src={goldenKingsCode[3].src} alt={goldenKingsCode[3].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                            <Image src={goldenKingsCode[3].src} alt={goldenKingsCode[3].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {goldenKingsCode[3].artist}</p>
                                 <p><span>Title:</span> {goldenKingsCode[3].title}</p>
@@ -1196,7 +1200,7 @@ const GalleryGrid = () => {
                         </div>
                         <div className={`${styles.showMoreArtwork} ${showMoreMidTwo ? styles.active : ""}`}>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[4].src} alt={goldenKingsCode[4].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <Image src={goldenKingsCode[4].src} alt={goldenKingsCode[4].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[4].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[4].title}</p>
@@ -1224,7 +1228,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[5].src} alt={goldenKingsCode[5].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <Image src={goldenKingsCode[5].src} alt={goldenKingsCode[5].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[5].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[5].title}</p>
@@ -1252,7 +1256,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[6].src} alt={goldenKingsCode[6].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <Image src={goldenKingsCode[6].src} alt={goldenKingsCode[6].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[6].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[6].title}</p>
@@ -1280,7 +1284,7 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src={goldenKingsCode[7].src} alt={goldenKingsCode[7].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <Image src={goldenKingsCode[7].src} alt={goldenKingsCode[7].alt} width={150} height={150} className={`${styles.soloImgs} ${styles.linocuts}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {goldenKingsCode[7].artist}</p>
                                     <p><span>Title:</span> {goldenKingsCode[7].title}</p>
