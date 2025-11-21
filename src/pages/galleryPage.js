@@ -126,7 +126,7 @@ const GalleryGrid = () => {
         { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 1', medium: 'Oil on canvas', size: '120 x 120 cm', year: '2023', price: 'R23 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 2', medium: 'Oil on canvas', size: '120 x 125 cm', year: '2023', price: 'R20 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
-        { src: 'assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
     ];
 
     // Storeroom artworks
@@ -925,6 +925,118 @@ const GalleryGrid = () => {
                                             style={{
                                                 fill: likedArtworks.has(allArtworks[19].title) ? '#ff4757' : '#000000',
                                                 color: likedArtworks.has(allArtworks[19].title) ? '#ff4757' : '#333'
+                                            }}
+                                        />
+                                    </button>
+                                    <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
+                                </div>
+                            </div>
+                            <div className={styles["artwork"]}>
+                                <Image src={allArtworks[20].src} alt={allArtworks[20].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <div className={styles["artwork-details"]}>
+                                    <p><span>Artist:</span> {allArtworks[20].artist}</p>
+                                    <p><span>Title:</span> {allArtworks[20].title}</p>
+                                    <p><span>Medium:</span> {allArtworks[20].medium}</p>
+                                    <p><span>Size:</span> {allArtworks[20].size}</p>
+                                    <p><span>Year:</span> {allArtworks[20].year}</p>
+                                    <p><span>Price:</span> {allArtworks[20].price}</p>
+                                </div>
+                                <div className={styles.btnsContainer}>
+                                    <button
+                                        className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[20].title) ? styles.liked : ''}`}
+                                        onClick={() => handleLike(allArtworks[20])}
+                                        title={likedArtworks.has(allArtworks[20].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                    >
+                                        <CiHeart
+                                            size={24}
+                                            className={styles.heartIcon}
+                                            style={{
+                                                fill: likedArtworks.has(allArtworks[20].title) ? '#ff4757' : '#000000',
+                                                color: likedArtworks.has(allArtworks[20].title) ? '#ff4757' : '#333'
+                                            }}
+                                        />
+                                    </button>
+                                    <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
+                                </div>
+                            </div>
+                            <div className={styles["artwork"]}>
+                                <Image src={allArtworks[21].src} alt={allArtworks[21].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <div className={styles["artwork-details"]}>
+                                    <p><span>Artist:</span> {allArtworks[21].artist}</p>
+                                    <p><span>Title:</span> {allArtworks[21].title}</p>
+                                    <p><span>Medium:</span> {allArtworks[21].medium}</p>
+                                    <p><span>Size:</span> {allArtworks[21].size}</p>
+                                    <p><span>Year:</span> {allArtworks[21].year}</p>
+                                    <p><span>Price:</span> {allArtworks[21].price}</p>
+                                </div>
+                                <div className={styles.btnsContainer}>
+                                    <button
+                                        className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[21].title) ? styles.liked : ''}`}
+                                        onClick={() => handleLike(allArtworks[21])}
+                                        title={likedArtworks.has(allArtworks[21].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                    >
+                                        <CiHeart
+                                            size={24}
+                                            className={styles.heartIcon}
+                                            style={{
+                                                fill: likedArtworks.has(allArtworks[21].title) ? '#ff4757' : '#000000',
+                                                color: likedArtworks.has(allArtworks[21].title) ? '#ff4757' : '#333'
+                                            }}
+                                        />
+                                    </button>
+                                    <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
+                                </div>
+                            </div>
+                            <div className={styles["artwork"]}>
+                                <Image src={allArtworks[22].src} alt={allArtworks[22].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <div className={styles["artwork-details"]}>
+                                    <p><span>Artist:</span> {allArtworks[22].artist}</p>
+                                    <p><span>Title:</span> {allArtworks[22].title}</p>
+                                    <p><span>Medium:</span> {allArtworks[22].medium}</p>
+                                    <p><span>Size:</span> {allArtworks[22].size}</p>
+                                    <p><span>Year:</span> {allArtworks[22].year}</p>
+                                    <p><span>Price:</span> {allArtworks[22].price}</p>
+                                </div>
+                                <div className={styles.btnsContainer}>
+                                    <button
+                                        className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[22].title) ? styles.liked : ''}`}
+                                        onClick={() => handleLike(allArtworks[22])}
+                                        title={likedArtworks.has(allArtworks[22].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                    >
+                                        <CiHeart
+                                            size={24}
+                                            className={styles.heartIcon}
+                                            style={{
+                                                fill: likedArtworks.has(allArtworks[22].title) ? '#ff4757' : '#000000',
+                                                color: likedArtworks.has(allArtworks[22].title) ? '#ff4757' : '#333'
+                                            }}
+                                        />
+                                    </button>
+                                    <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
+                                </div>
+                            </div>
+                            <div className={styles["artwork"]}>
+                                <Image src={allArtworks[23].src} alt={allArtworks[23].alt} width={150} height={150} className={`${styles.soloImgs}`} placeholder="empty" loading="lazy" />
+                                <div className={styles["artwork-details"]}>
+                                    <p><span>Artist:</span> {allArtworks[23].artist}</p>
+                                    <p><span>Title:</span> {allArtworks[23].title}</p>
+                                    <p><span>Medium:</span> {allArtworks[23].medium}</p>
+                                    <p><span>Size:</span> {allArtworks[23].size}</p>
+                                    <p><span>Year:</span> {allArtworks[23].year}</p>
+                                    <p><span>Price:</span> {allArtworks[23].price}</p>
+                                </div>
+                                <div className={styles.btnsContainer}>
+                                    <button
+                                        className={`${styles.likeBtn} ${likedArtworks.has(allArtworks[23].title) ? styles.liked : ''}`}
+                                        onClick={() => handleLike(allArtworks[23])}
+                                        title={likedArtworks.has(allArtworks[23].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                    >
+                                        <CiHeart
+                                            size={24}
+                                            className={styles.heartIcon}
+                                            style={{
+                                                fill: likedArtworks.has(allArtworks[23].title) ? '#ff4757' : '#000000',
+                                                color: likedArtworks.has(allArtworks[23].title) ? '#ff4757' : '#333'
                                             }}
                                         />
                                     </button>
