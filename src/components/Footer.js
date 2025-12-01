@@ -62,6 +62,7 @@ const Footer = () => {
             <div className={Styles["footer-details"]}>
                 <p>📞 : +2771 051 7574</p>
                 <p>✉️ : hello@dwebaart.com</p>
+                <p>📍 : 167 Longmarket Street, Cape Town</p>
                 <p>
                     <span
                         className={Styles["signUp"]}
