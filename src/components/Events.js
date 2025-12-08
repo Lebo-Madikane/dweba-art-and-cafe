@@ -10,17 +10,17 @@ const Events = () => {
             <div className={Style["event-one"]}>
                 <div className={Style["marquee-track"]}>
                     <h4>
-                        <span className={Style["event-name"]}> GROUP EXHIBITION</span> ● NOW SHOWING ●
+                        <span className={Style["event-name"]}> GROUP EXHIBITION: CRTL+ALT+AFRICA</span> ● NOW SHOWING ●
                         <span className={Style["event-location"]}> 167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE 
                         {/*<span className={Style["event-entry"]}>FREE ENTRANCE</span>*/} ●
                     </h4>
                     <h4>
-                        <span className={Style["event-name"]}>NEW COLLECTION: GROUP EXHIBITION</span> ● NOW SHOWING ●
+                        <span className={Style["event-name"]}>GROUP EXHIBITION: CRTL+ALT+AFRICA</span> ● NOW SHOWING ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
                         {/*<span className={Style["event-entry"]}>FREE ENTRANCE</span>*/}
                     </h4>
                     <h4>
-                        <span className={Style["event-name"]}>NEW COLLECTION: GROUP EXHIBITION</span> ● NOW SHOWING ●
+                        <span className={Style["event-name"]}>GROUP EXHIBITION: CRTL+ALT+AFRICA</span> ● NOW SHOWING ●
                         <span className={Style["event-location"]}>167 LONGMARKET ST. CAPE TOWN</span> ● DWEBA ART & CAFE ●
                         {/*<span className={Style["event-entry"]}>FREE ENTRANCE</span>*/}
                     </h4>
