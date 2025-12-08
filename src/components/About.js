@@ -24,7 +24,7 @@ const About = () => {
                 </div>
                 <div className={Style['row-two-col-two']}>
                     <div className={Style['row-two-col-two-row-one']}>
-                        <Image className={Style['upstairs-img']} src='/assets/about-section/About-us-one.webp' alt="Gallery image" width={150} height={50} placeholder="empty" priority />
+                        <Image className={Style['upstairs-img']} src='/assets/about-section/aboutUpStairs.webp' alt="Gallery image" width={150} height={50} placeholder="empty" priority />
                         <Image className={Style['street-sign-img2']} src='/assets/about-section/aboutStreetSign-Two.webp' alt="Street sign image" width={150} height={50} placeholder="empty" priority />
                     </div>
                     <div className={Style['row-two-col-two-row-two']}>
