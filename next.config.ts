@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true, // ✅ This disables linting from stopping your build
-  },
 };
 
 export default nextConfig;
