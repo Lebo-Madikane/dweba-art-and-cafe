@@ -103,39 +103,39 @@ const GalleryGrid = () => {
 
     // All artworks
     const allArtworks = [
-        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/One.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Awakening', medium: 'Mash wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
-        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Two.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Chasing Horizons', medium: 'Mesh wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
-        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Three.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Rising Light', medium: 'Mesh wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
-        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Four.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Becoming Light | ..', medium: 'Mash wire, plaster on canvas', size: '20 x 26 cm, 2kg', year: '2023', price: 'R8 000each ex VAT' },
-        { src: '/assets/artworks/newCollectionNov25/MongeziGum0ne.webp', alt: 'Exhibition Artwork', artist: 'Mongezi Gum', title: 'Wedding Girl with Pearls', medium: 'Oil on board', size: '80 x 122 cm', year: '1999', price: 'R143 000 ex VAT' },
-        { src: '/assets/artworks/newCollectionNov25/MongeziGumTwo.webp', alt: 'Exhibition Artwork', artist: 'Mongezi Gum', title: 'Women Dancing', medium: 'Mixed Midea', size: '85 x 114 cm', year: '2004', price: 'R165 000 ex VAT' },
         { src: '/assets/artworks/newCollectionNov25/JackMulele.webp', alt: 'Exhibition Artwork', artist: 'Jack Mulele', title: 'Composition', medium: 'Acrylic on canvas', size: '90 x 90 cm', year: '2006', price: 'R45 000 ex VAT' },
         { src: '/assets/artworks/newCollectionNov25/ItaiVangani.webp', alt: 'Exhibition Artwork', artist: 'Itai Vangani', title: 'Girl with Lost Goat', medium: 'Acrylic on canvas', size: '70 x 55 cm', year: '2024', price: 'R18 000 ex VAT' },
         { src: '/assets/artworks/newCollectionNov25/KhanyaMehloOne.webp', alt: 'Exhibition Artwork', artist: 'Khanya Mehlo', title: 'Untitled', medium: 'Mixed Media', size: '114 x 89 cm', year: '2023', price: 'R19 500 ex VAT' },
         { src: '/assets/artworks/newCollectionNov25/KhanyaMehloTwo.webp', alt: 'Exhibition Artwork', artist: 'Khanya Mehlo', title: 'Untitled', medium: 'Mixed Media', size: '92 x 65 cm', year: '2023', price: 'R18 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/messiahsDonkey.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'Messiah`s Donkey', medium: 'Acrylic and oil paint', size: '93 x 64 cm', year: '2021', price: 'R42 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/tbc.webp', alt: 'Exhibition Artwork', artist: 'Cheryl Traub Adler', title: 'TBC', medium: 'Acrylic and oil paint', size: '54 x 78 cm', year: '2025', price: 'R40 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/observingPresence.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Observing Presences', medium: 'Oil paint on canvas', size: '130 x 90 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/rose.webp', alt: 'Exhibition Artwork', artist: 'Nelson Okoh', title: 'The Rose', medium: 'Oil on canvas', size: '120 x 90 cm', year: '20219', price: 'R95 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/Sikhokhele.webp', alt: 'Exhibition Artwork', artist: 'Sikho Mququ', title: 'Sikhokhele(Lead Us)', medium: 'Ceramic', size: '44 x 30 cm', year: '2025', price: 'R36 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/Manziphazi.webp', alt: 'Exhibition Artwork', artist: 'Sikho Mququ', title: 'Manziphazi..', medium: 'Ceramic', size: '20 x 30 x 40 cm', year: '2025', price: 'R33 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/twiceDivorcedWaterhog.webp', alt: 'Exhibition Artwork', artist: 'Yah-Weh the Son', title: 'Twice divorced waterhog..', medium: 'Mixed Media', size: '14 x 30 x 30 cm', year: '2023', price: 'R26 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/daliElephantChimera.webp', alt: 'Exhibition Artwork', artist: 'Yah-Weh the Son', title: 'Dali Elephant Chimera', medium: 'Mixed Media', size: '30 x 30 x 30 cm', year: '2023', price: 'R22 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/Untitled-Indlela-1.webp', alt: 'Exhibition Artwork', artist: 'Refiloe Mnisi', title: 'Untitled Indlela I', medium: 'Mixed Media', size: '51 x 39 cm', year: '2022', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/ART10.webp', alt: 'Exhibition Artwork', artist: 'Samson Mnisi', title: 'Abstract I', medium: 'Mixed Media', size: '55 x 100 cm', year: '2022', price: 'R150 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/Isobar.webp', alt: 'Exhibition Artwork', artist: 'Johan Vorster', title: 'Isobar', medium: 'Water Colour', size: '19 x 26 cm', year: '2025', price: 'R7 200 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe MK', title: 'F A I T H', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/hondoMupfungwa.webp', alt: 'Exhibition Artwork', artist: 'Austin Mandlokuwa', title: 'Hondo Mupfungwa', medium: 'Acrylic and Charcoal', size: '80 x 60 cm', year: '2025', price: 'R20 480 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/safe.webp', alt: 'Exhibition Artwork', artist: 'Aimee Pullon', title: 'SAFE', medium: 'Mild Steel', size: '100 x 160 cm', year: '2021', price: 'R35 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Gaze', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Mind', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/beauties1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 1', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/beauties2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 2', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/umhambiWendlela.webp', alt: 'Exhibition Artwork', artist: 'Luyanda Mkhuthungu', title: 'Umhambi Wendlela', medium: 'Mixed Media', size: '73 x 97 cm', year: '2025', price: 'R25 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe Mk', title: 'F A I TH', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 1', medium: 'Oil on canvas', size: '120 x 120 cm', year: '2023', price: 'R23 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/untitledAbstract2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Untitled Abstract 2', medium: 'Oil on canvas', size: '120 x 125 cm', year: '2023', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/greenAndYellow.webp', alt: 'Exhibition Artwork', artist: 'Lindisipho Gulwa', title: 'Green and Yellow', medium: 'Irish Acrylic', size: '93 x 64 cm', year: '2025', price: 'R30 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/untitled.webp', alt: 'Exhibition Artwork', artist: 'Lindisipho Gulwa', title: 'Untitled', medium: 'Irish Acrylic', size: '93 x 64 cm', year: '2025', price: 'R40 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/mrWhySoSerious.webp', alt: 'Exhibition Artwork', artist: 'Takura Chadoka', title: 'Mr. Why so serious', medium: 'Screen print on canvas', size: '85 x 48 cm', year: '2024', price: 'R14 400 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/betweenFriends.webp', alt: 'Exhibition Artwork', artist: 'Tusevo Lando', title: 'Between Friends', medium: 'Oil and acrylic', size: '163 x 103 cm', year: '2025', price: 'R85 000 ex VAT' },  
     ];
 
     // Storeroom artworks
     const storeroomArtworks = [
         { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Misty Blues', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART14.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Duvha (Sun)', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART4.webp', alt: 'The Storeroom Artwork', artist: 'Cheryl Traub Adler', title: 'Chimera II', medium: 'Monotype and paint', size: '62 X 82 cm', year: '2025', price: 'R24 000 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART16.webp', alt: 'The Storeroom Artwork', artist: 'Cheryl Traub Adler', title: 'Chimera III', medium: 'Monotype and paint', size: '62 X 82 cm', year: '2025', price: 'R24 000 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART10.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'Abstract I', medium: 'Mixed Media', size: '55 X 100 cm', year: '2022', price: 'R150 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART11.webp', alt: 'The Storeroom Artwork', artist: 'Mario Macilau', title: 'Untitled (Faith Series)', medium: 'Digital Print..', size: '120 X 80 cm', year: '2022', price: '$7600 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART16.webp', alt: 'The Storeroom Artwork', artist: 'Mario Macilau', title: 'Untitled (Faith Series)', medium: 'Digital Print..', size: '120 X 80 cm', year: '2022', price: '$7600 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART10.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'Abstract II', medium: 'Mixed Media', size: '136 X 205 cm', year: 'Unknown', price: 'SOLD' },
         { src: '/assets/artworks/Storeroom/ART13.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'The Last One', medium: 'Mixed Media', size: '185 X 88 cm', year: '2022', price: 'R240 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART2.webp', alt: 'The Storeroom Artwork', artist: 'Funeka Shuping', title: 'Untitled (Bee Series)', medium: 'Mixed Media', size: '141 X 102 cm', year: '2024', price: 'R28 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork', artist: 'Ziyanda Majozi', title: 'Nozimvo', medium: 'Mosaic', size: '60 X 40 cm', year: '2018', price: 'R36 000 ex VAT' },
@@ -143,10 +143,10 @@ const GalleryGrid = () => {
 
     // The Reading Man artworks
     const theReadingMan = [
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-I.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man I', medium: 'Mixed Media', size: '100 x 80 cm', year: '2025', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/The-Reading-Man-II.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man II', medium: 'Mixed Media', size: '60 x 45 cm', year: '2025', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIII.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man III', medium: 'Mixed Media', size: '50 x 50 cm', year: '2025', price: 'R20 000 ex VAT' },
-        { src: '/assets/artworks/Downstairs/JuliusBadatu/TheReadingManIV.webp', alt: 'The Reading Man', artist: 'Julius Badatu', title: 'The Reading Man IV', medium: 'Mixed Media', size: '100 x 80 cm', year: '2025', price: 'R20 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/One.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Awakening', medium: 'Mash wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Two.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Chasing Horizons', medium: 'Mesh wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Three.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Rising Light', medium: 'Mesh wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
+        { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Four.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Becoming Light | ..', medium: 'Mash wire, plaster on canvas', size: '20 x 26 cm, 2kg', year: '2023', price: 'R8 000each ex VAT' },
     ];
 
     // Golden Kings Code artworks
@@ -294,7 +294,7 @@ const GalleryGrid = () => {
                 <div ref={topSectionRef} className={styles.gallerySection}>
                     <div className={styles.wallHeader}>
                         {/*<h3>Why We Need Mothers</h3>*/}
-                        <h4>New Collection: Group Exhibition</h4>
+                        <h4>Group Exhibition: CTRL+ALT+AFRICA</h4>
                         <p>Now Showing</p>
                     </div>
 
@@ -366,7 +366,7 @@ const GalleryGrid = () => {
 
                     <div className={`${styles.galleryHeader} ${styles.removeMobile}`}>
                         {/*<h3>Why We Need Mothers</h3>*/}
-                        <h4>New Collection: Group Exhibition</h4>
+                        <h4>Group Exhibition: CTRL+ALT+AFRICA</h4>
                         <p>Now Showing</p>
                     </div>
                     <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
@@ -1052,7 +1052,7 @@ const GalleryGrid = () => {
                 <div ref={midSectionRef} className={`${styles.gallerySection} ${styles.gallerySectionMid}`}>
                     <div className={`${styles.galleryHeader} ${styles.galleryHeaderMid}`}>
                         <h3>Now Showing</h3>
-                        <h4>The Reading Man: <span>Julius Badatu</span></h4>
+                        <h4>Dawn of Dreams: <span>Grace London</span></h4>
                     </div>
                     <div className={`${styles.galleryGrid} ${styles.galleryGridMid}`}>
                         <div className={styles["artwork"]}>
@@ -1573,7 +1573,35 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART4.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                            <Image src='/assets/artworks/Storeroom/ART6.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                            <div className={styles["artwork-details"]}>
+                                <p><span>Artist:</span> {storeroomArtworks[7].artist}</p>
+                                <p><span>Title:</span> {storeroomArtworks[7].title}</p>
+                                <p><span>Medium:</span> {storeroomArtworks[7].medium}</p>
+                                <p><span>Size:</span>{storeroomArtworks[7].size}</p>
+                                <p><span>Year:</span> {storeroomArtworks[7].year}</p>
+                                <p><span>Price:</span> {storeroomArtworks[7].price}</p>
+                            </div>
+                            <div className={styles.btnsContainer}>
+                                <button
+                                    className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[7].title) ? styles.liked : ''}`}
+                                    onClick={() => handleLike(storeroomArtworks[7])}
+                                    title={likedArtworks.has(storeroomArtworks[7].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                >
+                                    <CiHeart
+                                        size={24}
+                                        className={styles.heartIcon}
+                                        style={{
+                                            fill: likedArtworks.has(storeroomArtworks[7].title) ? '#ff4757' : '#000000',
+                                            color: likedArtworks.has(storeroomArtworks[7].title) ? '#ff4757' : '#333'
+                                        }}
+                                    />
+                                </button>
+                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
+                            </div>
+                        </div>
+                        <div className={styles["artwork"]}>
+                            <Image src='/assets/artworks/Storeroom/ART11.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {storeroomArtworks[2].artist}</p>
                                 <p><span>Title:</span> {storeroomArtworks[2].title}</p>
@@ -1600,38 +1628,38 @@ const GalleryGrid = () => {
                                 <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
                             </div>
                         </div>
-                        <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART16.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
-                            <div className={styles["artwork-details"]}>
-                                <p><span>Artist:</span> {storeroomArtworks[3].artist}</p>
-                                <p><span>Title:</span> {storeroomArtworks[3].title}</p>
-                                <p><span>Medium:</span> {storeroomArtworks[3].medium}</p>
-                                <p><span>Size:</span>{storeroomArtworks[3].size}</p>
-                                <p><span>Year:</span> {storeroomArtworks[3].year}</p>
-                                <p><span>Price:</span> {storeroomArtworks[3].price}</p>
-                            </div>
-                            <div className={styles.btnsContainer}>
-                                <button
-                                    className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[3].title) ? styles.liked : ''}`}
-                                    onClick={() => handleLike(storeroomArtworks[3])}
-                                    title={likedArtworks.has(storeroomArtworks[3].title) ? 'Unlike this artwork' : 'Like this artwork'}
-                                >
-                                    <CiHeart
-                                        size={24}
-                                        className={styles.heartIcon}
-                                        style={{
-                                            fill: likedArtworks.has(storeroomArtworks[3].title) ? '#ff4757' : '#000000',
-                                            color: likedArtworks.has(storeroomArtworks[3].title) ? '#ff4757' : '#333'
-                                        }}
-                                    />
-                                </button>
-                                <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
-                            </div>
-                        </div>
                         <div className={`${styles.showMoreArtwork} ${showMoreBottom ? styles.active : ""
                             }`}>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART10.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                                <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                                <div className={styles["artwork-details"]}>
+                                    <p><span>Artist:</span> {storeroomArtworks[6].artist}</p>
+                                    <p><span>Title:</span> {storeroomArtworks[6].title}</p>
+                                    <p><span>Medium:</span> {storeroomArtworks[6].medium}</p>
+                                    <p><span>Size:</span>{storeroomArtworks[6].size}</p>
+                                    <p><span>Year:</span> {storeroomArtworks[6].year}</p>
+                                    <p><span>Price:</span> {storeroomArtworks[6].price}</p>
+                                </div>
+                                <div className={styles.btnsContainer}>
+                                    <button
+                                        className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[6].title) ? styles.liked : ''}`}
+                                        onClick={() => handleLike(storeroomArtworks[6])}
+                                        title={likedArtworks.has(storeroomArtworks[6].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                    >
+                                        <CiHeart
+                                            size={24}
+                                            className={styles.heartIcon}
+                                            style={{
+                                                fill: likedArtworks.has(storeroomArtworks[6].title) ? '#ff4757' : '#000000',
+                                                color: likedArtworks.has(storeroomArtworks[6].title) ? '#ff4757' : '#333'
+                                            }}
+                                        />
+                                    </button>
+                                    <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
+                                </div>
+                            </div>
+                            <div className={styles["artwork"]}>
+                                <Image src='/assets/artworks/Storeroom/ART7.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
                                     <p><span>Artist:</span> {storeroomArtworks[4].artist}</p>
                                     <p><span>Title:</span> {storeroomArtworks[4].title}</p>
@@ -1687,55 +1715,27 @@ const GalleryGrid = () => {
                                 </div>
                             </div>
                             <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART2.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                                <Image src='/assets/artworks/Storeroom/ART12.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                                 <div className={styles["artwork-details"]}>
-                                    <p><span>Artist:</span> {storeroomArtworks[6].artist}</p>
-                                    <p><span>Title:</span> {storeroomArtworks[6].title}</p>
-                                    <p><span>Medium:</span> {storeroomArtworks[6].medium}</p>
-                                    <p><span>Size:</span>{storeroomArtworks[6].size}</p>
-                                    <p><span>Year:</span> {storeroomArtworks[6].year}</p>
-                                    <p><span>Price:</span> {storeroomArtworks[6].price}</p>
+                                    <p><span>Artist:</span> {storeroomArtworks[3].artist}</p>
+                                    <p><span>Title:</span> {storeroomArtworks[3].title}</p>
+                                    <p><span>Medium:</span> {storeroomArtworks[3].medium}</p>
+                                    <p><span>Size:</span>{storeroomArtworks[3].size}</p>
+                                    <p><span>Year:</span> {storeroomArtworks[3].year}</p>
+                                    <p><span>Price:</span> {storeroomArtworks[3].price}</p>
                                 </div>
                                 <div className={styles.btnsContainer}>
                                     <button
-                                        className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[6].title) ? styles.liked : ''}`}
-                                        onClick={() => handleLike(storeroomArtworks[6])}
-                                        title={likedArtworks.has(storeroomArtworks[6].title) ? 'Unlike this artwork' : 'Like this artwork'}
+                                        className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[3].title) ? styles.liked : ''}`}
+                                        onClick={() => handleLike(storeroomArtworks[3])}
+                                        title={likedArtworks.has(storeroomArtworks[3].title) ? 'Unlike this artwork' : 'Like this artwork'}
                                     >
                                         <CiHeart
                                             size={24}
                                             className={styles.heartIcon}
                                             style={{
-                                                fill: likedArtworks.has(storeroomArtworks[6].title) ? '#ff4757' : '#000000',
-                                                color: likedArtworks.has(storeroomArtworks[6].title) ? '#ff4757' : '#333'
-                                            }}
-                                        />
-                                    </button>
-                                    <button className={styles.addToCartBtn} onClick={handleAddToCart}><IoCartOutline size={24} color='#ffffff' /></button>
-                                </div>
-                            </div>
-                            <div className={styles["artwork"]}>
-                                <Image src='/assets/artworks/Storeroom/ART6.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
-                                <div className={styles["artwork-details"]}>
-                                    <p><span>Artist:</span> {storeroomArtworks[7].artist}</p>
-                                    <p><span>Title:</span> {storeroomArtworks[7].title}</p>
-                                    <p><span>Medium:</span> {storeroomArtworks[7].medium}</p>
-                                    <p><span>Size:</span>{storeroomArtworks[7].size}</p>
-                                    <p><span>Year:</span> {storeroomArtworks[7].year}</p>
-                                    <p><span>Price:</span> {storeroomArtworks[7].price}</p>
-                                </div>
-                                <div className={styles.btnsContainer}>
-                                    <button
-                                        className={`${styles.likeBtn} ${likedArtworks.has(storeroomArtworks[7].title) ? styles.liked : ''}`}
-                                        onClick={() => handleLike(storeroomArtworks[7])}
-                                        title={likedArtworks.has(storeroomArtworks[7].title) ? 'Unlike this artwork' : 'Like this artwork'}
-                                    >
-                                        <CiHeart
-                                            size={24}
-                                            className={styles.heartIcon}
-                                            style={{
-                                                fill: likedArtworks.has(storeroomArtworks[7].title) ? '#ff4757' : '#000000',
-                                                color: likedArtworks.has(storeroomArtworks[7].title) ? '#ff4757' : '#333'
+                                                fill: likedArtworks.has(storeroomArtworks[3].title) ? '#ff4757' : '#000000',
+                                                color: likedArtworks.has(storeroomArtworks[3].title) ? '#ff4757' : '#333'
                                             }}
                                         />
                                     </button>
