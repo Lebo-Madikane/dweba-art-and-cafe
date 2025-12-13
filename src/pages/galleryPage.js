@@ -107,26 +107,26 @@ const GalleryGrid = () => {
         { src: '/assets/artworks/newCollectionNov25/ItaiVangani.webp', alt: 'Exhibition Artwork', artist: 'Itai Vangani', title: 'Girl with Lost Goat', medium: 'Acrylic on canvas', size: '70 x 55 cm', year: '2024', price: 'R18 000 ex VAT' },
         { src: '/assets/artworks/newCollectionNov25/KhanyaMehloOne.webp', alt: 'Exhibition Artwork', artist: 'Khanya Mehlo', title: 'Untitled', medium: 'Mixed Media', size: '114 x 89 cm', year: '2023', price: 'R19 500 ex VAT' },
         { src: '/assets/artworks/newCollectionNov25/KhanyaMehloTwo.webp', alt: 'Exhibition Artwork', artist: 'Khanya Mehlo', title: 'Untitled', medium: 'Mixed Media', size: '92 x 65 cm', year: '2023', price: 'R18 000 ex VAT' },
-        { src: '/assets/artworks/ctrlAltAfrica/Sikhokhele.webp', alt: 'Exhibition Artwork', artist: 'Sikho Mququ', title: 'Sikhokhele(Lead Us)', medium: 'Ceramic', size: '44 x 30 cm', year: '2025', price: 'R36 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/Sikhokhele2.webp', alt: 'Exhibition Artwork', artist: 'Sikho Mququ', title: 'Sikhokhele(Lead Us)', medium: 'Ceramic', size: '44 x 30 cm', year: '2025', price: 'R36 000 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/Manziphazi.webp', alt: 'Exhibition Artwork', artist: 'Sikho Mququ', title: 'Manziphazi..', medium: 'Ceramic', size: '20 x 30 x 40 cm', year: '2025', price: 'R33 000 ex VAT' },
-        { src: '/assets/artworks/ctrlAltAfrica/twiceDivorcedWaterhog.webp', alt: 'Exhibition Artwork', artist: 'Yah-Weh the Son', title: 'Twice divorced waterhog..', medium: 'Mixed Media', size: '14 x 30 x 30 cm', year: '2023', price: 'R26 000 ex VAT' },
-        { src: '/assets/artworks/ctrlAltAfrica/daliElephantChimera.webp', alt: 'Exhibition Artwork', artist: 'Yah-Weh the Son', title: 'Dali Elephant Chimera', medium: 'Mixed Media', size: '30 x 30 x 30 cm', year: '2023', price: 'R22 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/twiceDivorcedWaterhog2.webp', alt: 'Exhibition Artwork', artist: 'Yah-Weh the Son', title: 'Twice divorced waterhog..', medium: 'Mixed Media', size: '14 x 30 x 30 cm', year: '2023', price: 'R26 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/nasgara.webp', alt: 'Exhibition Artwork', artist: 'Aimee Pullon', title: 'Nasgara', medium: 'Mild Steel', size: '55 x 20 x 180 cm', year: '2018', price: 'R140 000 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/Untitled-Indlela-1.webp', alt: 'Exhibition Artwork', artist: 'Refiloe Mnisi', title: 'Untitled Indlela I', medium: 'Mixed Media', size: '51 x 39 cm', year: '2022', price: 'R25 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/afroBluesKoraMeetsMaskandi.webp', alt: 'Exhibition Artwork', artist: 'Nico Phooko', title: 'Afro Blues', medium: 'Acrylic on canvas', size: '100 x 135 cm', year: '2022', price: 'R70 500 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART3.webp', alt: 'Exhibition Artwork', artist: 'Ndikhumbule Ngqinambi', title: 'Yintengiso Yobomi', medium: 'Oil on paper', size: '51 x 69 cm', year: '2024', price: 'R42 000 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/ART10.webp', alt: 'Exhibition Artwork', artist: 'Samson Mnisi', title: 'Abstract I', medium: 'Mixed Media', size: '55 x 100 cm', year: '2022', price: 'R150 000 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/Isobar.webp', alt: 'Exhibition Artwork', artist: 'Johan Vorster', title: 'Isobar', medium: 'Water Colour', size: '19 x 26 cm', year: '2025', price: 'R7 200 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/Orynx.webp', alt: 'Exhibition Artwork', artist: 'Johan Vorster', title: 'Orynx', medium: 'Water colour & Giclee', size: '31 x 40 cm', year: '2025', price: 'R17 200 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/faith.webp', alt: 'Exhibition Artwork', artist: 'Tinashe MK', title: 'F A I T H', medium: 'Acrylic on canvas', size: '120 x 100 cm', year: '2025', price: 'R25 000 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/hondoMupfungwa.webp', alt: 'Exhibition Artwork', artist: 'Austin Mandlokuwa', title: 'Hondo Mupfungwa', medium: 'Acrylic and Charcoal', size: '80 x 60 cm', year: '2025', price: 'R20 480 ex VAT' },
-        { src: '/assets/artworks/ctrlAltAfrica/Safe.webp', alt: 'Exhibition Artwork', artist: 'Aimee Pullon', title: 'SAFE', medium: 'Mild Steel', size: '100 x 160 cm', year: '2021', price: 'R35 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheGaze.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Gaze', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/connectionWithTheMind.webp', alt: 'Exhibition Artwork', artist: 'Kingdiah Kolapo', title: 'Connection With The Mind', medium: 'Charcoal and acrylic', size: '100 x 60 cm', year: '2016', price: 'R40 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/beauties1.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 1', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
         { src: '/assets/artworks/whyWeNeedMothers/beauties2.webp', alt: 'Exhibition Artwork', artist: 'Julius Badatu', title: 'Beauties 2', medium: 'Oil paint on canvas', size: '100 x 100 cm', year: '2025', price: 'R60 000 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/greenAndYellow.webp', alt: 'Exhibition Artwork', artist: 'Lindisipho Gulwa', title: 'Green and Yellow', medium: 'Irish Acrylic', size: '93 x 64 cm', year: '2025', price: 'R30 000 ex VAT' },
         { src: '/assets/artworks/ctrlAltAfrica/untitled.webp', alt: 'Exhibition Artwork', artist: 'Lindisipho Gulwa', title: 'Untitled', medium: 'Irish Acrylic', size: '93 x 64 cm', year: '2025', price: 'R40 000 ex VAT' },
-        { src: '/assets/artworks/ctrlAltAfrica/mrWhySoSerious.webp', alt: 'Exhibition Artwork', artist: 'Takura Chadoka', title: 'Mr. Why so serious', medium: 'Screen print on canvas', size: '85 x 48 cm', year: '2024', price: 'R14 400 ex VAT' },
-        { src: '/assets/artworks/ctrlAltAfrica/betweenFriends.webp', alt: 'Exhibition Artwork', artist: 'Tusevo Lando', title: 'Between Friends', medium: 'Oil and acrylic', size: '163 x 103 cm', year: '2025', price: 'R85 000 ex VAT' },  
+        { src: '/assets/artworks/ctrlAltAfrica/betweenFriends.webp', alt: 'Exhibition Artwork', artist: 'Tusevo Lando', title: 'Between Friends', medium: 'Oil and acrylic', size: '163 x 103 cm', year: '2025', price: 'R85 000 ex VAT' },
+        { src: '/assets/artworks/ctrlAltAfrica/Brothers.webp', alt: 'Exhibition Artwork', artist: 'Takura Chadoka', title: 'Brothers', medium: 'Screen print on canvas', size: '45 x 45 cm', year: '2023', price: 'R14 400 ex VAT' },  
     ];
 
     // Storeroom artworks
@@ -295,7 +295,8 @@ const GalleryGrid = () => {
                     <div className={styles.wallHeader}>
                         {/*<h3>Why We Need Mothers</h3>*/}
                         <h4>Group Exhibition: CTRL+ALT+AFRICA</h4>
-                        <p>Now Showing</p>
+                        <p>An exhibition exploring the tension between inherited narratives and self-authored ones.</p>
+                        <p>NOW SHOWING</p>
                     </div>
 
                     {/* DESKTOP */}
@@ -367,7 +368,8 @@ const GalleryGrid = () => {
                     <div className={`${styles.galleryHeader} ${styles.removeMobile}`}>
                         {/*<h3>Why We Need Mothers</h3>*/}
                         <h4>Group Exhibition: CTRL+ALT+AFRICA</h4>
-                        <p>Now Showing</p>
+                        <p>An exhibition exploring the tension between inherited narratives and self-authored ones.</p>
+                        <p>NOW SHOWING</p>
                     </div>
                     <div className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                         <div className={styles["artwork"]}>
