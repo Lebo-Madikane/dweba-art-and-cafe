@@ -27,7 +27,6 @@ const MenuItems = () => (
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Breakfast</h3>
-                        <hr />
                         <ul>
                             <li>Classic egg benedict - <span>R105</span></li>
                             <li>Loaded egg benedict - <span>R135</span></li>
@@ -45,7 +44,6 @@ const MenuItems = () => (
                     <div className={`${Styles.menuCategorImg2}`}></div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Croissaints</h3>
-                        <hr />
                         <ul>
                             <li>Plain croissant - <span>R25</span></li>
                             <li>Croissant with butter & jam - <span>R50</span></li>
@@ -63,7 +61,6 @@ const MenuItems = () => (
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Salads</h3>
-                        <hr />
                         <ul>
                             <li>Classic greek - <span>R70</span></li>
                             <li>Waldorf salad - <span>R95</span></li>
@@ -78,7 +75,6 @@ const MenuItems = () => (
                     <div className={`${Styles.menuCategorImg2}`}></div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Burgers</h3>
-                        <hr />
                         <ul>
                             <li>Smash burger - <span>R165</span></li>
                             <li>Caprese style burger - <span>R95</span></li>
@@ -96,7 +92,6 @@ const MenuItems = () => (
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Extras</h3>
-                        <hr />
                         <ul>
                             <li>Cake Slice - <span>R55</span></li>
                             <li>Egg - <span>R25</span></li>
@@ -126,7 +121,6 @@ const MenuItems = () => (
                     <div className={`${Styles.menuCategorImg2}`}></div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Juices</h3>
-                        <hr />
                         <ul>
                             <li>Apple zing - <span>R55</span></li>
                             <li>Apple juice - <span>R35</span></li>
@@ -150,7 +144,6 @@ const MenuItems = () => (
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Cold Drinks</h3>
-                        <hr />
                         <ul>
                             <li>Sprite - <span>R22</span></li>
                             <li>Lemonade - <span>R22</span></li>
@@ -171,7 +164,6 @@ const MenuItems = () => (
                     <div className={`${Styles.menuCategorImg2}`}></div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Hot Drinks</h3>
-                        <hr />
                         <ul>
                             <li>Tea - <span>R25</span></li>
                             <li>Espresso - <span>R28</span></li>
@@ -197,7 +189,6 @@ const MenuItems = () => (
                     </div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Mocktails</h3>
-                        <hr />
                         <ul>
                             <li>Rock shandy - <span>R45</span></li>
                             <li>Cucumber lime - <span>R55</span></li>
@@ -212,7 +203,6 @@ const MenuItems = () => (
                     <div className={`${Styles.menuCategorImg2}`}></div>
                     <div className={Styles["menu-category-detail"]}>
                         <h3>Smoothies</h3>
-                        <hr />
                         <ul>
                             <li>Tropical breeze - <span>R55</span></li>
                             <li>Peanut butter bliss - <span>R55</span></li>
