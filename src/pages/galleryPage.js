@@ -132,16 +132,16 @@ const GalleryGrid = () => {
     // Storeroom artworks
     const storeroomArtworks = [
         { src: '/assets/artworks/Storeroom/ART17.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Misty Blues', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART14.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Duvha (Sun)', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'R53 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART14.webp', alt: 'The Storeroom Artwork', artist: 'Ditiro Mashigo', title: 'Duvha (Sun)', medium: 'Fabric Paint', size: '145 x 106 cm', year: '2024', price: 'SOLD' },
         { src: '/assets/artworks/Storeroom/ART11.webp', alt: 'The Storeroom Artwork', artist: 'Mario Macilau', title: 'Untitled (Faith Series)', medium: 'Digital Print..', size: '120 X 80 cm', year: '2022', price: '$7600 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART16.webp', alt: 'The Storeroom Artwork', artist: 'Mario Macilau', title: 'Untitled (Faith Series)', medium: 'Digital Print..', size: '120 X 80 cm', year: '2022', price: '$7600 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART10.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'Abstract II', medium: 'Mixed Media', size: '136 X 205 cm', year: 'Unknown', price: 'SOLD' },
         { src: '/assets/artworks/Storeroom/ART13.webp', alt: 'The Storeroom Artwork', artist: 'Samson Mnisi', title: 'The Last One', medium: 'Mixed Media', size: '185 X 88 cm', year: '2022', price: 'R240 000 ex VAT' },
         { src: '/assets/artworks/Storeroom/ART2.webp', alt: 'The Storeroom Artwork', artist: 'Funeka Shuping', title: 'Untitled (Bee Series)', medium: 'Mixed Media', size: '141 X 102 cm', year: '2024', price: 'R28 000 ex VAT' },
-        { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork', artist: 'Ziyanda Majozi', title: 'Nozimvo', medium: 'Mosaic', size: '60 X 40 cm', year: '2018', price: 'R36 000 ex VAT' },
+        { src: '/assets/artworks/Storeroom/ART6.webp', alt: 'The Storeroom Artwork', artist: 'Ziyanda Majozi', title: 'Nozimvo', medium: 'Mosaic', size: '60 X 40 cm', year: '2018', price: 'SOLD' },
     ];
 
-    // The Reading Man artworks
+    // Dawn Of Dreams artworks
     const theReadingMan = [
         { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/One.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Awakening', medium: 'Mash wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
         { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Two.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Chasing Horizons', medium: 'Mesh wire, plaster on canvas', size: '60 x 85 cm', year: '2023', price: 'R18 000 ex VAT' },
@@ -149,7 +149,7 @@ const GalleryGrid = () => {
         { src: '/assets/artworks/newCollectionNov25/DawnOfDreams/Four.webp', alt: 'Exhibition Artwork', artist: 'Grace London', title: 'Becoming Light | ..', medium: 'Mash wire, plaster on canvas', size: '20 x 26 cm, 2kg', year: '2023', price: 'R8 000each ex VAT' },
     ];
 
-    // Golden Kings Code artworks
+    // Linocut edition artworks
     const goldenKingsCode = [
         { src: '/assets/artworks/Downstairs/PatrickHolo/One.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Jam Session', medium: 'Linocut', size: '48 X 64 cm', year: '2010', price: 'R12 500 ex VAT' },
         { src: '/assets/artworks/Downstairs/PatrickHolo/Two.webp', alt: 'Linocut - edition', artist: 'Patrick Holo', title: 'Mandela in TV', medium: 'Linocut', size: '48 X 64 cm', year: '2010', price: 'R12 500 ex VAT' },
@@ -1519,7 +1519,7 @@ const GalleryGrid = () => {
                     </div>
                     <div ref={bottomSectionRef} className={`${styles.galleryGrid} ${styles.removeMobile}`}>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART17.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                            <Image src='/assets/artworks/Storeroom/ART14.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {storeroomArtworks[0].artist}</p>
                                 <p><span>Title:</span> {storeroomArtworks[0].title}</p>
@@ -1547,7 +1547,7 @@ const GalleryGrid = () => {
                             </div>
                         </div>
                         <div className={styles["artwork"]}>
-                            <Image src='/assets/artworks/Storeroom/ART14.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
+                            <Image src='/assets/artworks/Storeroom/ART17.webp' alt='The Storeroom Artwork' width={150} height={150} className={`${styles.storeroomImg}`} placeholder="empty" loading="lazy" />
                             <div className={styles["artwork-details"]}>
                                 <p><span>Artist:</span> {storeroomArtworks[1].artist}</p>
                                 <p><span>Title:</span> {storeroomArtworks[1].title}</p>
