@@ -1,10 +1,17 @@
+"use client";
 import Image from 'next/image';
 import Style from '../styles/components/About.module.scss';
+import { motion } from "motion/react";
 
 const About = () => {
 
     return (
-        <div className={Style['container']}>
+        <motion.div className={Style['container']}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: [0, 0, 0.2, 1] }}
+        >
             <div className={Style['row-one']}>
                 <div className={Style['row-one-col-left']}>
                     <h2>YOUR DAY<br /> AT THE GALLERY</h2>
@@ -33,7 +40,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 
 }
